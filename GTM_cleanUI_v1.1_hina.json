@@ -1,6 +1,6 @@
 {
   "last_node_id": 352,
-  "last_link_id": 863,
+  "last_link_id": 890,
   "nodes": [
     {
       "id": 247,
@@ -70,10 +70,7 @@
       "properties": {
         "Node name for S&R": "Anything Everywhere",
         "group_restricted": false
-      },
-      "widgets_values": [
-        "Tensor shape torch.Size([1, 1152, 896, 3])"
-      ]
+      }
     },
     {
       "id": 311,
@@ -343,7 +340,7 @@
       "widgets_values": [
         "Detailer prompt",
         "text",
-        "cinematic film still 18 years old girls, (((close up, portrait))), graceful woman, simple background, (extreme detailed face, detailed skin), . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy"
+        "cinematic film still adult girl, whole body, medium breasts, looking at viewer, solo:1, white dress . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy"
       ]
     },
     {
@@ -536,7 +533,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        659163060482256,
+        659163060482266,
         "increment",
         35,
         4,
@@ -965,7 +962,7 @@
           "name": "INT",
           "type": "*",
           "link": 768,
-          "color_on": ""
+          "color_on": "#29699C"
         }
       ],
       "properties": {
@@ -1189,10 +1186,10 @@
         1316.1619903241817,
         645.9404585904266
       ],
-      "size": {
-        "0": 400,
-        "1": 490
-      },
+      "size": [
+        400,
+        490
+      ],
       "flags": {
         "pinned": true
       },
@@ -1234,14 +1231,6 @@
           "link": null,
           "widget": {
             "name": "cfg"
-          }
-        },
-        {
-          "name": "modelname",
-          "type": "COMBO",
-          "link": 746,
-          "widget": {
-            "name": "modelname"
           }
         },
         {
@@ -1294,7 +1283,7 @@
         "webp",
         20,
         8,
-        "00_realisian_v40.safetensors",
+        "zHina/9527_detailRealisticSDXL_fp16_delta-gamma.safetensors",
         "euler",
         "normal",
         "unknown",
@@ -1329,8 +1318,7 @@
           "name": "ckpt_name",
           "type": "COMBO",
           "links": [
-            745,
-            746
+            745
           ],
           "shape": 3,
           "slot_index": 0
@@ -1340,7 +1328,7 @@
         "Node name for S&R": "Checkpoint Selector"
       },
       "widgets_values": [
-        "zHina/9527_detailRealisticSDXL_fp16-delta-gamma.safetensors"
+        "00_realisian_v40.safetensors"
       ]
     },
     {
@@ -1569,10 +1557,10 @@
         "Node name for S&R": "ImpactWildcardProcessor"
       },
       "widgets_values": [
-        "18 years old girls, (((close up, portrait))), simple background, (extreme detailed face, detailed skin),",
-        "18 years old girls, (((close up, portrait))), graceful woman, simple background, (extreme detailed face, detailed skin),",
+        "adult girl, whole body, medium breasts, looking at viewer, solo:1, white dress . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy",
+        "adult girl, whole body, medium breasts, looking at viewer, solo:1, white dress . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy",
         false,
-        86567,
+        86577,
         "increment"
       ],
       "color": "#232",
@@ -1669,7 +1657,7 @@
       },
       "widgets_values": [
         2,
-        990956215286385,
+        542093538036206,
         "randomize",
         20,
         1,
@@ -1946,9 +1934,9 @@
         "group_restricted": false
       },
       "widgets_values": [
-        638909848066422,
+        131309886890163,
         "randomize",
-        "145805696705223"
+        "64440568225626"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -2247,14 +2235,6 @@
       "COMBO"
     ],
     [
-      746,
-      319,
-      0,
-      317,
-      5,
-      "COMBO"
-    ],
-    [
       753,
       322,
       0,
@@ -2267,7 +2247,7 @@
       322,
       0,
       317,
-      7,
+      6,
       "COMBO"
     ],
     [
@@ -2283,7 +2263,7 @@
       323,
       0,
       317,
-      8,
+      7,
       "COMBO"
     ],
     [
@@ -2363,7 +2343,7 @@
       346,
       0,
       317,
-      9,
+      8,
       "INT"
     ],
     [
@@ -2371,7 +2351,7 @@
       346,
       1,
       317,
-      10,
+      9,
       "INT"
     ],
     [
@@ -3040,6 +3020,222 @@
     ],
     [
       863,
+      235,
+      2,
+      291,
+      4,
+      "VAE"
+    ],
+    [
+      864,
+      235,
+      2,
+      247,
+      1,
+      "VAE"
+    ],
+    [
+      865,
+      306,
+      1,
+      263,
+      0,
+      "CLIP"
+    ],
+    [
+      866,
+      306,
+      1,
+      264,
+      0,
+      "CLIP"
+    ],
+    [
+      867,
+      306,
+      0,
+      261,
+      0,
+      "MODEL"
+    ],
+    [
+      868,
+      263,
+      0,
+      261,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      869,
+      264,
+      0,
+      261,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      870,
+      270,
+      0,
+      261,
+      3,
+      "LATENT"
+    ],
+    [
+      871,
+      318,
+      0,
+      261,
+      4,
+      "FLOAT"
+    ],
+    [
+      872,
+      321,
+      0,
+      261,
+      5,
+      "INT"
+    ],
+    [
+      873,
+      316,
+      0,
+      261,
+      6,
+      "INT"
+    ],
+    [
+      874,
+      306,
+      1,
+      285,
+      0,
+      "CLIP"
+    ],
+    [
+      875,
+      238,
+      0,
+      285,
+      1,
+      "STRING"
+    ],
+    [
+      876,
+      306,
+      1,
+      284,
+      0,
+      "CLIP"
+    ],
+    [
+      877,
+      316,
+      0,
+      317,
+      1,
+      "INT"
+    ],
+    [
+      878,
+      318,
+      0,
+      317,
+      4,
+      "FLOAT"
+    ],
+    [
+      879,
+      321,
+      0,
+      317,
+      5,
+      "INT"
+    ],
+    [
+      880,
+      247,
+      0,
+      308,
+      0,
+      "IMAGE"
+    ],
+    [
+      881,
+      316,
+      0,
+      274,
+      0,
+      "INT"
+    ],
+    [
+      882,
+      247,
+      0,
+      339,
+      0,
+      "IMAGE"
+    ],
+    [
+      883,
+      306,
+      0,
+      339,
+      1,
+      "MODEL"
+    ],
+    [
+      884,
+      263,
+      0,
+      339,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      885,
+      264,
+      0,
+      339,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      886,
+      235,
+      2,
+      339,
+      4,
+      "VAE"
+    ],
+    [
+      887,
+      321,
+      0,
+      339,
+      6,
+      "INT"
+    ],
+    [
+      888,
+      306,
+      0,
+      291,
+      2,
+      "MODEL"
+    ],
+    [
+      889,
+      306,
+      1,
+      291,
+      3,
+      "CLIP"
+    ],
+    [
+      890,
       235,
       2,
       291,
