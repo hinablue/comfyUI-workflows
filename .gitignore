@@ -1,0 +1,18 @@
+node_modules/*
+dist/*
+
+# Auto generated files
+.php_cs.cache
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.sublime*
+*.swp
+*.thumb
+*.njsproj
+*.sln
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log
