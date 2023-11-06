@@ -1,13 +1,13 @@
 {
-  "last_node_id": 90,
-  "last_link_id": 189,
+  "last_node_id": 94,
+  "last_link_id": 194,
   "nodes": [
     {
       "id": 4,
       "type": "CLIPSetLastLayer",
       "pos": [
-        367.12423696405034,
-        319.99863503817744
+        8.035954146057174,
+        328.16713936709596
       ],
       "size": {
         "0": 315,
@@ -47,81 +47,11 @@
       "bgcolor": "#653"
     },
     {
-      "id": 7,
-      "type": "KSampler",
-      "pos": [
-        367.12423696405034,
-        429.99863503817744
-      ],
-      "size": [
-        320,
-        450
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 183
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 55
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 5
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 39
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "link": 6,
-          "widget": {
-            "name": "seed"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            136
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        10000,
-        "fixed",
-        20,
-        6,
-        "euler_ancestral",
-        "karras",
-        1
-      ]
-    },
-    {
       "id": 39,
       "type": "VHS_GetLatentCount",
       "pos": [
-        757.1242369640502,
-        449.99863503817744
+        398.0359541460569,
+        458.16713936709596
       ],
       "size": {
         "0": 210,
@@ -161,8 +91,8 @@
       "id": 67,
       "type": "VAEDecode",
       "pos": [
-        467.12423696405034,
-        169.99863503817747
+        108.03595414605704,
+        178.16713936709593
       ],
       "size": {
         "0": 210,
@@ -171,7 +101,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -204,8 +134,8 @@
       "id": 36,
       "type": "ADE_AnimateDiffLoaderWithContext",
       "pos": [
-        367.12423696405034,
-        89.99863503817753
+        8.035954146057174,
+        98.16713936709597
       ],
       "size": {
         "0": 315,
@@ -253,8 +183,8 @@
         "Node name for S&R": "ADE_AnimateDiffLoaderWithContext"
       },
       "widgets_values": [
-        "mm_sd_v15_v2.ckpt",
-        "sqrt_linear (AnimateDiff)",
+        "mm-Stabilized_high.pth",
+        "linear (HotshotXL/default)",
         1,
         false
       ],
@@ -265,8 +195,8 @@
       "id": 38,
       "type": "BatchPromptSchedule",
       "pos": [
-        697.1242369640502,
-        89.99863503817753
+        338.03595414605707,
+        98.16713936709597
       ],
       "size": [
         490,
@@ -314,11 +244,11 @@
         "Node name for S&R": "BatchPromptSchedule"
       },
       "widgets_values": [
-        "\"0\" : \"1girl, solo, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals, black eyes, upper body, from left side, white kimono, purple hair\",\n\"24\" : \"1girl, solo, orange leaves, yellow leaves, fall season, outdoors, falling leaves, black eyes, upper body, from left side, white kimono, purple hair\",\n\"47\" : \"1girl, solo, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals, black eyes, upper body, from left side, white kimono, purple hair\"\n\n",
+        "\"0\" : \"(smiling:`(0.5+0.5*sin(t/12))`), cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\",\n\"12\" : \"cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\",\n\"24\" : \"orange leaves, yellow leaves, fall season, outdoors, falling leaves,\",\n\"36\" : \"orange leaves, yellow leaves, fall season, outdoors, falling leaves,\",\n\"47\" : \"(smiling:`(0.5+0.5*sin(t/max_f))`, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\"",
         120,
-        true,
-        "",
-        "0",
+        false,
+        "18 years old girl, adult girl, solo, ",
+        "black eyes, upper body, shy, pov, posing to viewer, white kimono, purple hair, hands on chests,",
         0,
         0,
         0,
@@ -331,8 +261,8 @@
       "id": 87,
       "type": "Upscale Model Loader",
       "pos": [
-        1224.5040116049183,
-        91.3748418034973
+        868.3400890682967,
+        98.83530197256466
       ],
       "size": {
         "0": 315,
@@ -370,8 +300,8 @@
       "id": 72,
       "type": "UltralyticsDetectorProvider",
       "pos": [
-        1673.9552404855333,
-        221.39535066264347
+        1314.0713638656596,
+        227.2689451203462
       ],
       "size": {
         "0": 315,
@@ -412,8 +342,8 @@
       "id": 80,
       "type": "ImageListToImageBatch",
       "pos": [
-        1853.9552404855333,
-        661.3953506626428
+        1494.0713638656596,
+        667.2689451203452
       ],
       "size": {
         "0": 210,
@@ -422,7 +352,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -450,8 +380,8 @@
       "id": 79,
       "type": "ImpactImageBatchToImageList",
       "pos": [
-        1823.9552404855333,
-        611.3953506626428
+        1464.0713638656596,
+        617.2689451203452
       ],
       "size": {
         "0": 210,
@@ -460,7 +390,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -489,8 +419,8 @@
       "id": 82,
       "type": "SAMLoader",
       "pos": [
-        1673.9552404855333,
-        91.39535066264345
+        1314.0713638656596,
+        97.26894512034606
       ],
       "size": {
         "0": 315,
@@ -523,8 +453,8 @@
       "id": 32,
       "type": "CheckpointLoaderSimple",
       "pos": [
-        27.124236964050315,
-        289.99863503817744
+        -331.964045853943,
+        298.16713936709596
       ],
       "size": {
         "0": 315,
@@ -583,8 +513,8 @@
       "id": 9,
       "type": "EmptyLatentImage",
       "pos": [
-        27.124236964050315,
-        429.99863503817744
+        -331.964045853943,
+        438.16713936709596
       ],
       "size": {
         "0": 315,
@@ -622,8 +552,8 @@
       "id": 86,
       "type": "UltimateSDUpscale",
       "pos": [
-        1224.5040116049183,
-        221.37484180349736
+        868.3400890682967,
+        228.8353019725647
       ],
       "size": [
         410,
@@ -632,7 +562,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -648,7 +578,7 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 178,
+          "link": 193,
           "slot_index": 2
         },
         {
@@ -685,7 +615,7 @@
       },
       "widgets_values": [
         2,
-        285253817617579,
+        1048810148441299,
         "randomize",
         20,
         7,
@@ -709,8 +639,8 @@
       "id": 71,
       "type": "FaceDetailer",
       "pos": [
-        1673.9552404855333,
-        561.3953506626428
+        1314.0713638656596,
+        567.2689451203452
       ],
       "size": {
         "0": 510,
@@ -719,7 +649,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -824,7 +754,7 @@
         128,
         true,
         768,
-        538202093596309,
+        443399520335382,
         "randomize",
         20,
         6,
@@ -851,8 +781,8 @@
       "id": 81,
       "type": "CLIPTextEncode",
       "pos": [
-        1673.9552404855333,
-        341.3953506626434
+        1314.0713638656596,
+        347.2689451203461
       ],
       "size": [
         510,
@@ -875,8 +805,7 @@
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
-            159,
-            178
+            159
           ],
           "shape": 3
         }
@@ -895,8 +824,8 @@
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
-        707.1242369640502,
-        799.9986350381773
+        348.03595414605707,
+        808.1671393670955
       ],
       "size": [
         470,
@@ -928,6 +857,7 @@
           "slot_index": 0
         }
       ],
+      "title": "Negative Prompt",
       "properties": {
         "Node name for S&R": "CLIPTextEncode"
       },
@@ -941,8 +871,8 @@
       "id": 37,
       "type": "VHS_VideoCombine",
       "pos": [
-        2558.2036718577865,
-        89.78096469406127
+        2206.608639022094,
+        96.43146901809689
       ],
       "size": [
         510,
@@ -951,7 +881,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -966,18 +896,18 @@
         "Node name for S&R": "VHS_VideoCombine"
       },
       "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 4,
-        "filename_prefix": "aaa_readme",
+        "frame_rate": 12,
+        "loop_count": 1,
+        "filename_prefix": "animate_test",
         "format": "video/h264-mp4",
         "pingpong": false,
         "save_image": true,
-        "crf": 20,
+        "crf": 21,
         "videopreview": {
           "hidden": false,
-          "paused": false,
+          "paused": true,
           "params": {
-            "filename": "aaa_readme_00052.mp4",
+            "filename": "aaa_readme_00055.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4"
@@ -991,8 +921,8 @@
       "id": 33,
       "type": "ADE_AnimateDiffUniformContextOptions",
       "pos": [
-        30,
-        90
+        -329.0882828179933,
+        98.16850432891844
       ],
       "size": {
         "0": 315,
@@ -1031,8 +961,8 @@
       "id": 83,
       "type": "VAEEncode",
       "pos": [
-        2270,
-        90
+        1918.404967164307,
+        96.65050432403564
       ],
       "size": {
         "0": 210,
@@ -1042,7 +972,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1077,8 +1007,8 @@
       "id": 84,
       "type": "KSampler",
       "pos": [
-        2220,
-        170
+        1868.4049671643074,
+        176.65050432403558
       ],
       "size": [
         320,
@@ -1087,7 +1017,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1135,11 +1065,11 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        10000,
+        100000000,
         "randomize",
         20,
-        8,
-        "dpmpp_2m_sde",
+        7,
+        "euler_ancestral",
         "karras",
         0.3
       ]
@@ -1148,8 +1078,8 @@
       "id": 5,
       "type": "PrimitiveNode",
       "pos": [
-        40,
-        580
+        -319.08828281799333,
+        588.1685043289182
       ],
       "size": {
         "0": 290,
@@ -1177,8 +1107,8 @@
       "title": "Seed",
       "properties": {},
       "widgets_values": [
-        10000,
-        "randomize"
+        100000000,
+        "fixed"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1187,8 +1117,8 @@
       "id": 85,
       "type": "VAEDecode",
       "pos": [
-        2290,
-        670
+        1938.4049671643072,
+        676.6505043240355
       ],
       "size": {
         "0": 210,
@@ -1198,7 +1128,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1233,8 +1163,8 @@
       "id": 89,
       "type": "CR LoRA Stack",
       "pos": [
-        -330,
-        90
+        -681.5322751260372,
+        96.82530194824217
       ],
       "size": {
         "0": 315,
@@ -1285,8 +1215,8 @@
       "id": 90,
       "type": "CR Apply LoRA Stack",
       "pos": [
-        -280,
-        460
+        -631.5322751260371,
+        466.82530194824227
       ],
       "size": {
         "0": 210,
@@ -1332,7 +1262,8 @@
           "links": [
             187,
             188,
-            189
+            189,
+            194
           ],
           "shape": 3,
           "slot_index": 1
@@ -1341,6 +1272,119 @@
       "properties": {
         "Node name for S&R": "CR Apply LoRA Stack"
       }
+    },
+    {
+      "id": 94,
+      "type": "CLIPTextEncode",
+      "pos": [
+        880,
+        1110
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 194
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            193
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "Upscale Prompt",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "extreme detailed,"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "KSampler",
+      "pos": [
+        0,
+        440
+      ],
+      "size": [
+        320,
+        450
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 183
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 55
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 5
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 39
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 6,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            136
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        100000000,
+        "fixed",
+        20,
+        6,
+        "euler_ancestral",
+        "karras",
+        1
+      ]
     }
   ],
   "links": [
@@ -1609,14 +1653,6 @@
       "MODEL"
     ],
     [
-      178,
-      81,
-      0,
-      86,
-      2,
-      "CONDITIONING"
-    ],
-    [
       179,
       6,
       0,
@@ -1703,14 +1739,30 @@
       81,
       0,
       "CLIP"
+    ],
+    [
+      193,
+      94,
+      0,
+      86,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      194,
+      90,
+      1,
+      94,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
     {
       "title": "Initialize",
       "bounding": [
-        17,
-        16,
+        -342,
+        24,
         1180,
         1034
       ],
@@ -1721,10 +1773,10 @@
     {
       "title": "Upsacle",
       "bounding": [
-        1215,
-        17,
-        430,
-        1044
+        858,
+        25,
+        432,
+        1295
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1733,8 +1785,8 @@
     {
       "title": "Face Detailer",
       "bounding": [
-        1664,
-        17,
+        1304,
+        23,
         530,
         1414
       ],
@@ -1745,8 +1797,8 @@
     {
       "title": "2pass & Final",
       "bounding": [
-        2208,
-        17,
+        1856,
+        24,
         870,
         1014
       ],
@@ -1757,8 +1809,8 @@
     {
       "title": "Lora",
       "bounding": [
-        -340,
-        16,
+        -692,
+        23,
         335,
         520
       ],
