@@ -1,5 +1,7 @@
 # comfyUI-workflows
 
+You can directly download the images that have been embedded in the workflow.
+
 ---
 
 ## AnimateDiff_2pass_upscale_fadeDetailer
