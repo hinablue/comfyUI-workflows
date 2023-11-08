@@ -4,6 +4,9 @@ You can directly download the images that have been embedded in the workflow.
 
 ---
 
+## AnimateDiff_vid2vid_3passCN_FaceDetailer
+![AnimateDiff_vid2vid_3passCN_FaceDetailer](AnimateDiff_vid2vid_3passCN_FaceDetailer.png)
+
 ## AnimateDiff_2pass_upscale_fadeDetailer_CN_Stabilized
 ![AnimateDiff_2pass_upscale_fadeDetailer_CN_Stabilized](AnimateDiff_2pass_upscale_fadeDetailer_CN_Stabilized.png)
 
