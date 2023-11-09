@@ -1,6 +1,6 @@
 {
-  "last_node_id": 57,
-  "last_link_id": 102,
+  "last_node_id": 58,
+  "last_link_id": 104,
   "nodes": [
     {
       "id": 29,
@@ -16,7 +16,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -550,8 +550,19 @@
       "flags": {
         "pinned": true
       },
-      "order": 5,
+      "order": 14,
       "mode": 0,
+      "inputs": [
+        {
+          "name": "force_rate",
+          "type": "INT",
+          "link": 103,
+          "widget": {
+            "name": "force_rate"
+          },
+          "slot_index": 0
+        }
+      ],
       "outputs": [
         {
           "name": "IMAGE",
@@ -682,7 +693,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -726,7 +737,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -771,7 +782,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -809,7 +820,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -854,53 +865,6 @@
         "sqrt_linear (AnimateDiff)",
         1,
         false
-      ]
-    },
-    {
-      "id": 6,
-      "type": "EmptyLatentImage",
-      "pos": [
-        290,
-        80
-      ],
-      "size": {
-        "0": 320,
-        "1": 110
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "batch_size",
-          "type": "INT",
-          "link": 5,
-          "widget": {
-            "name": "batch_size"
-          },
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            83
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        512,
-        768,
-        1
       ]
     },
     {
@@ -1031,10 +995,10 @@
         1332.2194444864472,
         81.05911896615626
       ],
-      "size": [
-        320,
-        330
-      ],
+      "size": {
+        "0": 320,
+        "1": 330
+      },
       "flags": {
         "pinned": true
       },
@@ -1106,7 +1070,7 @@
       ],
       "size": [
         320,
-        640
+        200
       ],
       "flags": {
         "pinned": true
@@ -1118,6 +1082,14 @@
           "name": "images",
           "type": "IMAGE",
           "link": 34
+        },
+        {
+          "name": "frame_rate",
+          "type": "INT",
+          "link": 104,
+          "widget": {
+            "name": "frame_rate"
+          }
         }
       ],
       "outputs": [],
@@ -1130,7 +1102,7 @@
         "filename_prefix": "AnimateDiff",
         "format": "video/h264-mp4",
         "pingpong": false,
-        "save_image": false,
+        "save_image": true,
         "crf": 18,
         "videopreview": {
           "hidden": false,
@@ -1158,7 +1130,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1194,10 +1166,10 @@
         1670,
         590
       ],
-      "size": [
-        510,
-        830
-      ],
+      "size": {
+        "0": 510,
+        "1": 830
+      },
       "flags": {
         "pinned": true
       },
@@ -1353,7 +1325,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1410,7 +1382,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1440,14 +1412,14 @@
         10,
         -70
       ],
-      "size": [
-        650,
-        60
-      ],
+      "size": {
+        "0": 650,
+        "1": 60
+      },
       "flags": {
         "pinned": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "title": "Video Resolution Note",
       "properties": {
@@ -1460,30 +1432,87 @@
       "bgcolor": "#653"
     },
     {
-      "id": 57,
-      "type": "Note",
+      "id": 6,
+      "type": "EmptyLatentImage",
       "pos": [
-        -420,
-        190
+        290,
+        80
       ],
-      "size": [
-        410,
-        60
+      "size": {
+        "0": 320,
+        "1": 110
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 5,
+          "widget": {
+            "name": "batch_size"
+          },
+          "slot_index": 0
+        }
       ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            83
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        768,
+        1
+      ]
+    },
+    {
+      "id": 58,
+      "type": "Integer",
+      "pos": [
+        -320,
+        80
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
       "flags": {
         "pinned": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            103,
+            104
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
       "title": "Frame Rate",
       "properties": {
-        "text": ""
+        "Node name for S&R": "Integer"
       },
       "widgets_values": [
-        "The force rate is set to 12 for better output in AnimateDiff."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+        12
+      ]
     }
   ],
   "links": [
@@ -1846,6 +1875,22 @@
       24,
       1,
       "MODEL"
+    ],
+    [
+      103,
+      58,
+      0,
+      1,
+      0,
+      "INT"
+    ],
+    [
+      104,
+      58,
+      0,
+      23,
+      1,
+      "INT"
     ]
   ],
   "groups": [
