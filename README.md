@@ -4,6 +4,12 @@ You can directly download the images that have been embedded in the workflow.
 
 ---
 
+## AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer
+![AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer](AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer.png)
+
+## AnimateDiff_SDXL_Simple_Prompt_Traveling_FreeU_Upscale_FD
+![AnimateDiff_SDXL_Simple_Prompt_Traveling_FreeU_Upscale_FD](AnimateDiff_SDXL_Simple_Prompt_Traveling_FreeU_Upscale_FD.png)
+
 ## AnimateDiff_SDXL_Simple_Prompt_Traveling
 ![AnimateDiff_SDXL_Simple_Prompt_Traveling](AnimateDiff_SDXL_Simple_Prompt_Traveling.png)
 
