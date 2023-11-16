@@ -1,6 +1,6 @@
 {
-  "last_node_id": 64,
-  "last_link_id": 136,
+  "last_node_id": 65,
+  "last_link_id": 139,
   "nodes": [
     {
       "id": 29,
@@ -9,10 +9,10 @@
         39.81456591796892,
         735.7103617553706
       ],
-      "size": [
-        390,
-        110
-      ],
+      "size": {
+        "0": 390,
+        "1": 110
+      },
       "flags": {
         "pinned": true
       },
@@ -48,7 +48,7 @@
           "links": [
             44,
             45,
-            115
+            139
           ],
           "shape": 3,
           "slot_index": 0
@@ -141,7 +141,7 @@
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 116,
+          "link": 138,
           "slot_index": 3
         }
       ],
@@ -342,7 +342,7 @@
       ],
       "size": {
         "0": 320,
-        "1": 130
+        "1": 174
       },
       "flags": {
         "pinned": true
@@ -383,7 +383,9 @@
         "enable",
         "enable",
         "enable",
-        512
+        512,
+        "yolox_l.onnx",
+        "dw-ll_ucoco_384.onnx"
       ]
     },
     {
@@ -536,7 +538,7 @@
             18,
             42,
             56,
-            114
+            137
           ],
           "shape": 3,
           "slot_index": 0
@@ -1342,60 +1344,6 @@
       ]
     },
     {
-      "id": 59,
-      "type": "LeReS-DepthMapPreprocessor",
-      "pos": [
-        30,
-        890
-      ],
-      "size": [
-        370,
-        130
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 114,
-          "slot_index": 0
-        },
-        {
-          "name": "resolution",
-          "type": "INT",
-          "link": 115,
-          "widget": {
-            "name": "resolution"
-          },
-          "slot_index": 1
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            116
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LeReS-DepthMapPreprocessor"
-      },
-      "widgets_values": [
-        0,
-        0.7000000000000001,
-        "disable",
-        512
-      ]
-    },
-    {
       "id": 61,
       "type": "Get latent size",
       "pos": [
@@ -1658,10 +1606,10 @@
         800,
         -340
       ],
-      "size": [
-        630,
-        320
-      ],
+      "size": {
+        "0": 630,
+        "1": 322
+      },
       "flags": {
         "pinned": true
       },
@@ -1700,6 +1648,57 @@
         "None",
         1,
         1
+      ]
+    },
+    {
+      "id": 65,
+      "type": "MiDaS-DepthMapPreprocessor",
+      "pos": [
+        60,
+        900
+      ],
+      "size": [
+        320,
+        110
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 137
+        },
+        {
+          "name": "resolution",
+          "type": "INT",
+          "link": 139,
+          "widget": {
+            "name": "resolution"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            138
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MiDaS-DepthMapPreprocessor"
+      },
+      "widgets_values": [
+        6.283185307179586,
+        0.1,
+        512
       ]
     }
   ],
@@ -2009,30 +2008,6 @@
       "CONDITIONING"
     ],
     [
-      114,
-      1,
-      0,
-      59,
-      0,
-      "IMAGE"
-    ],
-    [
-      115,
-      29,
-      0,
-      59,
-      1,
-      "INT"
-    ],
-    [
-      116,
-      59,
-      0,
-      12,
-      3,
-      "IMAGE"
-    ],
-    [
       117,
       6,
       0,
@@ -2127,6 +2102,30 @@
       64,
       2,
       "LORA_STACK"
+    ],
+    [
+      137,
+      1,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      138,
+      65,
+      0,
+      12,
+      3,
+      "IMAGE"
+    ],
+    [
+      139,
+      29,
+      0,
+      65,
+      1,
+      "INT"
     ]
   ],
   "groups": [
