@@ -1,20 +1,20 @@
 {
-  "last_node_id": 391,
-  "last_link_id": 1024,
+  "last_node_id": 394,
+  "last_link_id": 1061,
   "nodes": [
     {
       "id": 247,
       "type": "VAEDecode",
       "pos": [
-        280.6953043759676,
-        530.4155400534088
+        522.2803009396885,
+        674.0362368750029
       ],
       "size": {
         "0": 210,
         "1": 46
       },
       "flags": {},
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -47,8 +47,8 @@
       "id": 309,
       "type": "Anything Everywhere",
       "pos": [
-        310.6953043759676,
-        470.41554005340873
+        552.2803009396885,
+        614.036236875003
       ],
       "size": {
         "0": 210,
@@ -57,30 +57,28 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
           "type": "*",
           "link": 727,
-          "color_on": "#5940bb"
+          "color_on": "#64B5F6"
         }
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
-      },
-      "widgets_values": [
-        "Tensor shape torch.Size([1, 1152, 896, 3])"
-      ]
+        "group_restricted": false,
+        "color_restricted": false
+      }
     },
     {
       "id": 263,
       "type": "CLIPTextEncode",
       "pos": [
-        -99.30469562403258,
-        290.41554005340885
+        142.2803009396882,
+        434.0362368750033
       ],
       "size": {
         "0": 210,
@@ -89,7 +87,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -130,8 +128,8 @@
       "id": 312,
       "type": "Prompts Everywhere",
       "pos": [
-        -89.30469562403258,
-        230.41554005340868
+        152.2803009396882,
+        374.0362368750031
       ],
       "size": {
         "0": 254.40000915527344,
@@ -140,25 +138,26 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
           "name": "CONDITIONING",
           "type": "*",
           "link": 733,
-          "color_on": "#d33682"
+          "color_on": "#FFA931"
         },
         {
           "name": "CONDITIONING",
           "type": "*",
           "link": 732,
-          "color_on": "#d33682"
+          "color_on": "#FFA931"
         }
       ],
       "properties": {
         "Node name for S&R": "Prompts Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -167,8 +166,8 @@
       "id": 264,
       "type": "CLIPTextEncode",
       "pos": [
-        -139.30469562403263,
-        530.4155400534088
+        102.2803009396881,
+        674.0362368750029
       ],
       "size": {
         "0": 210,
@@ -177,7 +176,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -218,8 +217,8 @@
       "id": 302,
       "type": "Anything Everywhere?",
       "pos": [
-        -69.30469562403258,
-        650.4155400534088
+        172.28030093968817,
+        794.0362368750029
       ],
       "size": {
         "0": 320,
@@ -228,7 +227,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -240,20 +239,20 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere?",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "widgets_values": [
         "Detailer prompt",
-        "text",
-        "cinematic photo leogirl, seductive leaning forward detailed skin, ultra realistic 8k cg, picture-perfect face, flawless, clean, masterpiece, professional artwork, famous artwork, cinematic lighting, cinematic bloom,((black hair:1)),(beautiful korean girl),perfect face, (young:1.1),((fit figure)),((25 year old)), beautiful face, beautiful blude eyes,detail eyes, detail face, (((perfect female body, narrow waist))),(lage breasts:1.2), looking at viewer,(nude:1) . 35mm photograph, film, bokeh, professional, 4k, highly detailed"
+        "text"
       ]
     },
     {
       "id": 310,
       "type": "Anything Everywhere",
       "pos": [
-        -70.30469562403258,
-        737.4155400534088
+        171.28030093968817,
+        881.036236875003
       ],
       "size": {
         "0": 210,
@@ -262,30 +261,28 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
           "type": "*",
           "link": 728,
-          "color_on": "#268bd2"
+          "color_on": "#FF9CF9"
         }
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
-      },
-      "widgets_values": [
-        "Latent shape torch.Size([1, 4, 144, 112])"
-      ]
+        "group_restricted": false,
+        "color_restricted": false
+      }
     },
     {
       "id": 289,
       "type": "ImpactImageBatchToImageList",
       "pos": [
-        1031.7143279706659,
-        76.39672156011099
+        1271.9439634809194,
+        143.7483018030309
       ],
       "size": {
         "0": 210,
@@ -294,7 +291,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -320,8 +317,8 @@
       "id": 287,
       "type": "UltralyticsDetectorProvider",
       "pos": [
-        979.3239776288694,
-        16.88091879550474
+        1219.5536131391234,
+        84.23249903842459
       ],
       "size": {
         "0": 315,
@@ -365,15 +362,15 @@
       "id": 345,
       "type": "Anything Everywhere",
       "pos": [
-        -122.30469562403258,
-        1004.4155400534096
+        119.28030093968819,
+        1148.0362368750034
       ],
       "size": {
         "0": 210,
         "1": 80
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -385,25 +382,23 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
-      },
-      "widgets_values": [
-        "8.0"
-      ]
+        "group_restricted": false,
+        "color_restricted": false
+      }
     },
     {
       "id": 344,
       "type": "Anything Everywhere",
       "pos": [
-        -116.30469562403258,
-        1129.4155400534098
+        125.28030093968819,
+        1273.0362368750039
       ],
       "size": {
         "0": 210,
         "1": 80
       },
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -415,18 +410,16 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
-      },
-      "widgets_values": [
-        "35"
-      ]
+        "group_restricted": false,
+        "color_restricted": false
+      }
     },
     {
       "id": 346,
       "type": "Get latent size",
       "pos": [
-        -81.30469562403258,
-        769.4155400534088
+        160.2803009396882,
+        913.0362368750029
       ],
       "size": {
         "0": 315,
@@ -435,7 +428,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -449,18 +442,14 @@
         {
           "name": "INT",
           "type": "INT",
-          "links": [
-            771
-          ],
+          "links": [],
           "shape": 3,
           "slot_index": 0
         },
         {
           "name": "INT",
           "type": "INT",
-          "links": [
-            772
-          ],
+          "links": [],
           "shape": 3,
           "slot_index": 1
         },
@@ -482,8 +471,8 @@
       "id": 318,
       "type": "Cfg Literal",
       "pos": [
-        -169.30469562403263,
-        1000.4155400534095
+        72.28030093968805,
+        1144.0362368750034
       ],
       "size": {
         "0": 315,
@@ -518,8 +507,8 @@
       "id": 321,
       "type": "Int Literal",
       "pos": [
-        -169.30469562403263,
-        1110.4155400534098
+        72.28030093968805,
+        1254.0362368750039
       ],
       "size": {
         "0": 315,
@@ -555,8 +544,8 @@
       "id": 322,
       "type": "Sampler Selector",
       "pos": [
-        -169.30469562403263,
-        1220.4155400534098
+        72.28030093968805,
+        1364.0362368750039
       ],
       "size": {
         "0": 315,
@@ -592,8 +581,8 @@
       "id": 323,
       "type": "Scheduler Selector",
       "pos": [
-        -169.30469562403263,
-        1330.4155400534098
+        72.28030093968805,
+        1474.0362368750039
       ],
       "size": {
         "0": 315,
@@ -629,8 +618,8 @@
       "id": 308,
       "type": "SaveImage",
       "pos": [
-        231.85120916112368,
-        937.202209181827
+        473.4362057248445,
+        1080.8229060034214
       ],
       "size": {
         "0": 330,
@@ -658,8 +647,8 @@
       "id": 283,
       "type": "SAMLoader",
       "pos": [
-        977.9883807050409,
-        155.16828504001157
+        1218.2180162152947,
+        222.51986528293148
       ],
       "size": {
         "0": 315,
@@ -695,8 +684,8 @@
       "id": 274,
       "type": "ImpactWildcardProcessor",
       "pos": [
-        -219.30469562403263,
-        170.41554005340862
+        22.280300939687976,
+        314.0362368750029
       ],
       "size": {
         "0": 420,
@@ -738,8 +727,9 @@
         "seductive leaning forward detailed skin, ultra realistic 8k cinematic lighting, cinematic bloom, perfect face, (young:1.1),((fit figure)),((25 year old)), beautiful face, beautiful blue eyes, detail eyes, detail face,",
         "leogirl, seductive leaning forward detailed skin, ultra realistic 8k cg, picture-perfect face, flawless, clean, masterpiece, professional artwork, famous artwork, cinematic lighting, cinematic bloom,((black hair:1)),(beautiful korean girl),perfect face, (young:1.1),((fit figure)),((25 year old)), beautiful face, beautiful blude eyes,detail eyes, detail face, (((perfect female body, narrow waist))),(lage breasts:1.2), looking at viewer,(nude:1)",
         false,
-        86740,
-        "increment"
+        86741,
+        "increment",
+        "Select the Wildcard to add to the text"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -748,17 +738,17 @@
       "id": 339,
       "type": "UltimateSDUpscale",
       "pos": [
-        600.3239776288694,
-        172.88091879550484
+        840.5536131391245,
+        240.2324990384248
       ],
-      "size": {
-        "0": 360,
-        "1": 940
-      },
+      "size": [
+        360,
+        940
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 27,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -802,22 +792,6 @@
           }
         },
         {
-          "name": "tile_width",
-          "type": "INT",
-          "link": 771,
-          "widget": {
-            "name": "tile_width"
-          }
-        },
-        {
-          "name": "tile_height",
-          "type": "INT",
-          "link": 772,
-          "widget": {
-            "name": "tile_height"
-          }
-        },
-        {
           "name": "cfg",
           "type": "FLOAT",
           "link": null,
@@ -843,7 +817,7 @@
       },
       "widgets_values": [
         2,
-        883217211827617,
+        418356650852734,
         "randomize",
         20,
         1,
@@ -851,10 +825,10 @@
         "karras",
         0.3,
         "Linear",
-        1024,
-        1024,
+        768,
+        768,
         16,
-        64,
+        32,
         "None",
         0.8,
         64,
@@ -867,8 +841,8 @@
       "id": 343,
       "type": "Upscale Model Loader",
       "pos": [
-        597.3239776288694,
-        26.880918795504726
+        837.5536131391245,
+        94.23249903842456
       ],
       "size": {
         "0": 358.296142578125,
@@ -907,8 +881,8 @@
       "id": 316,
       "type": "Seed Everywhere",
       "pos": [
-        -168.14879083887632,
-        838.202209181827
+        73.43620572484436,
+        981.822906003421
       ],
       "size": {
         "0": 320,
@@ -930,12 +904,12 @@
       ],
       "properties": {
         "Node name for S&R": "Seed Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "widgets_values": [
-        1047481482738627,
-        "randomize",
-        "792339658457513"
+        716016971414629,
+        "randomize"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -944,8 +918,8 @@
       "id": 270,
       "type": "Empty Latent Ratio Select SDXL",
       "pos": [
-        -168.14879083887632,
-        708.202209181827
+        73.43620572484436,
+        851.8229060034212
       ],
       "size": {
         "0": 319.20001220703125,
@@ -983,8 +957,8 @@
       "id": 292,
       "type": "PreviewImage",
       "pos": [
-        1730.1619873046875,
-        19.940460205078125
+        1970.3916228149405,
+        87.29204044799796
       ],
       "size": {
         "0": 760,
@@ -993,7 +967,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 40,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1011,8 +985,8 @@
       "id": 353,
       "type": "KSamplerAdvanced",
       "pos": [
-        231.61140563964847,
-        386.9863461303712
+        473.1964022033693,
+        530.6070429519656
       ],
       "size": [
         320,
@@ -1021,7 +995,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1102,7 +1076,7 @@
       },
       "widgets_values": [
         "enable",
-        526245742442332,
+        369742012357729,
         "randomize",
         20,
         8,
@@ -1117,8 +1091,8 @@
       "id": 238,
       "type": "SDXLPromptStyler",
       "pos": [
-        -210,
-        490
+        31.584996563720583,
+        633.6206968215943
       ],
       "size": {
         "0": 400,
@@ -1127,7 +1101,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1179,8 +1153,8 @@
       "id": 368,
       "type": "SegmDetectorSEGS",
       "pos": [
-        669.6750591519427,
-        1364.6528522885123
+        839.9615615078998,
+        1427.590829064636
       ],
       "size": {
         "0": 400,
@@ -1189,7 +1163,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 36,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1231,8 +1205,8 @@
       "id": 372,
       "type": "MaskToImage",
       "pos": [
-        1160.6388327115155,
-        1507.9604334042351
+        1330.9253350674733,
+        1570.8984101803587
       ],
       "size": {
         "0": 210,
@@ -1241,7 +1215,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 42,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1269,8 +1243,8 @@
       "id": 371,
       "type": "SegsToCombinedMask",
       "pos": [
-        1150.6388327115158,
-        1457.9604334042351
+        1320.9253350674735,
+        1520.8984101803587
       ],
       "size": {
         "0": 210,
@@ -1279,7 +1253,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1304,206 +1278,11 @@
       }
     },
     {
-      "id": 356,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -80,
-        80
-      ],
-      "size": {
-        "0": 400,
-        "1": 100
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "ckpt_name",
-          "type": "COMBO",
-          "link": 908,
-          "widget": {
-            "name": "ckpt_name"
-          },
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            874
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            875
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            876
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "zHina/9527_detailRealisticSDXL_fp16_delta-gamma.safetensors"
-      ]
-    },
-    {
-      "id": 306,
-      "type": "CR Apply LoRA Stack",
-      "pos": [
-        320,
-        110
-      ],
-      "size": {
-        "0": 210,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 874
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 875
-        },
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "link": 726
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            880
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            871
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Apply LoRA Stack"
-      }
-    },
-    {
-      "id": 311,
-      "type": "Anything Everywhere3",
-      "pos": [
-        320,
-        60
-      ],
-      "size": {
-        "0": 210,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 880,
-          "color_on": "#dc322f"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 871,
-          "color_on": "#2AB7CA"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 876,
-          "color_on": "#facfad"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": false
-      }
-    },
-    {
-      "id": 357,
-      "type": "Checkpoint Selector",
-      "pos": [
-        -210,
-        30
-      ],
-      "size": {
-        "0": 400,
-        "1": 80
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 11,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "ckpt_name",
-          "type": "COMBO",
-          "links": [
-            908,
-            909
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Checkpoint Selector"
-      },
-      "widgets_values": [
-        "zHina/9527_detailRealisticSDXL_fp16_v4-garmma-SP.safetensors"
-      ]
-    },
-    {
       "id": 285,
       "type": "CLIPTextEncode",
       "pos": [
-        1420,
-        140
+        1660.2296355102537,
+        207.35158024291994
       ],
       "size": {
         "0": 210,
@@ -1512,7 +1291,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1556,8 +1335,8 @@
       "id": 294,
       "type": "MaskToImage",
       "pos": [
-        1060,
-        500
+        1300.2296355102537,
+        567.35158024292
       ],
       "size": {
         "0": 210,
@@ -1595,8 +1374,8 @@
       "id": 373,
       "type": "PreviewImage",
       "pos": [
-        1141.3333072085866,
-        1240.0821660723868
+        1311.6198095645443,
+        1303.0201428485104
       ],
       "size": {
         "0": 320,
@@ -1605,7 +1384,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 45,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -1622,8 +1401,8 @@
       "id": 352,
       "type": "ImpactImageBatchToImageList",
       "pos": [
-        1420,
-        60
+        1660.2296355102537,
+        127.35158024291991
       ],
       "size": {
         "0": 210,
@@ -1661,15 +1440,15 @@
       "id": 388,
       "type": "ImageSharpen",
       "pos": [
-        980,
-        290
+        1220.2296355102537,
+        357.35158024292014
       ],
       "size": {
         "0": 315,
         "1": 106
       },
       "flags": {},
-      "order": 37,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -1703,8 +1482,8 @@
       "id": 295,
       "type": "PreviewImage",
       "pos": [
-        980,
-        450
+        1220.2296355102537,
+        517.3515802429199
       ],
       "size": {
         "0": 310,
@@ -1713,7 +1492,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 38,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -1731,8 +1510,8 @@
       "id": 366,
       "type": "DetailerForEach",
       "pos": [
-        670.6388327115131,
-        1607.9604334042351
+        840.9253350674702,
+        1670.8984101803587
       ],
       "size": {
         "0": 400,
@@ -1741,7 +1520,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 41,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1806,7 +1585,7 @@
         256,
         true,
         768,
-        774714411538226,
+        378307514647321,
         "randomize",
         20,
         8,
@@ -1823,8 +1602,8 @@
       "id": 391,
       "type": "Image Lucy Sharpen",
       "pos": [
-        1143.0964630590825,
-        1576.2819951739505
+        1313.3829654150402,
+        1639.219971950074
       ],
       "size": {
         "0": 315,
@@ -1833,7 +1612,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 44,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -1864,8 +1643,8 @@
       "id": 377,
       "type": "ImpactImageBatchToImageList",
       "pos": [
-        1193.0964630590825,
-        1716.2819951739505
+        1363.3829654150402,
+        1779.219971950074
       ],
       "size": {
         "0": 210,
@@ -1874,7 +1653,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 46,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -1904,8 +1683,8 @@
       "id": 341,
       "type": "Get image size",
       "pos": [
-        1223.0964630590825,
-        1796.2819951739505
+        1393.3829654150402,
+        1859.2199719500738
       ],
       "size": {
         "0": 210,
@@ -1914,7 +1693,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 43,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -1957,8 +1736,8 @@
       "id": 385,
       "type": "NoiseInjectionDetailerHookProvider",
       "pos": [
-        1143.0964630590825,
-        1706.2819951739505
+        1313.3829654150402,
+        1769.219971950074
       ],
       "size": {
         "0": 315,
@@ -1967,7 +1746,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -1984,7 +1763,7 @@
       },
       "widgets_values": [
         "GPU",
-        40415347969540,
+        1067309431374087,
         "randomize",
         0.1
       ]
@@ -1993,8 +1772,8 @@
       "id": 317,
       "type": "Save Image w/Metadata",
       "pos": [
-        1103.0964630590825,
-        1886.2819951739505
+        1273.3829654150402,
+        1949.2199719500738
       ],
       "size": {
         "0": 400,
@@ -2003,7 +1782,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 48,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
@@ -2121,15 +1900,15 @@
       "id": 384,
       "type": "FaceDetailer",
       "pos": [
-        1310,
-        20
+        1550.2296355102537,
+        87.35158024291984
       ],
       "size": {
         "0": 410,
         "1": 860
       },
       "flags": {},
-      "order": 32,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -2235,7 +2014,7 @@
         256,
         true,
         768,
-        191921630063043,
+        476550349167130,
         "randomize",
         20,
         8,
@@ -2262,8 +2041,8 @@
       "id": 370,
       "type": "PreviewImage",
       "pos": [
-        1533.0964630590825,
-        1236.2819951739505
+        1703.3829654150402,
+        1299.219971950074
       ],
       "size": {
         "0": 810,
@@ -2272,7 +2051,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 47,
+      "order": 49,
       "mode": 0,
       "inputs": [
         {
@@ -2290,8 +2069,8 @@
       "id": 369,
       "type": "UltralyticsDetectorProvider",
       "pos": [
-        710,
-        1240
+        880.2865023559568,
+        1302.9379767761236
       ],
       "size": {
         "0": 315,
@@ -2300,7 +2079,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "outputs": [
         {
@@ -2322,22 +2101,199 @@
         "Node name for S&R": "UltralyticsDetectorProvider"
       },
       "widgets_values": [
-        "segm/person_yolov8s-seg.pt"
+        "segm/person_yolov8m-seg.pt"
+      ]
+    },
+    {
+      "id": 306,
+      "type": "CR Apply LoRA Stack",
+      "pos": [
+        531.5849965637209,
+        233.62069682159415
+      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 874
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 875
+        },
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 726
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1025
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1027
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Apply LoRA Stack"
+      }
+    },
+    {
+      "id": 392,
+      "type": "FreeU_V2",
+      "pos": [
+        571.584996563721,
+        293.6206968215943
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1025
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1026
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FreeU_V2"
+      },
+      "widgets_values": [
+        1.3,
+        1.4,
+        0.9,
+        0.2
+      ]
+    },
+    {
+      "id": 311,
+      "type": "Anything Everywhere3",
+      "pos": [
+        541.5849965637209,
+        343.6206968215943
+      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 1026,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 1027,
+          "color_on": "#FFD500"
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 1028,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": false,
+        "color_restricted": false
+      }
+    },
+    {
+      "id": 394,
+      "type": "VAELoader",
+      "pos": [
+        31.584996563720583,
+        213.62069682159415
+      ],
+      "size": [
+        410,
+        60
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            1028
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl_vae_fp16_fix.safetensors"
       ]
     },
     {
       "id": 307,
       "type": "CR LoRA Stack",
       "pos": [
-        240,
-        20
+        481.5849965637209,
+        163.6206968215942
       ],
       "size": {
         "0": 315,
         "1": 322
       },
       "flags": {
-        "pinned": false
+        "pinned": true
       },
       "order": 15,
       "mode": 0,
@@ -2378,6 +2334,101 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 356,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        140,
+        140
+      ],
+      "size": {
+        "0": 400,
+        "1": 100
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "link": 908,
+          "widget": {
+            "name": "ckpt_name"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            874
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            875
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "zHina/9527_detailRealisticSDXL_fp16_delta-gamma.safetensors"
+      ]
+    },
+    {
+      "id": 357,
+      "type": "Checkpoint Selector",
+      "pos": [
+        30,
+        90
+      ],
+      "size": {
+        "0": 400,
+        "1": 80
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 16,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "links": [
+            908,
+            909
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Checkpoint Selector"
+      },
+      "widgets_values": [
+        "zHina/9527_detailRealisticSDXL_fp16_delta-gamma.safetensors"
+      ]
     }
   ],
   "links": [
@@ -2532,22 +2583,6 @@
       346,
       0,
       "LATENT"
-    ],
-    [
-      771,
-      346,
-      0,
-      339,
-      7,
-      "INT"
-    ],
-    [
-      772,
-      346,
-      1,
-      339,
-      8,
-      "INT"
     ],
     [
       777,
@@ -3222,14 +3257,6 @@
       "LATENT"
     ],
     [
-      871,
-      306,
-      1,
-      311,
-      1,
-      "*"
-    ],
-    [
       874,
       356,
       0,
@@ -3244,22 +3271,6 @@
       306,
       1,
       "CLIP"
-    ],
-    [
-      876,
-      356,
-      2,
-      311,
-      2,
-      "*"
-    ],
-    [
-      880,
-      306,
-      0,
-      311,
-      0,
-      "*"
     ],
     [
       881,
@@ -4212,14 +4223,310 @@
       384,
       5,
       "CONDITIONING"
+    ],
+    [
+      1025,
+      306,
+      0,
+      392,
+      0,
+      "MODEL"
+    ],
+    [
+      1026,
+      392,
+      0,
+      311,
+      0,
+      "*"
+    ],
+    [
+      1027,
+      306,
+      1,
+      311,
+      1,
+      "*"
+    ],
+    [
+      1028,
+      394,
+      0,
+      311,
+      2,
+      "*"
+    ],
+    [
+      1029,
+      394,
+      0,
+      247,
+      1,
+      "VAE"
+    ],
+    [
+      1030,
+      306,
+      1,
+      263,
+      0,
+      "CLIP"
+    ],
+    [
+      1031,
+      306,
+      1,
+      264,
+      0,
+      "CLIP"
+    ],
+    [
+      1032,
+      247,
+      0,
+      308,
+      0,
+      "IMAGE"
+    ],
+    [
+      1033,
+      316,
+      0,
+      274,
+      0,
+      "INT"
+    ],
+    [
+      1034,
+      247,
+      0,
+      339,
+      0,
+      "IMAGE"
+    ],
+    [
+      1035,
+      392,
+      0,
+      339,
+      1,
+      "MODEL"
+    ],
+    [
+      1036,
+      263,
+      0,
+      339,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1037,
+      264,
+      0,
+      339,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      1038,
+      394,
+      0,
+      339,
+      4,
+      "VAE"
+    ],
+    [
+      1039,
+      321,
+      0,
+      339,
+      6,
+      "INT"
+    ],
+    [
+      1040,
+      318,
+      0,
+      339,
+      7,
+      "FLOAT"
+    ],
+    [
+      1041,
+      392,
+      0,
+      353,
+      0,
+      "MODEL"
+    ],
+    [
+      1042,
+      263,
+      0,
+      353,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1043,
+      264,
+      0,
+      353,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1044,
+      270,
+      0,
+      353,
+      3,
+      "LATENT"
+    ],
+    [
+      1045,
+      316,
+      0,
+      353,
+      4,
+      "INT"
+    ],
+    [
+      1046,
+      321,
+      0,
+      353,
+      5,
+      "INT"
+    ],
+    [
+      1047,
+      318,
+      0,
+      353,
+      6,
+      "FLOAT"
+    ],
+    [
+      1048,
+      306,
+      1,
+      285,
+      0,
+      "CLIP"
+    ],
+    [
+      1049,
+      238,
+      0,
+      285,
+      1,
+      "STRING"
+    ],
+    [
+      1050,
+      392,
+      0,
+      366,
+      2,
+      "MODEL"
+    ],
+    [
+      1051,
+      306,
+      1,
+      366,
+      3,
+      "CLIP"
+    ],
+    [
+      1052,
+      394,
+      0,
+      366,
+      4,
+      "VAE"
+    ],
+    [
+      1053,
+      263,
+      0,
+      366,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      1054,
+      264,
+      0,
+      366,
+      6,
+      "CONDITIONING"
+    ],
+    [
+      1055,
+      316,
+      0,
+      317,
+      1,
+      "INT"
+    ],
+    [
+      1056,
+      318,
+      0,
+      317,
+      4,
+      "FLOAT"
+    ],
+    [
+      1057,
+      321,
+      0,
+      317,
+      5,
+      "INT"
+    ],
+    [
+      1058,
+      392,
+      0,
+      384,
+      1,
+      "MODEL"
+    ],
+    [
+      1059,
+      306,
+      1,
+      384,
+      2,
+      "CLIP"
+    ],
+    [
+      1060,
+      394,
+      0,
+      384,
+      3,
+      "VAE"
+    ],
+    [
+      1061,
+      264,
+      0,
+      384,
+      5,
+      "CONDITIONING"
     ]
   ],
   "groups": [
     {
       "title": "Face detailer and Ultimate SD Upscale",
       "bounding": [
-        587,
-        -57,
+        827,
+        10,
         1913,
         1203
       ],
@@ -4230,10 +4537,10 @@
     {
       "title": "Initialize",
       "bounding": [
-        -229,
-        -57,
+        12,
+        10,
         801,
-        1455
+        1532
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -4242,8 +4549,8 @@
     {
       "title": "Noise Injection Detailer",
       "bounding": [
-        660,
-        1162,
+        830,
+        1225,
         1693,
         1224
       ],

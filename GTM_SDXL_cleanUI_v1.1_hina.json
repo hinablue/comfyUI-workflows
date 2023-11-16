@@ -1,6 +1,6 @@
 {
-  "last_node_id": 357,
-  "last_link_id": 936,
+  "last_node_id": 359,
+  "last_link_id": 996,
   "nodes": [
     {
       "id": 247,
@@ -14,7 +14,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -57,19 +57,20 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
           "name": "IMAGE",
           "type": "*",
           "link": 727,
-          "color_on": "#5940bb"
+          "color_on": "#64B5F6"
         }
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       }
     },
     {
@@ -86,7 +87,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -137,25 +138,26 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
           "name": "CONDITIONING",
           "type": "*",
           "link": 733,
-          "color_on": "#d33682"
+          "color_on": "#FFA931"
         },
         {
           "name": "CONDITIONING",
           "type": "*",
           "link": 732,
-          "color_on": "#d33682"
+          "color_on": "#FFA931"
         }
       ],
       "properties": {
         "Node name for S&R": "Prompts Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -174,7 +176,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -225,7 +227,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -237,7 +239,8 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere?",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "widgets_values": [
         "Detailer prompt",
@@ -258,19 +261,20 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
           "name": "LATENT",
           "type": "*",
           "link": 728,
-          "color_on": "#268bd2"
+          "color_on": "#FF9CF9"
         }
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       }
     },
     {
@@ -385,7 +389,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -434,7 +438,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -517,7 +521,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -555,7 +559,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 37,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -656,7 +660,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -668,7 +672,8 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       }
     },
     {
@@ -683,7 +688,7 @@
         "1": 80
       },
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -695,7 +700,8 @@
       ],
       "properties": {
         "Node name for S&R": "Anything Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       }
     },
     {
@@ -712,7 +718,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -727,7 +733,6 @@
           "name": "INT",
           "type": "INT",
           "links": [
-            771,
             773
           ],
           "shape": 3,
@@ -737,7 +742,6 @@
           "name": "INT",
           "type": "INT",
           "links": [
-            772,
             774
           ],
           "shape": 3,
@@ -911,14 +915,14 @@
         1316.1619903241817,
         645.9404585904266
       ],
-      "size": [
-        400,
-        490
-      ],
+      "size": {
+        "0": 400,
+        "1": 490
+      },
       "flags": {
         "pinned": true
       },
-      "order": 39,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1001,11 +1005,10 @@
         {
           "name": "modelname",
           "type": "COMBO",
-          "link": 909,
+          "link": 969,
           "widget": {
             "name": "modelname"
-          },
-          "slot_index": 10
+          }
         }
       ],
       "properties": {
@@ -1141,11 +1144,12 @@
         "Node name for S&R": "ImpactWildcardProcessor"
       },
       "widgets_values": [
-        "dult girl, (close shot), snow treading, rain dripping, fog filling,",
-        "dult girl, (close shot), snow treading, rain dripping, fog filling,",
+        "adult girl, (close shot), snow treading, wool sweater",
+        "adult girl, (close shot), snow treading, wool sweater",
         false,
-        86591,
-        "increment"
+        86593,
+        "increment",
+        "Select the Wildcard to add to the text"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -1158,13 +1162,13 @@
         172.94045859042672
       ],
       "size": {
-        "0": 355.271240234375,
-        "1": 940.6048583984375
+        "0": 360,
+        "1": 940
       },
       "flags": {
         "pinned": true
       },
-      "order": 26,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1206,22 +1210,6 @@
           "widget": {
             "name": "steps"
           }
-        },
-        {
-          "name": "tile_width",
-          "type": "INT",
-          "link": 771,
-          "widget": {
-            "name": "tile_width"
-          }
-        },
-        {
-          "name": "tile_height",
-          "type": "INT",
-          "link": 772,
-          "widget": {
-            "name": "tile_height"
-          }
         }
       ],
       "outputs": [
@@ -1241,7 +1229,7 @@
       },
       "widgets_values": [
         2,
-        578970262707306,
+        526564823629705,
         "randomize",
         20,
         1,
@@ -1249,10 +1237,10 @@
         "exponential",
         0.3,
         "Linear",
-        1024,
-        1024,
+        768,
+        768,
+        8,
         16,
-        32,
         "None",
         1,
         64,
@@ -1315,7 +1303,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 40,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1343,7 +1331,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -1382,7 +1370,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 33,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -1515,11 +1503,12 @@
       ],
       "properties": {
         "Node name for S&R": "Seed Everywhere",
-        "group_restricted": false
+        "group_restricted": false,
+        "color_restricted": false
       },
       "widgets_values": [
         282392001774955,
-        "randomize"
+        "fixed"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1577,7 +1566,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 38,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1605,7 +1594,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1686,7 +1675,7 @@
       },
       "widgets_values": [
         "enable",
-        599875437700806,
+        961762215759708,
         "randomize",
         20,
         8,
@@ -1696,158 +1685,6 @@
         10000,
         "disable"
       ]
-    },
-    {
-      "id": 306,
-      "type": "CR Apply LoRA Stack",
-      "pos": [
-        271.61140563964847,
-        56.98634613037109
-      ],
-      "size": {
-        "0": 210,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 874
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 875
-        },
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "link": 726
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            880
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            871
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Apply LoRA Stack"
-      }
-    },
-    {
-      "id": 311,
-      "type": "Anything Everywhere3",
-      "pos": [
-        271.61140563964847,
-        106.98634613037109
-      ],
-      "size": {
-        "0": 210,
-        "1": 66
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MODEL",
-          "type": "*",
-          "link": 880,
-          "color_on": "#dc322f"
-        },
-        {
-          "name": "CLIP",
-          "type": "*",
-          "link": 871,
-          "color_on": "#2AB7CA"
-        },
-        {
-          "name": "VAE",
-          "type": "*",
-          "link": 876,
-          "color_on": "#facfad"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Anything Everywhere3",
-        "group_restricted": false
-      }
-    },
-    {
-      "id": 307,
-      "type": "CR LoRA Stack",
-      "pos": [
-        231.61140563964847,
-        16.986346130371096
-      ],
-      "size": {
-        "0": 315,
-        "1": 322
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LORA_STACK",
-          "type": "LORA_STACK",
-          "links": [
-            726
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR LoRA Stack"
-      },
-      "widgets_values": [
-        "Off",
-        "None",
-        0.3,
-        1,
-        "Off",
-        "None",
-        1,
-        1,
-        "Off",
-        "None",
-        1,
-        1
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 238,
@@ -1863,7 +1700,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1912,20 +1749,121 @@
       "bgcolor": "#533"
     },
     {
-      "id": 356,
-      "type": "CheckpointLoaderSimple",
+      "id": 306,
+      "type": "CR Apply LoRA Stack",
       "pos": [
-        -90,
-        80
+        280,
+        70
       ],
-      "size": [
-        400,
-        100
-      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 874
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 875
+        },
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 726
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            938
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            871
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Apply LoRA Stack"
+      }
+    },
+    {
+      "id": 358,
+      "type": "FreeU_V2",
+      "pos": [
+        310,
+        160
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 938
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            939
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FreeU_V2"
+      },
+      "widgets_values": [
+        1.3,
+        1.4,
+        0.9,
+        0.2
+      ]
+    },
+    {
+      "id": 356,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -100,
+        90
+      ],
+      "size": {
+        "0": 400,
+        "1": 100
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1960,9 +1898,7 @@
         {
           "name": "VAE",
           "type": "VAE",
-          "links": [
-            876
-          ],
+          "links": [],
           "shape": 3,
           "slot_index": 2
         }
@@ -1975,20 +1911,62 @@
       ]
     },
     {
+      "id": 311,
+      "type": "Anything Everywhere3",
+      "pos": [
+        280,
+        230
+      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MODEL",
+          "type": "*",
+          "link": 939,
+          "color_on": "#B39DDB"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 871,
+          "color_on": "#FFD500"
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 941,
+          "color_on": "#FF6E6E"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere3",
+        "group_restricted": false,
+        "color_restricted": false
+      }
+    },
+    {
       "id": 357,
       "type": "Checkpoint Selector",
       "pos": [
         -210,
-        30
+        -60
       ],
-      "size": [
-        400,
-        80
-      ],
+      "size": {
+        "0": 400,
+        "1": 80
+      },
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "outputs": [
         {
@@ -1996,16 +1974,105 @@
           "type": "COMBO",
           "links": [
             908,
-            909
+            969
           ],
-          "shape": 3
+          "shape": 3,
+          "slot_index": 0
         }
       ],
       "properties": {
         "Node name for S&R": "Checkpoint Selector"
       },
       "widgets_values": [
-        "00_realisian_v40.safetensors"
+        "zHina/9527_detailRealisticSDXL_fp16_delta-gamma.safetensors"
+      ]
+    },
+    {
+      "id": 307,
+      "type": "CR LoRA Stack",
+      "pos": [
+        240,
+        10
+      ],
+      "size": {
+        "0": 315,
+        "1": 322
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LORA_STACK",
+          "type": "LORA_STACK",
+          "links": [
+            726
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR LoRA Stack"
+      },
+      "widgets_values": [
+        "Off",
+        "None",
+        0.3,
+        1,
+        "Off",
+        "None",
+        1,
+        1,
+        "Off",
+        "None",
+        1,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 359,
+      "type": "VAELoader",
+      "pos": [
+        -210,
+        60
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 15,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            941
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl_vae.safetensors"
       ]
     }
   ],
@@ -2249,22 +2316,6 @@
       346,
       0,
       "LATENT"
-    ],
-    [
-      771,
-      346,
-      0,
-      339,
-      7,
-      "INT"
-    ],
-    [
-      772,
-      346,
-      1,
-      339,
-      8,
-      "INT"
     ],
     [
       773,
@@ -3003,22 +3054,6 @@
       "CLIP"
     ],
     [
-      876,
-      356,
-      2,
-      311,
-      2,
-      "*"
-    ],
-    [
-      880,
-      306,
-      0,
-      311,
-      0,
-      "*"
-    ],
-    [
       881,
       356,
       2,
@@ -3243,14 +3278,6 @@
       "COMBO"
     ],
     [
-      909,
-      357,
-      0,
-      317,
-      10,
-      "COMBO"
-    ],
-    [
       910,
       356,
       2,
@@ -3465,6 +3492,470 @@
       353,
       6,
       "FLOAT"
+    ],
+    [
+      938,
+      306,
+      0,
+      358,
+      0,
+      "MODEL"
+    ],
+    [
+      939,
+      358,
+      0,
+      311,
+      0,
+      "*"
+    ],
+    [
+      941,
+      359,
+      0,
+      311,
+      2,
+      "*"
+    ],
+    [
+      942,
+      359,
+      0,
+      247,
+      1,
+      "VAE"
+    ],
+    [
+      943,
+      306,
+      1,
+      263,
+      0,
+      "CLIP"
+    ],
+    [
+      944,
+      306,
+      1,
+      264,
+      0,
+      "CLIP"
+    ],
+    [
+      945,
+      306,
+      1,
+      285,
+      0,
+      "CLIP"
+    ],
+    [
+      946,
+      238,
+      0,
+      285,
+      1,
+      "STRING"
+    ],
+    [
+      947,
+      306,
+      1,
+      284,
+      0,
+      "CLIP"
+    ],
+    [
+      948,
+      316,
+      0,
+      317,
+      1,
+      "INT"
+    ],
+    [
+      949,
+      318,
+      0,
+      317,
+      4,
+      "FLOAT"
+    ],
+    [
+      950,
+      321,
+      0,
+      317,
+      5,
+      "INT"
+    ],
+    [
+      951,
+      247,
+      0,
+      308,
+      0,
+      "IMAGE"
+    ],
+    [
+      952,
+      316,
+      0,
+      274,
+      0,
+      "INT"
+    ],
+    [
+      953,
+      247,
+      0,
+      339,
+      0,
+      "IMAGE"
+    ],
+    [
+      954,
+      358,
+      0,
+      339,
+      1,
+      "MODEL"
+    ],
+    [
+      955,
+      263,
+      0,
+      339,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      956,
+      264,
+      0,
+      339,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      957,
+      359,
+      0,
+      339,
+      4,
+      "VAE"
+    ],
+    [
+      958,
+      321,
+      0,
+      339,
+      6,
+      "INT"
+    ],
+    [
+      959,
+      358,
+      0,
+      291,
+      2,
+      "MODEL"
+    ],
+    [
+      960,
+      306,
+      1,
+      291,
+      3,
+      "CLIP"
+    ],
+    [
+      961,
+      359,
+      0,
+      291,
+      4,
+      "VAE"
+    ],
+    [
+      962,
+      358,
+      0,
+      353,
+      0,
+      "MODEL"
+    ],
+    [
+      963,
+      263,
+      0,
+      353,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      964,
+      264,
+      0,
+      353,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      965,
+      270,
+      0,
+      353,
+      3,
+      "LATENT"
+    ],
+    [
+      966,
+      316,
+      0,
+      353,
+      4,
+      "INT"
+    ],
+    [
+      967,
+      321,
+      0,
+      353,
+      5,
+      "INT"
+    ],
+    [
+      968,
+      318,
+      0,
+      353,
+      6,
+      "FLOAT"
+    ],
+    [
+      969,
+      357,
+      0,
+      317,
+      10,
+      "COMBO"
+    ],
+    [
+      970,
+      359,
+      0,
+      247,
+      1,
+      "VAE"
+    ],
+    [
+      971,
+      306,
+      1,
+      263,
+      0,
+      "CLIP"
+    ],
+    [
+      972,
+      306,
+      1,
+      264,
+      0,
+      "CLIP"
+    ],
+    [
+      973,
+      306,
+      1,
+      285,
+      0,
+      "CLIP"
+    ],
+    [
+      974,
+      238,
+      0,
+      285,
+      1,
+      "STRING"
+    ],
+    [
+      975,
+      306,
+      1,
+      284,
+      0,
+      "CLIP"
+    ],
+    [
+      976,
+      316,
+      0,
+      317,
+      1,
+      "INT"
+    ],
+    [
+      977,
+      318,
+      0,
+      317,
+      4,
+      "FLOAT"
+    ],
+    [
+      978,
+      321,
+      0,
+      317,
+      5,
+      "INT"
+    ],
+    [
+      979,
+      247,
+      0,
+      308,
+      0,
+      "IMAGE"
+    ],
+    [
+      980,
+      316,
+      0,
+      274,
+      0,
+      "INT"
+    ],
+    [
+      981,
+      247,
+      0,
+      339,
+      0,
+      "IMAGE"
+    ],
+    [
+      982,
+      358,
+      0,
+      339,
+      1,
+      "MODEL"
+    ],
+    [
+      983,
+      263,
+      0,
+      339,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      984,
+      264,
+      0,
+      339,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      985,
+      359,
+      0,
+      339,
+      4,
+      "VAE"
+    ],
+    [
+      986,
+      321,
+      0,
+      339,
+      6,
+      "INT"
+    ],
+    [
+      987,
+      358,
+      0,
+      291,
+      2,
+      "MODEL"
+    ],
+    [
+      988,
+      306,
+      1,
+      291,
+      3,
+      "CLIP"
+    ],
+    [
+      989,
+      359,
+      0,
+      291,
+      4,
+      "VAE"
+    ],
+    [
+      990,
+      358,
+      0,
+      353,
+      0,
+      "MODEL"
+    ],
+    [
+      991,
+      263,
+      0,
+      353,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      992,
+      264,
+      0,
+      353,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      993,
+      270,
+      0,
+      353,
+      3,
+      "LATENT"
+    ],
+    [
+      994,
+      316,
+      0,
+      353,
+      4,
+      "INT"
+    ],
+    [
+      995,
+      321,
+      0,
+      353,
+      5,
+      "INT"
+    ],
+    [
+      996,
+      318,
+      0,
+      353,
+      6,
+      "FLOAT"
     ]
   ],
   "groups": [
@@ -3484,9 +3975,9 @@
       "title": "Initialize",
       "bounding": [
         -229,
-        -57,
+        -144,
         801,
-        1455
+        1542
       ],
       "color": "#3f789e",
       "font_size": 24,
