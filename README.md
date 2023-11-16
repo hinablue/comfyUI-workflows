@@ -6,6 +6,9 @@ You can directly download the images that have been embedded in the workflow.
 
 # AnimateDiff
 
+## AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer
+![AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer](AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer.png)
+
 ## AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer
 ![AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer](AnimateDiff_vid2vid_CN_Lora_IPAdapter_FaceDetailer.png)
 
