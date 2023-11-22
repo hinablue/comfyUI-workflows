@@ -3,6 +3,15 @@
 You can directly download the images that have been embedded in the workflow.
 
 ---
+# LCM
+
+## LCM_IPAdapter_AnimateDiff_3CN
+![LCM_IPAdapter_AnimateDiff_3CN](LCM_IPAdapter_AnimateDiff_3CN.png)
+
+## LCM_Prompt_Travel_AnimateDiff_Lora
+![LCM_Prompt_Travel_AnimateDiff_Lora](LCM_Prompt_Travel_AnimateDiff_Lora.png)
+
+---
 
 # AnimateDiff
 
