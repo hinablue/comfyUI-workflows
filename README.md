@@ -15,6 +15,13 @@ You can directly download the images that have been embedded in the workflow.
 
 # AnimateDiff
 
+## Prompt_Travel_5Keyframes_10CN_5pass_LCM
+![Prompt_Travel_5Keyframes_10CN_5pass_LCM](Prompt_Travel_5Keyframes_10CN_5pass_LCM.png)
+
+## Prompt_Travel_5Keyframes_10CN_5pass
+![Prompt_Travel_5Keyframes_10CN_5pass](Prompt_Travel_5Keyframes_10CN_5pass.png)
+
+
 ## AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer
 ![AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer](AnimateDiff_vid2vid_CN_PromptTravel_Lora_IPAdapter_FaceDetailer.png)
 
