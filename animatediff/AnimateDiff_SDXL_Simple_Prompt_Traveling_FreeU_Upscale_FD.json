@@ -1,6 +1,6 @@
 {
-  "last_node_id": 168,
-  "last_link_id": 304,
+  "last_node_id": 169,
+  "last_link_id": 306,
   "nodes": [
     {
       "id": 121,
@@ -263,12 +263,12 @@
       ],
       "size": {
         "0": 320,
-        "1": 240
+        "1": 254
       },
       "flags": {
         "pinned": true
       },
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -319,6 +319,18 @@
           ],
           "shape": 3,
           "slot_index": 3
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -347,13 +359,13 @@
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 201
+          "link": 306
         }
       ],
       "outputs": [
@@ -378,61 +390,6 @@
       ]
     },
     {
-      "id": 97,
-      "type": "Checkpoint Loader (Simple)",
-      "pos": [
-        11.924323104858395,
-        91.07398255920407
-      ],
-      "size": {
-        "0": 315,
-        "1": 118
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            303
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            201
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "NAME_STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Checkpoint Loader (Simple)"
-      },
-      "widgets_values": [
-        "zHina/9527_detailRealisticSDXL_fp16-gamma.safetensors"
-      ]
-    },
-    {
       "id": 120,
       "type": "BatchPromptScheduleEncodeSDXL",
       "pos": [
@@ -447,7 +404,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -670,7 +627,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -729,7 +686,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -792,7 +749,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -830,7 +787,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -876,7 +833,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -957,7 +914,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -1066,7 +1023,8 @@
         64,
         8,
         16,
-        "enable"
+        false,
+        false
       ]
     },
     {
@@ -1083,7 +1041,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1156,6 +1114,8 @@
         "pingpong": false,
         "save_image": true,
         "crf": 20,
+        "save_metadata": true,
+        "audio_file": "",
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1177,7 +1137,7 @@
       ],
       "size": [
         630,
-        200
+        246
       ],
       "flags": {
         "pinned": true
@@ -1212,6 +1172,8 @@
         "pingpong": false,
         "save_image": true,
         "crf": 20,
+        "save_metadata": true,
+        "audio_file": "",
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1233,7 +1195,7 @@
       ],
       "size": [
         640,
-        200
+        246
       ],
       "flags": {
         "pinned": true
@@ -1268,6 +1230,8 @@
         "pingpong": false,
         "save_image": true,
         "crf": 20,
+        "save_metadata": true,
+        "audio_file": "",
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1294,7 +1258,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "outputs": [
         {
@@ -1331,7 +1295,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "outputs": [
         {
@@ -1371,7 +1335,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "outputs": [
         {
@@ -1405,7 +1369,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -1439,7 +1403,7 @@
       ],
       "size": {
         "0": 506.4000244140625,
-        "1": 808
+        "1": 814
       },
       "flags": {
         "pinned": true
@@ -1570,7 +1534,8 @@
         0.7,
         "False",
         10,
-        ""
+        "",
+        1
       ]
     },
     {
@@ -1707,13 +1672,13 @@
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 303
+          "link": 305
         }
       ],
       "outputs": [
@@ -1751,7 +1716,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1799,6 +1764,56 @@
         1,
         false
       ]
+    },
+    {
+      "id": 169,
+      "type": "CheckpointLoaderSimpleWithNoiseSelect",
+      "pos": [
+        18,
+        87
+      ],
+      "size": {
+        "0": 315,
+        "1": 122
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 13,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            305
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            306
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
+      },
+      "widgets_values": [
+        "zHina/sdxl/9527_detailRealisticSDXL_fp16_v2.safetensors",
+        "linear (HotshotXL/default)"
+      ]
     }
   ],
   "links": [
@@ -1809,14 +1824,6 @@
       71,
       1,
       "CONTEXT_OPTIONS"
-    ],
-    [
-      201,
-      97,
-      1,
-      79,
-      0,
-      "CLIP"
     ],
     [
       206,
@@ -2219,20 +2226,28 @@
       "IMAGE"
     ],
     [
-      303,
-      97,
-      0,
-      168,
-      0,
-      "MODEL"
-    ],
-    [
       304,
       168,
       0,
       71,
       0,
       "MODEL"
+    ],
+    [
+      305,
+      169,
+      0,
+      168,
+      0,
+      "MODEL"
+    ],
+    [
+      306,
+      169,
+      1,
+      79,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [

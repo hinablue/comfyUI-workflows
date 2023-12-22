@@ -1,6 +1,6 @@
 {
-  "last_node_id": 72,
-  "last_link_id": 133,
+  "last_node_id": 73,
+  "last_link_id": 135,
   "nodes": [
     {
       "id": 14,
@@ -185,7 +185,7 @@
       ],
       "size": {
         "0": 315,
-        "1": 130
+        "1": 178
       },
       "flags": {
         "pinned": true
@@ -206,10 +206,12 @@
         "Node name for S&R": "NoiseInjectionDetailerHookProvider"
       },
       "widgets_values": [
+        "from_start",
         "GPU",
-        148487187608001,
-        "randomize",
-        0.2
+        0,
+        "fixed",
+        0,
+        1
       ]
     },
     {
@@ -307,7 +309,7 @@
       },
       "widgets_values": [
         2,
-        28752666220941,
+        423037321366308,
         "randomize",
         20,
         8,
@@ -420,7 +422,7 @@
       },
       "widgets_values": [
         1,
-        384869259954070,
+        658743410513010,
         "randomize",
         20,
         7,
@@ -566,7 +568,7 @@
         256,
         true,
         768,
-        182781791708308,
+        247107427418333,
         "randomize",
         20,
         8,
@@ -586,7 +588,8 @@
         0.7,
         "False",
         10,
-        ""
+        "",
+        1
       ]
     },
     {
@@ -844,7 +847,7 @@
         {
           "name": "noise_seed",
           "type": "INT",
-          "link": 100,
+          "link": 135,
           "widget": {
             "name": "noise_seed"
           },
@@ -867,7 +870,7 @@
       },
       "widgets_values": [
         "enable",
-        644995361363062,
+        508879910002808,
         "randomize",
         20,
         8,
@@ -892,7 +895,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1005,7 +1008,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1038,148 +1041,6 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 63,
-      "type": "ImpactWildcardProcessor",
-      "pos": [
-        -526.2543523754886,
-        234.19178114685064
-      ],
-      "size": {
-        "0": 520,
-        "1": 600
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "seed",
-          "type": "INT",
-          "link": 101,
-          "widget": {
-            "name": "seed"
-          },
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            99
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImpactWildcardProcessor"
-      },
-      "widgets_values": [
-        "((different clothes)), (((Petite))) ,(low angle shot, shot from below:1.2), portrait photo of a 38 years old blonde woman, wearing denim shorts, (large hanging breasts, sagging breasts), beautiful face, perfect eyes, medium haircut, (space buns with loose tendrils framing the face), intricate skin details, skin imperfections, outdoors, sitting on a rock, film grain, ferrania p30 film, shadows BREAK messy ginger hair, bangs, perfect face and body, large breasts, seductive smirk BREAK casual outfit, cleavage, choker BREAK dark, nighttime, dark photo, grainy, dimly lit, harsh camera",
-        "((different clothes)), (((Petite))) ,(low angle shot, shot from below:1.2), portrait photo of a 38 years old blonde woman, wearing denim shorts, (large hanging breasts, sagging breasts), beautiful face, perfect eyes, medium haircut, (space buns with loose tendrils framing the face), intricate skin details, skin imperfections, outdoors, sitting on a rock, film grain, ferrania p30 film, shadows BREAK messy ginger hair, bangs, perfect face and body, large breasts, seductive smirk BREAK casual outfit, cleavage, choker BREAK dark, nighttime, dark photo, grainy, dimly lit, harsh camera",
-        false,
-        508879910002808,
-        "randomize",
-        "Select the Wildcard to add to the text"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 13,
-      "type": "EmptyLatentImage",
-      "pos": [
-        53.745647624511705,
-        814.1917811468504
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 6,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            16,
-            27
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        512,
-        768,
-        1
-      ]
-    },
-    {
-      "id": 64,
-      "type": "Seed",
-      "pos": [
-        53.745647624511705,
-        974.1917811468504
-      ],
-      "size": {
-        "0": 315,
-        "1": 142
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "seed",
-          "type": "SEED",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "number",
-          "type": "NUMBER",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "float",
-          "type": "FLOAT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "int",
-          "type": "INT",
-          "links": [
-            100,
-            101
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Seed"
-      },
-      "widgets_values": [
-        793118475416693,
-        "fixed"
-      ]
     },
     {
       "id": 67,
@@ -1242,7 +1103,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1267,6 +1128,12 @@
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1290,7 +1157,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1325,7 +1192,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1361,7 +1228,7 @@
         "Node name for S&R": "CheckpointLoaderSimple"
       },
       "widgets_values": [
-        "zHina/8964_detailRealisticBakedVAE_SP_fp16_v40.safetensors"
+        "zHina/8964_detailRealisticBakedVAE_SP_fp16_v45.safetensors"
       ]
     },
     {
@@ -1379,7 +1246,7 @@
         "collapsed": false,
         "pinned": false
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1433,7 +1300,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1473,6 +1340,12 @@
           ],
           "shape": 3,
           "slot_index": 1
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1488,12 +1361,12 @@
       ],
       "size": {
         "0": 315,
-        "1": 322
+        "1": 342
       },
       "flags": {
         "pinned": true
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1509,6 +1382,12 @@
           "links": [
             129
           ],
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
           "shape": 3
         }
       ],
@@ -1528,6 +1407,134 @@
         "None",
         1,
         1
+      ]
+    },
+    {
+      "id": 63,
+      "type": "ImpactWildcardProcessor",
+      "pos": [
+        -526.2543523754886,
+        234.19178114685064
+      ],
+      "size": {
+        "0": 520,
+        "1": 600
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 134,
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            99
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactWildcardProcessor"
+      },
+      "widgets_values": [
+        "((different clothes)), (((Petite))) ,(low angle shot, shot from below:1.2), portrait photo of a 38 years old blonde woman, wearing denim shorts, (large hanging breasts, sagging breasts), beautiful face, perfect eyes, medium haircut, (space buns with loose tendrils framing the face), intricate skin details, skin imperfections, outdoors, sitting on a rock, film grain, ferrania p30 film, shadows BREAK messy ginger hair, bangs, perfect face and body, large breasts, seductive smirk BREAK casual outfit, cleavage, choker BREAK dark, nighttime, dark photo, grainy, dimly lit, harsh camera",
+        "((different clothes)), (((Petite))) ,(low angle shot, shot from below:1.2), portrait photo of a 38 years old blonde woman, wearing denim shorts, (large hanging breasts, sagging breasts), beautiful face, perfect eyes, medium haircut, (space buns with loose tendrils framing the face), intricate skin details, skin imperfections, outdoors, sitting on a rock, film grain, ferrania p30 film, shadows BREAK messy ginger hair, bangs, perfect face and body, large breasts, seductive smirk BREAK casual outfit, cleavage, choker BREAK dark, nighttime, dark photo, grainy, dimly lit, harsh camera",
+        true,
+        508879910002808,
+        "randomize",
+        "Select the Wildcard to add to the text"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 13,
+      "type": "EmptyLatentImage",
+      "pos": [
+        60,
+        850
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            16,
+            27
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        768,
+        1
+      ]
+    },
+    {
+      "id": 73,
+      "type": "PrimitiveNode",
+      "pos": [
+        60,
+        1010
+      ],
+      "size": [
+        310,
+        80
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            134,
+            135
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "title": "Seed",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        508879910002808,
+        "fixed"
       ]
     }
   ],
@@ -1789,22 +1796,6 @@
       "STRING"
     ],
     [
-      100,
-      64,
-      3,
-      12,
-      4,
-      "INT"
-    ],
-    [
-      101,
-      64,
-      3,
-      63,
-      0,
-      "INT"
-    ],
-    [
       114,
       67,
       0,
@@ -1947,6 +1938,22 @@
       7,
       0,
       "CLIP"
+    ],
+    [
+      134,
+      73,
+      0,
+      63,
+      0,
+      "INT"
+    ],
+    [
+      135,
+      73,
+      0,
+      12,
+      4,
+      "INT"
     ]
   ],
   "groups": [

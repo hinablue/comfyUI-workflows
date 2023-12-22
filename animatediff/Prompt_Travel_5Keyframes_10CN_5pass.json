@@ -1,6 +1,6 @@
 {
-  "last_node_id": 316,
-  "last_link_id": 506,
+  "last_node_id": 317,
+  "last_link_id": 512,
   "nodes": [
     {
       "id": 14,
@@ -16,7 +16,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 35,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -63,7 +63,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 37,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -269,7 +269,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -333,7 +333,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 55,
+      "order": 52,
       "mode": 0,
       "inputs": [
         {
@@ -397,7 +397,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 75,
+      "order": 71,
       "mode": 0,
       "inputs": [
         {
@@ -461,7 +461,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 88,
+      "order": 84,
       "mode": 0,
       "inputs": [
         {
@@ -683,7 +683,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 39,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -801,7 +801,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -866,7 +866,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 54,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
@@ -931,7 +931,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 74,
+      "order": 70,
       "mode": 0,
       "inputs": [
         {
@@ -1175,7 +1175,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 86,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -1217,7 +1217,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 41,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1423,7 +1423,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 43,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -1487,7 +1487,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 64,
+      "order": 61,
       "mode": 0,
       "inputs": [
         {
@@ -1551,7 +1551,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 76,
+      "order": 72,
       "mode": 0,
       "inputs": [
         {
@@ -1707,7 +1707,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 90,
+      "order": 86,
       "mode": 0,
       "inputs": [
         {
@@ -1749,7 +1749,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 89,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -1791,7 +1791,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 87,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -1833,7 +1833,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 44,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1880,7 +1880,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 46,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -1945,7 +1945,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 78,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -2187,7 +2187,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 93,
+      "order": 89,
       "mode": 0,
       "inputs": [
         {
@@ -2229,7 +2229,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 92,
+      "order": 88,
       "mode": 0,
       "inputs": [
         {
@@ -2526,7 +2526,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 95,
+      "order": 94,
       "mode": 0,
       "inputs": [
         {
@@ -2614,7 +2614,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 68,
+      "order": 65,
       "mode": 0,
       "inputs": [
         {
@@ -2678,7 +2678,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 65,
+      "order": 62,
       "mode": 0,
       "inputs": [
         {
@@ -2705,7 +2705,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 66,
+      "order": 63,
       "mode": 0,
       "inputs": [
         {
@@ -2732,7 +2732,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 62,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -2759,7 +2759,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 63,
+      "order": 60,
       "mode": 0,
       "inputs": [
         {
@@ -2786,7 +2786,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 60,
+      "order": 57,
       "mode": 0,
       "inputs": [
         {
@@ -2813,7 +2813,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 61,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -2840,7 +2840,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 58,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -2867,7 +2867,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 59,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
@@ -2879,55 +2879,6 @@
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
-    },
-    {
-      "id": 1,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        262.23571513338476,
-        94.2747299907126
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 8,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            503
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            8
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "SFW(SoftNSFW)/neverendingDreamNED_bakedVae.safetensors"
-      ]
     },
     {
       "id": 2,
@@ -2943,7 +2894,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -2977,7 +2928,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 72,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -3017,7 +2968,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 73,
+      "order": 78,
       "mode": 0,
       "inputs": [
         {
@@ -3057,7 +3008,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "outputs": [
         {
@@ -3092,7 +3043,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "outputs": [
         {
@@ -3126,7 +3077,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "outputs": [
         {
@@ -3168,7 +3119,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -3210,7 +3161,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "outputs": [
         {
@@ -3247,12 +3198,12 @@
       ],
       "size": [
         300,
-        310
+        314.0000190734863
       ],
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "outputs": [
         {
@@ -3294,7 +3245,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "outputs": [
         {
@@ -3329,7 +3280,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "outputs": [
         {
@@ -3371,7 +3322,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "outputs": [
         {
@@ -3406,7 +3357,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "outputs": [
         {
@@ -3442,7 +3393,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "outputs": [
         {
@@ -3479,13 +3430,13 @@
       "flags": {
         "pinned": true
       },
-      "order": 32,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 8,
+          "link": 511,
           "slot_index": 0
         }
       ],
@@ -3494,10 +3445,10 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            436,
             500,
             501,
-            502
+            502,
+            512
           ],
           "shape": 3,
           "slot_index": 0
@@ -3507,7 +3458,7 @@
         "Node name for S&R": "CLIPSetLastLayer"
       },
       "widgets_values": [
-        -2
+        -1
       ]
     },
     {
@@ -3524,7 +3475,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 70,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -3538,7 +3489,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            506
+            508
           ],
           "shape": 3,
           "slot_index": 0
@@ -3568,7 +3519,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "outputs": [
         {
@@ -3605,7 +3556,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 53,
+      "order": 68,
       "mode": 0,
       "inputs": [
         {
@@ -3724,7 +3675,7 @@
       ],
       "size": [
         320,
-        690
+        689
       ],
       "flags": {
         "pinned": true
@@ -3779,7 +3730,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 85,
+      "order": 81,
       "mode": 0,
       "inputs": [
         {
@@ -3946,7 +3897,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 36,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -3989,7 +3940,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 38,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -4032,7 +3983,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 40,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -4075,7 +4026,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 42,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -4118,7 +4069,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 45,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -4279,7 +4230,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "outputs": [
         {
@@ -4313,7 +4264,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 49,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -4368,7 +4319,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 69,
+      "order": 66,
       "mode": 0,
       "inputs": [
         {
@@ -4432,7 +4383,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 79,
+      "order": 75,
       "mode": 0,
       "inputs": [
         {
@@ -4474,7 +4425,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 56,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
@@ -4501,7 +4452,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 80,
+      "order": 76,
       "mode": 0,
       "inputs": [
         {
@@ -4543,7 +4494,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 57,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -4570,7 +4521,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 71,
+      "order": 80,
       "mode": 0,
       "inputs": [
         {
@@ -4639,7 +4590,7 @@
         "1": 70
       },
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "properties": {
         "text": ""
@@ -4954,7 +4905,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 50,
+      "order": 49,
       "mode": 0,
       "inputs": [
         {
@@ -4993,7 +4944,7 @@
         "1": 102
       },
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "outputs": [
         {
@@ -5074,18 +5025,18 @@
       "flags": {
         "pinned": true
       },
-      "order": 51,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 503
+          "link": 509
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 436
+          "link": 512
         },
         {
           "name": "lora_stack",
@@ -5138,7 +5089,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 94,
+      "order": 95,
       "mode": 0,
       "inputs": [
         {
@@ -5198,7 +5149,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -5256,7 +5207,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 47,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -5302,13 +5253,13 @@
       "flags": {
         "pinned": true
       },
-      "order": 81,
+      "order": 92,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 506,
+          "link": 508,
           "slot_index": 0
         }
       ],
@@ -5345,7 +5296,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "properties": {
         "text": ""
@@ -5370,7 +5321,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 67,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
@@ -5788,7 +5739,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "properties": {
         "text": ""
@@ -5813,7 +5764,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "properties": {
         "text": ""
@@ -5838,7 +5789,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "properties": {
         "text": ""
@@ -5863,7 +5814,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "properties": {
         "text": ""
@@ -5886,7 +5837,7 @@
         26
       ],
       "flags": {},
-      "order": 48,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -5997,7 +5948,7 @@
         26
       ],
       "flags": {},
-      "order": 91,
+      "order": 87,
       "mode": 0,
       "inputs": [
         {
@@ -6179,7 +6130,7 @@
         26
       ],
       "flags": {},
-      "order": 83,
+      "order": 90,
       "mode": 0,
       "inputs": [
         {
@@ -6217,7 +6168,7 @@
         26
       ],
       "flags": {},
-      "order": 84,
+      "order": 91,
       "mode": 0,
       "inputs": [
         {
@@ -6415,7 +6366,7 @@
         26
       ],
       "flags": {},
-      "order": 77,
+      "order": 73,
       "mode": 0,
       "inputs": [
         {
@@ -6529,7 +6480,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 52,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -6593,7 +6544,7 @@
         "1": 120
       },
       "flags": {},
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "properties": {
         "text": ""
@@ -6618,7 +6569,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 82,
+      "order": 93,
       "mode": 0,
       "inputs": [
         {
@@ -6653,6 +6604,56 @@
       "widgets_values": [
         1
       ]
+    },
+    {
+      "id": 317,
+      "type": "CheckpointLoaderSimpleWithNoiseSelect",
+      "pos": [
+        263,
+        75
+      ],
+      "size": {
+        "0": 315,
+        "1": 122
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 31,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            509
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            511
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
+      },
+      "widgets_values": [
+        "00_realisian_v40.safetensors",
+        "linear (HotshotXL/default)"
+      ]
     }
   ],
   "links": [
@@ -6663,14 +6664,6 @@
       4,
       1,
       "CONTEXT_OPTIONS"
-    ],
-    [
-      8,
-      1,
-      1,
-      6,
-      0,
-      "CLIP"
     ],
     [
       22,
@@ -7769,14 +7762,6 @@
       "CONDITIONING"
     ],
     [
-      436,
-      6,
-      0,
-      271,
-      1,
-      "CLIP"
-    ],
-    [
       438,
       271,
       1,
@@ -8033,14 +8018,6 @@
       "CLIP"
     ],
     [
-      503,
-      1,
-      0,
-      271,
-      0,
-      "MODEL"
-    ],
-    [
       505,
       271,
       0,
@@ -8049,12 +8026,36 @@
       "MODEL"
     ],
     [
-      506,
+      508,
       5,
       0,
       244,
       0,
       "MODEL"
+    ],
+    [
+      509,
+      317,
+      0,
+      271,
+      0,
+      "MODEL"
+    ],
+    [
+      511,
+      317,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      512,
+      6,
+      0,
+      271,
+      1,
+      "CLIP"
     ]
   ],
   "groups": [

@@ -1,6 +1,6 @@
 {
-  "last_node_id": 81,
-  "last_link_id": 184,
+  "last_node_id": 83,
+  "last_link_id": 193,
   "nodes": [
     {
       "id": 1,
@@ -11,12 +11,12 @@
       ],
       "size": [
         240,
-        470
+        198
       ],
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -82,7 +82,7 @@
       ],
       "size": {
         "0": 315,
-        "1": 82
+        "1": 102
       },
       "flags": {
         "pinned": true
@@ -99,6 +99,12 @@
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -125,7 +131,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -188,7 +194,7 @@
         "collapsed": false,
         "pinned": false
       },
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -262,7 +268,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -318,7 +324,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 14,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -390,59 +396,6 @@
       ]
     },
     {
-      "id": 20,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        290,
-        260
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            128
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            129
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            28,
-            95
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "zHina/8964_detailRealisticBakedVAE_SP_fp16_v35.safetensors"
-      ]
-    },
-    {
       "id": 64,
       "type": "CR Apply LoRA Stack",
       "pos": [
@@ -456,18 +409,18 @@
       "flags": {
         "pinned": true
       },
-      "order": 12,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 128
+          "link": 185
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 129
+          "link": 191
         },
         {
           "name": "lora_stack",
@@ -481,8 +434,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            150,
-            182
+            150
           ],
           "shape": 3,
           "slot_index": 0
@@ -491,13 +443,16 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            134,
-            135,
-            171,
-            184
+            171
           ],
           "shape": 3,
           "slot_index": 1
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -513,12 +468,12 @@
       ],
       "size": {
         "0": 630,
-        "1": 322
+        "1": 342
       },
       "flags": {
         "pinned": true
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -534,6 +489,12 @@
           "links": [
             136
           ],
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
           "shape": 3
         }
       ],
@@ -556,96 +517,6 @@
       ]
     },
     {
-      "id": 18,
-      "type": "CLIPTextEncode",
-      "pos": [
-        290,
-        410
-      ],
-      "size": {
-        "0": 640,
-        "1": 190
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 135
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            177
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "1girl, dancing, adult girl, (full body, whole body, slim body), medium breasts, school uniform, skirt, solo:1, long hair, (outdoor), stream, (white hair), post-impressionist, (face upward:0.7),"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 19,
-      "type": "CLIPTextEncode",
-      "pos": [
-        300,
-        650
-      ],
-      "size": {
-        "0": 630,
-        "1": 180
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 134,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            86,
-            106
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "easynegative, illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), ng_deepnegative_v1_75t, negative_hand-neg, lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,\n"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 28,
       "type": "SAMLoader",
       "pos": [
@@ -659,7 +530,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -693,7 +564,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -734,7 +605,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -763,12 +634,12 @@
       ],
       "size": [
         320,
-        310
+        313.99998474121094
       ],
       "flags": {
         "pinned": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -809,7 +680,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -850,7 +721,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -894,7 +765,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -923,7 +794,8 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            153
+            153,
+            190
           ],
           "shape": 3,
           "slot_index": 0
@@ -961,7 +833,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1008,7 +880,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 30,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -1036,15 +908,15 @@
       "id": 79,
       "type": "Reroute",
       "pos": [
-        190,
-        950
+        192.01217050170897,
+        1008.7167447509768
       ],
       "size": [
         75,
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1083,7 +955,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -1095,7 +967,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 28
+          "link": 193
         }
       ],
       "outputs": [
@@ -1114,79 +986,6 @@
       }
     },
     {
-      "id": 49,
-      "type": "KSamplerAdvanced",
-      "pos": [
-        1340,
-        90
-      ],
-      "size": {
-        "0": 320,
-        "1": 520
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 146
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 179
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 176
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 83
-        },
-        {
-          "name": "noise_seed",
-          "type": "INT",
-          "link": 93,
-          "widget": {
-            "name": "noise_seed"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            84
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "enable",
-        270769819349125,
-        "fixed",
-        20,
-        8,
-        "euler_ancestral",
-        "karras",
-        0,
-        10000,
-        "disable"
-      ]
-    },
-    {
       "id": 23,
       "type": "VHS_VideoCombine",
       "pos": [
@@ -1195,12 +994,12 @@
       ],
       "size": [
         320,
-        640
+        685
       ],
       "flags": {
         "pinned": true
       },
-      "order": 31,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -1229,6 +1028,8 @@
         "pingpong": false,
         "save_image": true,
         "crf": 18,
+        "save_metadata": true,
+        "audio_file": "",
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1245,8 +1046,8 @@
       "id": 29,
       "type": "PixelPerfectResolution",
       "pos": [
-        40,
-        940
+        42.012170501708994,
+        998.7167447509768
       ],
       "size": {
         "0": 390,
@@ -1255,7 +1056,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1304,8 +1105,8 @@
       "id": 33,
       "type": "ControlNetLoaderAdvanced",
       "pos": [
-        50,
-        1100
+        52.012170501708994,
+        1158.7167447509767
       ],
       "size": {
         "0": 367.79998779296875,
@@ -1314,7 +1115,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1344,8 +1145,8 @@
       "id": 31,
       "type": "DWPreprocessor",
       "pos": [
-        450,
-        970
+        452.01217050170897,
+        1028.7167447509769
       ],
       "size": {
         "0": 320,
@@ -1354,7 +1155,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1399,8 +1200,8 @@
       "id": 32,
       "type": "ControlNetApplyAdvanced",
       "pos": [
-        800,
-        970
+        802.0121705017087,
+        1028.7167447509769
       ],
       "size": {
         "0": 315,
@@ -1409,7 +1210,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1471,20 +1272,20 @@
         1690,
         340
       ],
-      "size": [
-        490,
-        100
-      ],
+      "size": {
+        "0": 490,
+        "1": 100
+      },
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 184
+          "link": 188
         }
       ],
       "outputs": [
@@ -1521,7 +1322,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 29,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1532,7 +1333,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 182,
+          "link": 190,
           "slot_index": 1
         },
         {
@@ -1543,7 +1344,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 95,
+          "link": 192,
           "slot_index": 3
         },
         {
@@ -1658,7 +1459,255 @@
         0.7,
         "False",
         10,
-        ""
+        "",
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        1345,
+        91
+      ],
+      "size": {
+        "0": 320,
+        "1": 520
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 146
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 179
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 176
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 83
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 93,
+          "widget": {
+            "name": "noise_seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            84
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        270769819349125,
+        "fixed",
+        20,
+        8,
+        "euler_ancestral",
+        "karras",
+        0,
+        10000,
+        "disable"
+      ]
+    },
+    {
+      "id": 82,
+      "type": "CheckpointLoaderSimpleWithNoiseSelect",
+      "pos": [
+        284,
+        246
+      ],
+      "size": {
+        "0": 315,
+        "1": 122
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            185
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            186,
+            187,
+            188,
+            191
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
+      },
+      "widgets_values": [
+        "00_realisian_v40.safetensors",
+        "linear (HotshotXL/default)"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "CLIPTextEncode",
+      "pos": [
+        295,
+        446
+      ],
+      "size": {
+        "0": 640,
+        "1": 190
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 187
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            177
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "1girl, dancing, adult girl, (full body, whole body, slim body), medium breasts, school uniform, skirt, solo:1, long hair, (outdoor), stream, (white hair), post-impressionist, (face upward:0.7),"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 19,
+      "type": "CLIPTextEncode",
+      "pos": [
+        300,
+        685
+      ],
+      "size": {
+        "0": 630,
+        "1": 180
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 186,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            86,
+            106
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "easynegative, illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), ng_deepnegative_v1_75t, negative_hand-neg, lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 83,
+      "type": "VAELoader",
+      "pos": [
+        -60,
+        357
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            192,
+            193
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "abyssorangemix2NSFW_abyssorangemix2Nsfw.vae.pt"
       ]
     }
   ],
@@ -1678,14 +1727,6 @@
       7,
       1,
       "CONTEXT_OPTIONS"
-    ],
-    [
-      28,
-      20,
-      2,
-      22,
-      1,
-      "VAE"
     ],
     [
       33,
@@ -1800,14 +1841,6 @@
       "INT"
     ],
     [
-      95,
-      20,
-      2,
-      24,
-      3,
-      "VAE"
-    ],
-    [
       103,
       58,
       0,
@@ -1854,38 +1887,6 @@
       29,
       2,
       "INT"
-    ],
-    [
-      128,
-      20,
-      0,
-      64,
-      0,
-      "MODEL"
-    ],
-    [
-      129,
-      20,
-      1,
-      64,
-      1,
-      "CLIP"
-    ],
-    [
-      134,
-      64,
-      1,
-      19,
-      0,
-      "CLIP"
-    ],
-    [
-      135,
-      64,
-      1,
-      18,
-      0,
-      "CLIP"
     ],
     [
       136,
@@ -2032,14 +2033,6 @@
       "IMAGE"
     ],
     [
-      182,
-      64,
-      0,
-      24,
-      1,
-      "MODEL"
-    ],
-    [
       183,
       81,
       0,
@@ -2048,20 +2041,76 @@
       "CONDITIONING"
     ],
     [
-      184,
+      185,
+      82,
+      0,
       64,
+      0,
+      "MODEL"
+    ],
+    [
+      186,
+      82,
+      1,
+      19,
+      0,
+      "CLIP"
+    ],
+    [
+      187,
+      82,
+      1,
+      18,
+      0,
+      "CLIP"
+    ],
+    [
+      188,
+      82,
       1,
       81,
       0,
       "CLIP"
+    ],
+    [
+      190,
+      77,
+      0,
+      24,
+      1,
+      "MODEL"
+    ],
+    [
+      191,
+      82,
+      1,
+      64,
+      1,
+      "CLIP"
+    ],
+    [
+      192,
+      83,
+      0,
+      24,
+      3,
+      "VAE"
+    ],
+    [
+      193,
+      83,
+      0,
+      22,
+      1,
+      "VAE"
     ]
   ],
   "groups": [
     {
       "title": "ControlNet OpenPose",
       "bounding": [
-        30,
-        856,
+        32,
+        915,
         1105,
         312
       ],

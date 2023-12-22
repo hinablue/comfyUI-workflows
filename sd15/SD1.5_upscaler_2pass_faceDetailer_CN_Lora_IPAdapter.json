@@ -195,7 +195,7 @@
         "Node name for S&R": "Seed"
       },
       "widgets_values": [
-        325260461210480,
+        514260259200786,
         "randomize"
       ]
     },
@@ -392,8 +392,8 @@
       "id": 60,
       "type": "CLIPVisionLoader",
       "pos": [
-        437.8484945115098,
-        -86.55785420251225
+        446.78244104379735,
+        -87.29402119164797
       ],
       "size": {
         "0": 315,
@@ -420,71 +420,6 @@
       },
       "widgets_values": [
         "SD1.5/pytorch_model.bin"
-      ]
-    },
-    {
-      "id": 62,
-      "type": "IPAdapterApply",
-      "pos": [
-        807.8484945115099,
-        -206.55785420251232
-      ],
-      "size": {
-        "0": 315,
-        "1": 186
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 103,
-          "slot_index": 0
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": 101
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 138,
-          "slot_index": 2
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 147
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            142
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterApply"
-      },
-      "widgets_values": [
-        1,
-        0,
-        "original"
       ]
     },
     {
@@ -543,7 +478,7 @@
       },
       "widgets_values": [
         "enable",
-        1082689506413170,
+        658048553910649,
         "randomize",
         20,
         8,
@@ -679,7 +614,7 @@
         256,
         true,
         768,
-        829866894376055,
+        407167562626315,
         "randomize",
         20,
         8,
@@ -699,7 +634,8 @@
         0.7,
         "False",
         10,
-        ""
+        "",
+        1
       ]
     },
     {
@@ -862,7 +798,7 @@
       },
       "widgets_values": [
         2,
-        1036762240073557,
+        875220792532675,
         "randomize",
         20,
         8,
@@ -975,7 +911,7 @@
       },
       "widgets_values": [
         1,
-        67083811577824,
+        229918818344062,
         "randomize",
         30,
         8,
@@ -1026,8 +962,8 @@
       "id": 64,
       "type": "IPAdapterModelLoader",
       "pos": [
-        437.8484945115098,
-        -206.55785420251232
+        446.78244104379735,
+        -207.29402119164806
       ],
       "size": {
         "0": 315,
@@ -1059,8 +995,8 @@
       "id": 50,
       "type": "DWPreprocessor",
       "pos": [
-        866.9205182211045,
-        -830.3192689757072
+        875.8544647533923,
+        -831.0554359648431
       ],
       "size": {
         "0": 320,
@@ -1113,13 +1049,13 @@
       "id": 72,
       "type": "MiDaS-DepthMapPreprocessor",
       "pos": [
-        866.9205182211045,
-        -590.3192689757069
+        875.8544647533923,
+        -591.0554359648428
       ],
-      "size": [
-        320,
-        110
-      ],
+      "size": {
+        "0": 320,
+        "1": 110
+      },
       "flags": {
         "pinned": true
       },
@@ -1164,13 +1100,13 @@
       "id": 73,
       "type": "PiDiNetPreprocessor",
       "pos": [
-        866.9205182211045,
-        -420.3192689757066
+        875.8544647533923,
+        -421.05543596484245
       ],
-      "size": [
-        320,
-        80
-      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
       "flags": {
         "pinned": true
       },
@@ -1265,10 +1201,10 @@
         18.57080078125,
         722.4624176025391
       ],
-      "size": [
-        700,
-        200
-      ],
+      "size": {
+        "0": 700,
+        "1": 200
+      },
       "flags": {
         "pinned": true
       },
@@ -1313,10 +1249,10 @@
         18.57080078125,
         452.46241760253906
       ],
-      "size": [
-        710,
-        220
-      ],
+      "size": {
+        "0": 710,
+        "1": 220
+      },
       "flags": {
         "pinned": true
       },
@@ -1361,10 +1297,10 @@
         58.57080078125,
         92.46241760253906
       ],
-      "size": [
-        650,
-        100
-      ],
+      "size": {
+        "0": 650,
+        "1": 100
+      },
       "flags": {
         "pinned": true
       },
@@ -1450,6 +1386,12 @@
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1468,10 +1410,10 @@
         58.57080078125,
         232.46241760253906
       ],
-      "size": [
-        650,
-        60
-      ],
+      "size": {
+        "0": 650,
+        "1": 60
+      },
       "flags": {
         "pinned": true
       },
@@ -1582,13 +1524,13 @@
       "id": 68,
       "type": "PixelPerfectResolution",
       "pos": [
-        426.92051822110454,
-        -820.3192689757072
+        435.8544647533921,
+        -821.0554359648431
       ],
-      "size": [
-        390,
-        110
-      ],
+      "size": {
+        "0": 390,
+        "1": 110
+      },
       "flags": {
         "pinned": true
       },
@@ -1642,8 +1584,8 @@
       "id": 70,
       "type": "PixelPerfectResolution",
       "pos": [
-        426.92051822110454,
-        -630.3192689757069
+        435.8544647533921,
+        -631.0554359648428
       ],
       "size": {
         "0": 390,
@@ -1703,8 +1645,8 @@
       "id": 41,
       "type": "CR Multi-ControlNet Stack",
       "pos": [
-        1251.379241066563,
-        -671.6058593675695
+        1260.3131875988506,
+        -672.3420263567053
       ],
       "size": {
         "0": 418.1999816894531,
@@ -1750,6 +1692,12 @@
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1779,8 +1727,8 @@
       "id": 71,
       "type": "PixelPerfectResolution",
       "pos": [
-        431.37924106656294,
-        -431.6058593675687
+        440.3131875988505,
+        -432.34202635670454
       ],
       "size": {
         "0": 390,
@@ -1839,8 +1787,8 @@
       "id": 44,
       "type": "CR Apply Multi-ControlNet",
       "pos": [
-        1291.379241066563,
-        -831.6058593675693
+        1300.3131875988506,
+        -832.3420263567052
       ],
       "size": {
         "0": 317.4000244140625,
@@ -1886,6 +1834,12 @@
           ],
           "shape": 3,
           "slot_index": 1
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1949,6 +1903,12 @@
           ],
           "shape": 3,
           "slot_index": 1
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -1964,7 +1924,7 @@
       ],
       "size": {
         "0": 315,
-        "1": 322
+        "1": 342
       },
       "flags": {
         "pinned": true
@@ -1987,6 +1947,12 @@
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -2055,8 +2021,8 @@
       "id": 87,
       "type": "Reroute",
       "pos": [
-        150,
-        -70
+        158.9339465322876,
+        -70.73616698913573
       ],
       "size": [
         75,
@@ -2072,7 +2038,10 @@
           "name": "",
           "type": "*",
           "link": 175,
-          "slot_index": 0
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
         }
       ],
       "outputs": [
@@ -2096,8 +2065,8 @@
       "id": 88,
       "type": "Reroute",
       "pos": [
-        150,
-        -110
+        158.9339465322876,
+        -110.73616698913573
       ],
       "size": [
         75,
@@ -2112,7 +2081,10 @@
         {
           "name": "",
           "type": "*",
-          "link": 169
+          "link": 169,
+          "widget": {
+            "name": "value"
+          }
         }
       ],
       "outputs": [
@@ -2136,13 +2108,13 @@
       "id": 51,
       "type": "LoadImage",
       "pos": [
-        20,
-        -820
+        28.933946532287596,
+        -820.7361669891359
       ],
-      "size": [
-        390,
-        590
-      ],
+      "size": {
+        "0": 390,
+        "1": 590
+      },
       "flags": {
         "pinned": false
       },
@@ -2177,6 +2149,74 @@
       "widgets_values": [
         "2023-11-02-052750_1027812964178047.webp",
         "image"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "IPAdapterApply",
+      "pos": [
+        880,
+        -290
+      ],
+      "size": {
+        "0": 315,
+        "1": 258
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 103,
+          "slot_index": 0
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": 101
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 138,
+          "slot_index": 2
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 147
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            142
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterApply"
+      },
+      "widgets_values": [
+        1,
+        0,
+        "original",
+        0,
+        1,
+        false
       ]
     }
   ],
@@ -2802,8 +2842,8 @@
     {
       "title": "ControlNet & IPAdapter",
       "bounding": [
-        1,
-        -905,
+        10,
+        -906,
         1678,
         895
       ],
