@@ -68,6 +68,9 @@ You can directly download the images that have been embedded in the workflow.
 
 # SD1.5
 
+## SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID
+![SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID](sd15/SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID.png)
+
 ## SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter
 ![SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter](sd15/SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter.png)
 
