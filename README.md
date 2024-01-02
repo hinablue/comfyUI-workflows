@@ -3,9 +3,20 @@
 You can directly download the images that have been embedded in the workflow.
 
 ---
+# Prompt Schedule Helper
+
+This tool will help you merge keyframes with prompt content and there are some feature include,
+
+* The order of keyframes will be sorted automatically, so you don't have to worry about it.
+* Prompts with the same keyframes are automatically merged.
+* Prompt that contain line breaks will be replaced with , separators.
+
+![hina-prompt-schedule-helper](hina-prompt-schedule-helper.png)
+
+---
 # LCM
 
-## LCM_IPAdapter_AnimateDiff_3CN
+## hina-prompt-schedule-helper
 ![LCM_IPAdapter_AnimateDiff_3CN](lcm/LCM_IPAdapter_AnimateDiff_3CN.png)
 
 ## LCM_Prompt_Travel_AnimateDiff_Lora
