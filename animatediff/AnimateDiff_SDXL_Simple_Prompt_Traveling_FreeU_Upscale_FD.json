@@ -1,79 +1,7 @@
 {
-  "last_node_id": 169,
-  "last_link_id": 306,
+  "last_node_id": 171,
+  "last_link_id": 308,
   "nodes": [
-    {
-      "id": 121,
-      "type": "Text box",
-      "pos": [
-        -912.169500488282,
-        90.9914707794189
-      ],
-      "size": {
-        "0": 430.5533142089844,
-        "1": 363.16424560546875
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            236
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Prompt Traveling Text G",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        "\"0\" : \"(smiling:`(0.5+0.5*sin(t/12))`), (close up), posing to viewer, white kimono, purple hair, hands on chests, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\",\n\"12\" : \"(smiling:`(0.5+0.5*sin(t/12))`), (close up), posing to viewer, white kimono, purple hair, hands on chests, orange leaves, yellow leaves, fall season, outdoors, falling leaves,\",\n\"24\" : \"(smiling:`(0.5+0.5*sin(t/max_f))`, (close up), posing to viewer, white kimono, purple hair, hands on chests, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\""
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 130,
-      "type": "Text box",
-      "pos": [
-        -462.16950048828136,
-        90.9914707794189
-      ],
-      "size": {
-        "0": 430.5533142089844,
-        "1": 363.16424560546875
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            243
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Prompt Traveling Text L",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
     {
       "id": 126,
       "type": "Text box",
@@ -88,7 +16,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 2,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -124,7 +52,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -160,7 +88,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -196,7 +124,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -232,7 +160,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -458,7 +386,7 @@
         {
           "name": "text_g",
           "type": "STRING",
-          "link": 236,
+          "link": 307,
           "widget": {
             "name": "text_g"
           },
@@ -467,7 +395,7 @@
         {
           "name": "text_l",
           "type": "STRING",
-          "link": 243,
+          "link": 308,
           "widget": {
             "name": "text_l"
           },
@@ -604,8 +532,8 @@
         "enable",
         100003,
         "fixed",
-        20,
-        5,
+        8,
+        2,
         "euler_ancestral",
         "karras",
         0,
@@ -749,7 +677,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -914,7 +842,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1079,7 +1007,7 @@
       ],
       "size": {
         "0": 630,
-        "1": 1100
+        "1": 200
       },
       "flags": {
         "pinned": true
@@ -1101,8 +1029,15 @@
           }
         }
       ],
-      "outputs": [],
-      "title": "First Pass Video Combine 🎥🅥🅗🅢",
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "First Pass Video Combine ð¥ð¥ðð¢",
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -1112,10 +1047,7 @@
         "filename_prefix": "AnimateDiff",
         "format": "image/webp",
         "pingpong": false,
-        "save_image": true,
-        "crf": 20,
-        "save_metadata": true,
-        "audio_file": "",
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1137,7 +1069,7 @@
       ],
       "size": [
         630,
-        246
+        170
       ],
       "flags": {
         "pinned": true
@@ -1159,8 +1091,15 @@
           }
         }
       ],
-      "outputs": [],
-      "title": "Ultimate SD Upscale Video Combine 🎥🅥🅗🅢",
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Ultimate SD Upscale Video Combine ð¥ð¥ðð¢",
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -1170,10 +1109,7 @@
         "filename_prefix": "AnimateDiff",
         "format": "image/webp",
         "pingpong": false,
-        "save_image": true,
-        "crf": 20,
-        "save_metadata": true,
-        "audio_file": "",
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1195,7 +1131,7 @@
       ],
       "size": [
         640,
-        246
+        170
       ],
       "flags": {
         "pinned": true
@@ -1217,8 +1153,15 @@
           }
         }
       ],
-      "outputs": [],
-      "title": "FaceDetailer Video Combine 🎥🅥🅗🅢",
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "FaceDetailer Video Combine ð¥ð¥ðð¢",
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -1228,10 +1171,7 @@
         "filename_prefix": "AnimateDiff",
         "format": "image/webp",
         "pingpong": false,
-        "save_image": true,
-        "crf": 20,
-        "save_metadata": true,
-        "audio_file": "",
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -1258,7 +1198,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1295,7 +1235,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -1335,7 +1275,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "outputs": [
         {
@@ -1369,7 +1309,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "outputs": [
         {
@@ -1403,7 +1343,7 @@
       ],
       "size": {
         "0": 506.4000244140625,
-        "1": 814
+        "1": 832
       },
       "flags": {
         "pinned": true
@@ -1711,7 +1651,7 @@
       ],
       "size": {
         "0": 350,
-        "1": 190
+        "1": 210
       },
       "flags": {
         "pinned": true
@@ -1739,6 +1679,11 @@
         {
           "name": "motion_model_settings",
           "type": "MOTION_MODEL_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "sample_settings",
+          "type": "sample_settings",
           "link": null
         }
       ],
@@ -1773,13 +1718,13 @@
         87
       ],
       "size": {
-        "0": 315,
-        "1": 122
+        "0": 319.20001220703125,
+        "1": 170
       },
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "outputs": [
         {
@@ -1811,8 +1756,110 @@
         "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
       },
       "widgets_values": [
-        "zHina/sdxl/9527_detailRealisticSDXL_fp16_v2.safetensors",
-        "linear (HotshotXL/default)"
+        "sdxl/9527_detailRealisticSDXL_fp16_v2-RemixTurbo.safetensors",
+        "linear (HotshotXL/default)",
+        false,
+        0.18215
+      ]
+    },
+    {
+      "id": 170,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -910,
+        90
+      ],
+      "size": [
+        430,
+        360
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            307
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "(smiling:`(0.5+0.5*sin(t/12))`), (close up), posing to viewer, white kimono, purple hair, hands on chests, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,",
+        "(smiling:`(0.5+0.5*sin(t/12))`), (close up), posing to viewer, white kimono, purple hair, hands on chests, orange leaves, yellow leaves, fall season, outdoors, falling leaves,",
+        "(smiling:`(0.5+0.5*sin(t/max_f))`, (close up), posing to viewer, white kimono, purple hair, hands on chests, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 171,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -460,
+        90
+      ],
+      "size": [
+        430,
+        360
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            308
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     }
   ],
@@ -1946,14 +1993,6 @@
       "INT"
     ],
     [
-      236,
-      121,
-      0,
-      120,
-      6,
-      "STRING"
-    ],
-    [
       238,
       126,
       0,
@@ -1992,14 +2031,6 @@
       99,
       0,
       "MODEL"
-    ],
-    [
-      243,
-      130,
-      0,
-      120,
-      7,
-      "STRING"
     ],
     [
       245,
@@ -2248,6 +2279,22 @@
       79,
       0,
       "CLIP"
+    ],
+    [
+      307,
+      170,
+      0,
+      120,
+      6,
+      "STRING"
+    ],
+    [
+      308,
+      171,
+      0,
+      120,
+      7,
+      "STRING"
     ]
   ],
   "groups": [

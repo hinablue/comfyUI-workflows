@@ -1,115 +1,7 @@
 {
-  "last_node_id": 137,
-  "last_link_id": 251,
+  "last_node_id": 141,
+  "last_link_id": 254,
   "nodes": [
-    {
-      "id": 121,
-      "type": "Text box",
-      "pos": [
-        -912.169500488282,
-        90.9914707794189
-      ],
-      "size": {
-        "0": 430.5533142089844,
-        "1": 363.16424560546875
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            236
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Prompt Traveling Text G",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        "\"0\" : \"(smiling:`(0.5+0.5*sin(t/12))`), cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\",\n\"12\" : \"(smiling:`(0.5+0.5*sin(t/12))`), orange leaves, yellow leaves, fall season, outdoors, falling leaves,\",\n\"24\" : \"(smiling:`(0.5+0.5*sin(t/max_f))`, cherry blossom, hanami, pink flower, white flower, spring season, wisteria, petals, flower, plum blossoms, outdoors, falling petals,\""
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 130,
-      "type": "Text box",
-      "pos": [
-        -462.16950048828136,
-        90.9914707794189
-      ],
-      "size": {
-        "0": 430.5533142089844,
-        "1": 363.16424560546875
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            243
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Prompt Traveling Text L",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 126,
-      "type": "Text box",
-      "pos": [
-        -912.169500488282,
-        500.99147077941893
-      ],
-      "size": {
-        "0": 430,
-        "1": 200
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            238
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Prepend Text G",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        "18 years old girl, adult girl, solo, "
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
     {
       "id": 127,
       "type": "Text box",
@@ -124,7 +16,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 3,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -147,42 +39,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 128,
-      "type": "Text box",
-      "pos": [
-        -912.169500488282,
-        750.9914707794177
-      ],
-      "size": {
-        "0": 430,
-        "1": 200
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 4,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            239
-          ],
-          "shape": 3
-        }
-      ],
-      "title": "Append Text G",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        "black eyes, upper body, shy, pov, posing to viewer, white kimono, purple hair, hands on chests,"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 129,
       "type": "Text box",
       "pos": [
@@ -196,7 +52,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 5,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -219,131 +75,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 81,
-      "type": "VAELoader",
-      "pos": [
-        11.924323104858395,
-        251.0739825592042
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 6,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            217
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sdxl_vae_fp16_fix.safetensors"
-      ]
-    },
-    {
-      "id": 119,
-      "type": "CR SDXL Aspect Ratio",
-      "pos": [
-        11.924323104858395,
-        351.07398255920435
-      ],
-      "size": {
-        "0": 320,
-        "1": 254
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "batch_size",
-          "type": "INT",
-          "link": 247,
-          "widget": {
-            "name": "batch_size"
-          },
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            224,
-            231,
-            233
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            225,
-            232,
-            234
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "upscale_factor",
-          "type": "FLOAT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "batch_size",
-          "type": "INT",
-          "links": [
-            226,
-            235
-          ],
-          "shape": 3,
-          "slot_index": 3
-        },
-        {
-          "name": "empty_latent",
-          "type": "LATENT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR SDXL Aspect Ratio"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "3:4 portrait 896x1152",
-        "Off",
-        1,
-        24
-      ]
-    },
-    {
       "id": 79,
       "type": "CLIPSetLastLayer",
       "pos": [
@@ -357,7 +88,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -437,7 +168,7 @@
       ],
       "size": [
         430,
-        246
+        760
       ],
       "flags": {
         "pinned": true
@@ -459,7 +190,14 @@
           }
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -468,178 +206,22 @@
         "loop_count": 0,
         "filename_prefix": "AnimateDiff",
         "format": "video/h264-mp4",
-        "pingpong": false,
-        "save_image": true,
+        "pix_fmt": "yuv420p",
         "crf": 20,
         "save_metadata": true,
-        "audio_file": "",
+        "pingpong": false,
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
           "params": {
-            "filename": "AnimateDiff_00315.mp4",
+            "filename": "AnimateDiff_00003.mp4",
             "subfolder": "",
             "type": "output",
             "format": "video/h264-mp4"
           }
         }
       }
-    },
-    {
-      "id": 120,
-      "type": "BatchPromptScheduleEncodeSDXL",
-      "pos": [
-        11.924323104858395,
-        741.0739825592034
-      ],
-      "size": {
-        "0": 310,
-        "1": 430
-      },
-      "flags": {
-        "collapsed": false,
-        "pinned": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 229
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "link": 231,
-          "widget": {
-            "name": "width"
-          },
-          "slot_index": 1
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "link": 232,
-          "widget": {
-            "name": "height"
-          }
-        },
-        {
-          "name": "target_width",
-          "type": "INT",
-          "link": 233,
-          "widget": {
-            "name": "target_width"
-          },
-          "slot_index": 3
-        },
-        {
-          "name": "target_height",
-          "type": "INT",
-          "link": 234,
-          "widget": {
-            "name": "target_height"
-          }
-        },
-        {
-          "name": "max_frames",
-          "type": "INT",
-          "link": 235,
-          "widget": {
-            "name": "max_frames"
-          },
-          "slot_index": 5
-        },
-        {
-          "name": "text_g",
-          "type": "STRING",
-          "link": 236,
-          "widget": {
-            "name": "text_g"
-          },
-          "slot_index": 6
-        },
-        {
-          "name": "text_l",
-          "type": "STRING",
-          "link": 243,
-          "widget": {
-            "name": "text_l"
-          },
-          "slot_index": 7
-        },
-        {
-          "name": "pre_text_G",
-          "type": "STRING",
-          "link": 238,
-          "widget": {
-            "name": "pre_text_G"
-          },
-          "slot_index": 8
-        },
-        {
-          "name": "app_text_G",
-          "type": "STRING",
-          "link": 239,
-          "widget": {
-            "name": "app_text_G"
-          },
-          "slot_index": 9
-        },
-        {
-          "name": "pre_text_L",
-          "type": "STRING",
-          "link": 240,
-          "widget": {
-            "name": "pre_text_L"
-          },
-          "slot_index": 10
-        },
-        {
-          "name": "app_text_L",
-          "type": "STRING",
-          "link": 241,
-          "widget": {
-            "name": "app_text_L"
-          },
-          "slot_index": 11
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            230
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BatchPromptScheduleEncodeSDXL"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        0,
-        0,
-        1024,
-        1024,
-        "",
-        "",
-        120,
-        false,
-        "18 years old girl, adult girl, solo, ",
-        "",
-        "",
-        "",
-        0,
-        0,
-        0,
-        0
-      ]
     },
     {
       "id": 99,
@@ -699,89 +281,14 @@
         "enable",
         100002,
         "fixed",
-        20,
-        5,
-        "dpmpp_2m_sde",
-        "sgm_uniform",
+        8,
+        2,
+        "dpmpp_sde",
+        "karras",
         0,
         10000,
         "disable"
       ]
-    },
-    {
-      "id": 131,
-      "type": "Integer",
-      "pos": [
-        360,
-        90
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            245
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Animate Length (seconds)",
-      "properties": {
-        "Node name for S&R": "Integer"
-      },
-      "widgets_values": [
-        3
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 132,
-      "type": "Integer",
-      "pos": [
-        360,
-        190
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 8,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            244,
-            246
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Output Frame Rate",
-      "properties": {
-        "Node name for S&R": "Integer"
-      },
-      "widgets_values": [
-        12
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
     },
     {
       "id": 134,
@@ -797,7 +304,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -919,7 +426,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 9,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -952,12 +459,12 @@
       ],
       "size": {
         "0": 350,
-        "1": 190
+        "1": 210
       },
       "flags": {
         "pinned": true
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -980,6 +487,11 @@
         {
           "name": "motion_model_settings",
           "type": "MOTION_MODEL_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "sample_settings",
+          "type": "sample_settings",
           "link": null
         }
       ],
@@ -1019,7 +531,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1062,7 +574,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1091,13 +603,13 @@
         90
       ],
       "size": {
-        "0": 315,
-        "1": 122
+        "0": 319.20001220703125,
+        "1": 170
       },
       "flags": {
         "pinned": true
       },
-      "order": 10,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -1129,9 +641,539 @@
         "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
       },
       "widgets_values": [
-        "zHina/sdxl/9527_detailRealisticSDXL_fp16_v2.safetensors",
-        "linear (HotshotXL/default)"
+        "sdxl/9527_detailRealisticSDXL_fp16_v2-RemixTurbo.safetensors",
+        "linear (AnimateDiff-SDXL)",
+        false,
+        0.18215
       ]
+    },
+    {
+      "id": 139,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -460,
+        100
+      ],
+      "size": {
+        "0": 420,
+        "1": 350
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            253
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 81,
+      "type": "VAELoader",
+      "pos": [
+        20,
+        320
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            217
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl_vae_fp16_fix.safetensors"
+      ]
+    },
+    {
+      "id": 119,
+      "type": "CR SDXL Aspect Ratio",
+      "pos": [
+        20,
+        440
+      ],
+      "size": {
+        "0": 320,
+        "1": 254
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 247,
+          "widget": {
+            "name": "batch_size"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            224,
+            231,
+            233
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            225,
+            232,
+            234
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": [
+            226,
+            235
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR SDXL Aspect Ratio"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "3:4 portrait 896x1152",
+        "Off",
+        1,
+        24
+      ]
+    },
+    {
+      "id": 120,
+      "type": "BatchPromptScheduleEncodeSDXL",
+      "pos": [
+        20,
+        740
+      ],
+      "size": {
+        "0": 310,
+        "1": 430
+      },
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 229
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 231,
+          "widget": {
+            "name": "width"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 232,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "target_width",
+          "type": "INT",
+          "link": 233,
+          "widget": {
+            "name": "target_width"
+          },
+          "slot_index": 3
+        },
+        {
+          "name": "target_height",
+          "type": "INT",
+          "link": 234,
+          "widget": {
+            "name": "target_height"
+          }
+        },
+        {
+          "name": "max_frames",
+          "type": "INT",
+          "link": 235,
+          "widget": {
+            "name": "max_frames"
+          },
+          "slot_index": 5
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 252,
+          "widget": {
+            "name": "text_g"
+          },
+          "slot_index": 6
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 253,
+          "widget": {
+            "name": "text_l"
+          },
+          "slot_index": 7
+        },
+        {
+          "name": "pre_text_G",
+          "type": "STRING",
+          "link": 238,
+          "widget": {
+            "name": "pre_text_G"
+          },
+          "slot_index": 8
+        },
+        {
+          "name": "app_text_G",
+          "type": "STRING",
+          "link": 239,
+          "widget": {
+            "name": "app_text_G"
+          },
+          "slot_index": 9
+        },
+        {
+          "name": "pre_text_L",
+          "type": "STRING",
+          "link": 240,
+          "widget": {
+            "name": "pre_text_L"
+          },
+          "slot_index": 10
+        },
+        {
+          "name": "app_text_L",
+          "type": "STRING",
+          "link": 241,
+          "widget": {
+            "name": "app_text_L"
+          },
+          "slot_index": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            230
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchPromptScheduleEncodeSDXL"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        0,
+        0,
+        1024,
+        1024,
+        "",
+        "",
+        120,
+        false,
+        "18 years old girl, adult girl, solo, ",
+        "",
+        "",
+        "",
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "type": "Integer",
+      "pos": [
+        360,
+        190
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            244,
+            246
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Output Frame Rate",
+      "properties": {
+        "Node name for S&R": "Integer"
+      },
+      "widgets_values": [
+        12
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 131,
+      "type": "Integer",
+      "pos": [
+        360,
+        90
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            245
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Animate Length (seconds)",
+      "properties": {
+        "Node name for S&R": "Integer"
+      },
+      "widgets_values": [
+        3
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 128,
+      "type": "Text box",
+      "pos": [
+        -912.169500488282,
+        750.9914707794177
+      ],
+      "size": {
+        "0": 430,
+        "1": 200
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            239
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "Append Text G",
+      "properties": {
+        "Node name for S&R": "Text box"
+      },
+      "widgets_values": [
+        "black eyes, upper body, shy, deep v dress, hands on chests"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 138,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -910,
+        100
+      ],
+      "size": {
+        "0": 430,
+        "1": 350
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            252
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "(looking aside:1.3), (cherry bloom, pink flower, white flower),",
+        "(looking at viewer:1.3), (winter season, white flower),",
+        "(looking aside:1.3), (summer season, pink flower, white flower),",
+        "(looking at viewer:1.3), (winter season, white flower),",
+        ""
+      ]
+    },
+    {
+      "id": 126,
+      "type": "Text box",
+      "pos": [
+        -912.169500488282,
+        500.99147077941893
+      ],
+      "size": {
+        "0": 430,
+        "1": 200
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            238
+          ],
+          "shape": 3
+        }
+      ],
+      "title": "Prepend Text G",
+      "properties": {
+        "Node name for S&R": "Text box"
+      },
+      "widgets_values": [
+        "1girl,"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1272,14 +1314,6 @@
       "INT"
     ],
     [
-      236,
-      121,
-      0,
-      120,
-      6,
-      "STRING"
-    ],
-    [
       238,
       126,
       0,
@@ -1318,14 +1352,6 @@
       99,
       0,
       "MODEL"
-    ],
-    [
-      243,
-      130,
-      0,
-      120,
-      7,
-      "STRING"
     ],
     [
       244,
@@ -1382,6 +1408,22 @@
       79,
       0,
       "CLIP"
+    ],
+    [
+      252,
+      138,
+      0,
+      120,
+      6,
+      "STRING"
+    ],
+    [
+      253,
+      139,
+      0,
+      120,
+      7,
+      "STRING"
     ]
   ],
   "groups": [
@@ -1414,8 +1456,8 @@
       "bounding": [
         785,
         17,
-        800,
-        904
+        790,
+        934
       ],
       "color": "#3f789e",
       "font_size": 24,

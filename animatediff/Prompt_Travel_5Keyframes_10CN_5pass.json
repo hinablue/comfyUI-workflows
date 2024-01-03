@@ -1,6 +1,6 @@
 {
-  "last_node_id": 317,
-  "last_link_id": 512,
+  "last_node_id": 319,
+  "last_link_id": 514,
   "nodes": [
     {
       "id": 14,
@@ -16,7 +16,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 34,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -63,7 +63,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 36,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -110,7 +110,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 98,
+      "order": 100,
       "mode": 0,
       "inputs": [
         {
@@ -269,7 +269,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 33,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -333,7 +333,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 52,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -397,7 +397,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 71,
+      "order": 73,
       "mode": 0,
       "inputs": [
         {
@@ -461,7 +461,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 84,
+      "order": 86,
       "mode": 0,
       "inputs": [
         {
@@ -503,7 +503,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 100,
+      "order": 102,
       "mode": 0,
       "inputs": [
         {
@@ -593,7 +593,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 96,
+      "order": 98,
       "mode": 0,
       "inputs": [
         {
@@ -683,7 +683,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 38,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -801,7 +801,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 32,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -866,7 +866,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 51,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
@@ -931,7 +931,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 70,
+      "order": 72,
       "mode": 0,
       "inputs": [
         {
@@ -995,7 +995,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 102,
+      "order": 104,
       "mode": 0,
       "inputs": [
         {
@@ -1083,7 +1083,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 104,
+      "order": 106,
       "mode": 0,
       "inputs": [
         {
@@ -1175,7 +1175,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 82,
+      "order": 84,
       "mode": 0,
       "inputs": [
         {
@@ -1217,7 +1217,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 40,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -1264,7 +1264,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 106,
+      "order": 108,
       "mode": 0,
       "inputs": [
         {
@@ -1423,7 +1423,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 42,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1487,7 +1487,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 61,
+      "order": 63,
       "mode": 0,
       "inputs": [
         {
@@ -1551,7 +1551,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 72,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -1615,7 +1615,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 108,
+      "order": 110,
       "mode": 0,
       "inputs": [
         {
@@ -1707,7 +1707,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 86,
+      "order": 88,
       "mode": 0,
       "inputs": [
         {
@@ -1749,7 +1749,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 85,
+      "order": 87,
       "mode": 0,
       "inputs": [
         {
@@ -1791,7 +1791,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 83,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -1833,7 +1833,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 43,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1880,7 +1880,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 45,
+      "order": 46,
       "mode": 0,
       "inputs": [
         {
@@ -1945,7 +1945,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 74,
+      "order": 76,
       "mode": 0,
       "inputs": [
         {
@@ -2009,7 +2009,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 110,
+      "order": 112,
       "mode": 0,
       "inputs": [
         {
@@ -2097,7 +2097,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 112,
+      "order": 114,
       "mode": 0,
       "inputs": [
         {
@@ -2187,7 +2187,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 89,
+      "order": 91,
       "mode": 0,
       "inputs": [
         {
@@ -2229,7 +2229,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 88,
+      "order": 90,
       "mode": 0,
       "inputs": [
         {
@@ -2271,7 +2271,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 134,
+      "order": 136,
       "mode": 0,
       "inputs": [
         {
@@ -2309,7 +2309,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 135,
+      "order": 137,
       "mode": 0,
       "inputs": [
         {
@@ -2436,7 +2436,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 136,
+      "order": 138,
       "mode": 0,
       "inputs": [
         {
@@ -2474,7 +2474,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 133,
+      "order": 135,
       "mode": 0,
       "inputs": [
         {
@@ -2526,7 +2526,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 94,
+      "order": 97,
       "mode": 0,
       "inputs": [
         {
@@ -2614,7 +2614,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 65,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -2678,7 +2678,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 62,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
@@ -2705,7 +2705,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 63,
+      "order": 65,
       "mode": 0,
       "inputs": [
         {
@@ -2732,7 +2732,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 59,
+      "order": 61,
       "mode": 0,
       "inputs": [
         {
@@ -2759,7 +2759,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 60,
+      "order": 62,
       "mode": 0,
       "inputs": [
         {
@@ -2786,7 +2786,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 57,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -2813,7 +2813,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 58,
+      "order": 60,
       "mode": 0,
       "inputs": [
         {
@@ -2840,7 +2840,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 55,
+      "order": 57,
       "mode": 0,
       "inputs": [
         {
@@ -2867,7 +2867,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 56,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -2884,8 +2884,8 @@
       "id": 2,
       "type": "VAELoader",
       "pos": [
-        262.23571513338476,
-        244.27472999071242
+        247.5471272403185,
+        537.5821445662128
       ],
       "size": {
         "0": 315,
@@ -2918,8 +2918,8 @@
       "id": 73,
       "type": "Reroute",
       "pos": [
-        1332.9210880779417,
-        106.13544466727471
+        1318.2325001848747,
+        399.4428592427753
       ],
       "size": [
         140.8,
@@ -2928,7 +2928,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 77,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -2958,8 +2958,8 @@
       "id": 72,
       "type": "Reroute",
       "pos": [
-        1372.9210880779412,
-        146.1354446672747
+        1358.2325001848742,
+        439.4428592427753
       ],
       "size": [
         140.8,
@@ -2968,7 +2968,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 78,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -3196,10 +3196,10 @@
         1695.6301472987243,
         1101.4096494857615
       ],
-      "size": [
-        300,
-        314.0000190734863
-      ],
+      "size": {
+        "0": 300,
+        "1": 314.0000305175781
+      },
       "flags": {
         "pinned": true
       },
@@ -3383,8 +3383,8 @@
       "id": 221,
       "type": "Integer",
       "pos": [
-        -83.56937748022523,
-        117.32034320267515
+        -98.25796537329168,
+        410.62775777817575
       ],
       "size": {
         "0": 315,
@@ -3420,8 +3420,8 @@
       "id": 6,
       "type": "CLIPSetLastLayer",
       "pos": [
-        -93.56937748022524,
-        237.32034320267522
+        -108.25796537329171,
+        530.6277577781758
       ],
       "size": {
         "0": 315,
@@ -3430,7 +3430,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 50,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
@@ -3465,8 +3465,8 @@
       "id": 5,
       "type": "FreeU_V2",
       "pos": [
-        -93.56937748022524,
-        347.3203432026744
+        -108.25796537329171,
+        640.6277577781749
       ],
       "size": {
         "0": 315,
@@ -3475,7 +3475,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 79,
+      "order": 80,
       "mode": 0,
       "inputs": [
         {
@@ -3509,8 +3509,8 @@
       "id": 8,
       "type": "ADE_AnimateDiffUniformContextOptions",
       "pos": [
-        -93.56937748022524,
-        547.3203432026756
+        -108.25796537329171,
+        840.6277577781758
       ],
       "size": {
         "0": 315,
@@ -3546,8 +3546,8 @@
       "id": 12,
       "type": "CLIPTextEncode",
       "pos": [
-        636.4306225197749,
-        977.3203432026755
+        621.7420346267088,
+        1270.6277577781757
       ],
       "size": {
         "0": 590,
@@ -3556,7 +3556,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 68,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
@@ -3600,7 +3600,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 126,
+      "order": 128,
       "mode": 0,
       "inputs": [
         {
@@ -3675,12 +3675,12 @@
       ],
       "size": [
         320,
-        689
+        710
       ],
       "flags": {
         "pinned": true
       },
-      "order": 139,
+      "order": 141,
       "mode": 0,
       "inputs": [
         {
@@ -3688,9 +3688,21 @@
           "type": "IMAGE",
           "link": 424,
           "slot_index": 0
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "link": null
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -3699,11 +3711,11 @@
         "loop_count": 0,
         "filename_prefix": "2023-11-24/travel",
         "format": "video/h264-mp4",
-        "pingpong": false,
-        "save_image": true,
+        "pix_fmt": "yuv420p",
         "crf": 20,
         "save_metadata": true,
-        "audio_file": "",
+        "pingpong": false,
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -3730,7 +3742,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 81,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -3772,7 +3784,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 127,
+      "order": 129,
       "mode": 0,
       "inputs": [
         {
@@ -3897,7 +3909,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 35,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -3940,7 +3952,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 37,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -3983,7 +3995,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 39,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -4026,7 +4038,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 41,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -4069,7 +4081,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 44,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -4112,7 +4124,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 130,
+      "order": 132,
       "mode": 0,
       "inputs": [
         {
@@ -4264,7 +4276,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 48,
+      "order": 49,
       "mode": 0,
       "inputs": [
         {
@@ -4319,7 +4331,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 66,
+      "order": 68,
       "mode": 0,
       "inputs": [
         {
@@ -4383,7 +4395,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 75,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -4425,7 +4437,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 53,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -4452,7 +4464,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 76,
+      "order": 78,
       "mode": 0,
       "inputs": [
         {
@@ -4494,7 +4506,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 54,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
@@ -4521,7 +4533,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 80,
+      "order": 81,
       "mode": 0,
       "inputs": [
         {
@@ -4566,7 +4578,7 @@
         0,
         "Pad prompt/negative prompt to be same length\nimproves performance when prompt and negative prompt have different lengths; changes seeds. Only for CFGDenoiser.",
         true,
-        "Batch cond/uncond\ndo both conditional and unconditional denoising in one batch; uses a bit more VRAM during sampling, but improves speed ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ enabled on SDXL models. Only for CFGDenoiser.",
+        "Batch cond/uncond\ndo both conditional and unconditional denoising in one batch; uses a bit more VRAM during sampling, but improves speed ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ enabled on SDXL models. Only for CFGDenoiser.",
         false,
         "Compatibility",
         "Previous prompt editing timelines\nFor [red:green:N]; previous: If N < 1, it's a fraction of steps (and hires fix uses range from 0 to 1), if N >= 1, it's an absolute number of steps; new: If N has a decimal point in it, it's a fraction of steps (and hires fix uses range from 1 to 2), othewrwise it's an absolute number of steps",
@@ -4615,7 +4627,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 132,
+      "order": 134,
       "mode": 0,
       "inputs": [
         {
@@ -4676,12 +4688,12 @@
       ],
       "size": {
         "0": 319.20001220703125,
-        "1": 286
+        "1": 334
       },
       "flags": {
         "pinned": true
       },
-      "order": 131,
+      "order": 133,
       "mode": 0,
       "inputs": [
         {
@@ -4729,7 +4741,9 @@
         0.5,
         10,
         0,
-        0.7
+        0.7,
+        "Pivot SEGS",
+        "Combined mask"
       ]
     },
     {
@@ -4741,12 +4755,12 @@
       ],
       "size": {
         "0": 443.4000244140625,
-        "1": 198
+        "1": 222
       },
       "flags": {
         "pinned": true
       },
-      "order": 138,
+      "order": 140,
       "mode": 0,
       "inputs": [
         {
@@ -4780,7 +4794,8 @@
         4,
         true,
         true,
-        1
+        1,
+        true
       ]
     },
     {
@@ -4795,7 +4810,7 @@
         "1": 250
       },
       "flags": {},
-      "order": 137,
+      "order": 139,
       "mode": 0,
       "inputs": [
         {
@@ -4820,7 +4835,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 129,
+      "order": 131,
       "mode": 0,
       "inputs": [
         {
@@ -4905,7 +4920,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 49,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
@@ -4983,7 +4998,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 128,
+      "order": 130,
       "mode": 0,
       "inputs": [
         {
@@ -5015,8 +5030,8 @@
       "id": 271,
       "type": "CR Apply LoRA Stack",
       "pos": [
-        -33.37162803709765,
-        878.94647388708
+        -48.06021593016405,
+        1172.2538884625799
       ],
       "size": {
         "0": 210,
@@ -5025,7 +5040,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 69,
+      "order": 70,
       "mode": 0,
       "inputs": [
         {
@@ -5079,17 +5094,17 @@
       "id": 4,
       "type": "ADE_AnimateDiffLoaderWithContext",
       "pos": [
-        246.62837196290246,
-        528.94647388708
+        231.93978406983615,
+        822.2538884625802
       ],
       "size": {
         "0": 342.5999755859375,
-        "1": 190
+        "1": 210
       },
       "flags": {
         "pinned": true
       },
-      "order": 95,
+      "order": 96,
       "mode": 0,
       "inputs": [
         {
@@ -5111,6 +5126,11 @@
         {
           "name": "motion_model_settings",
           "type": "MOTION_MODEL_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "sample_settings",
+          "type": "sample_settings",
           "link": null
         }
       ],
@@ -5139,8 +5159,8 @@
       "id": 270,
       "type": "CR LoRA Stack",
       "pos": [
-        256.62837196290246,
-        768.94647388708
+        241.9397840698362,
+        1062.2538884625797
       ],
       "size": {
         "0": 315,
@@ -5197,8 +5217,8 @@
       "id": 47,
       "type": "ADE_EmptyLatentImageLarge",
       "pos": [
-        256.62837196290246,
-        358.9464738870793
+        241.9397840698362,
+        652.2538884625798
       ],
       "size": {
         "0": 320,
@@ -5207,7 +5227,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 46,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -5243,8 +5263,8 @@
       "id": 244,
       "type": "ModelSamplingDiscrete",
       "pos": [
-        -93.37162803709789,
-        738.94647388708
+        -108.06021593016436,
+        1032.2538884625799
       ],
       "size": {
         "0": 315,
@@ -5253,7 +5273,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 92,
+      "order": 93,
       "mode": 0,
       "inputs": [
         {
@@ -5311,8 +5331,8 @@
       "id": 220,
       "type": "Reroute",
       "pos": [
-        1492.647604140637,
-        512.9679963327584
+        1477.95901624757,
+        806.2754109082586
       ],
       "size": [
         90.4,
@@ -5321,7 +5341,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 64,
+      "order": 66,
       "mode": 0,
       "inputs": [
         {
@@ -5361,7 +5381,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 97,
+      "order": 99,
       "mode": 0,
       "inputs": [
         {
@@ -5398,7 +5418,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 99,
+      "order": 101,
       "mode": 0,
       "inputs": [
         {
@@ -5435,7 +5455,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 101,
+      "order": 103,
       "mode": 0,
       "inputs": [
         {
@@ -5472,7 +5492,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 103,
+      "order": 105,
       "mode": 0,
       "inputs": [
         {
@@ -5509,7 +5529,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 109,
+      "order": 111,
       "mode": 0,
       "inputs": [
         {
@@ -5546,7 +5566,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 111,
+      "order": 113,
       "mode": 0,
       "inputs": [
         {
@@ -5583,7 +5603,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 113,
+      "order": 115,
       "mode": 0,
       "inputs": [
         {
@@ -5623,7 +5643,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 114,
+      "order": 116,
       "mode": 0,
       "inputs": [
         {
@@ -5663,7 +5683,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 107,
+      "order": 109,
       "mode": 0,
       "inputs": [
         {
@@ -5701,7 +5721,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 105,
+      "order": 107,
       "mode": 0,
       "inputs": [
         {
@@ -5837,7 +5857,7 @@
         26
       ],
       "flags": {},
-      "order": 47,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -5876,7 +5896,7 @@
         26
       ],
       "flags": {},
-      "order": 124,
+      "order": 126,
       "mode": 0,
       "inputs": [
         {
@@ -5912,7 +5932,7 @@
         26
       ],
       "flags": {},
-      "order": 125,
+      "order": 127,
       "mode": 0,
       "inputs": [
         {
@@ -5948,7 +5968,7 @@
         26
       ],
       "flags": {},
-      "order": 87,
+      "order": 89,
       "mode": 0,
       "inputs": [
         {
@@ -5976,8 +5996,8 @@
       "id": 163,
       "type": "ToBasicPipe",
       "pos": [
-        1386.547287056494,
-        228.4518717773539
+        1371.858699163427,
+        521.7592863528545
       ],
       "size": {
         "0": 241.79998779296875,
@@ -5986,7 +6006,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 123,
+      "order": 125,
       "mode": 0,
       "inputs": [
         {
@@ -6034,8 +6054,8 @@
       "id": 305,
       "type": "Reroute",
       "pos": [
-        1470,
-        590
+        1455.311412106933,
+        883.3074145755003
       ],
       "size": [
         140.8,
@@ -6044,7 +6064,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 122,
+      "order": 124,
       "mode": 0,
       "inputs": [
         {
@@ -6078,8 +6098,8 @@
       "id": 304,
       "type": "Reroute",
       "pos": [
-        1470,
-        430
+        1455.311412106933,
+        723.3074145755005
       ],
       "size": [
         140.8,
@@ -6088,7 +6108,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 121,
+      "order": 123,
       "mode": 0,
       "inputs": [
         {
@@ -6130,7 +6150,7 @@
         26
       ],
       "flags": {},
-      "order": 90,
+      "order": 95,
       "mode": 0,
       "inputs": [
         {
@@ -6168,7 +6188,7 @@
         26
       ],
       "flags": {},
-      "order": 91,
+      "order": 92,
       "mode": 0,
       "inputs": [
         {
@@ -6206,7 +6226,7 @@
         26
       ],
       "flags": {},
-      "order": 118,
+      "order": 120,
       "mode": 0,
       "inputs": [
         {
@@ -6248,7 +6268,7 @@
         26
       ],
       "flags": {},
-      "order": 117,
+      "order": 119,
       "mode": 0,
       "inputs": [
         {
@@ -6290,7 +6310,7 @@
         26
       ],
       "flags": {},
-      "order": 119,
+      "order": 121,
       "mode": 0,
       "inputs": [
         {
@@ -6328,7 +6348,7 @@
         26
       ],
       "flags": {},
-      "order": 120,
+      "order": 122,
       "mode": 0,
       "inputs": [
         {
@@ -6366,7 +6386,7 @@
         26
       ],
       "flags": {},
-      "order": 73,
+      "order": 75,
       "mode": 0,
       "inputs": [
         {
@@ -6402,7 +6422,7 @@
         26
       ],
       "flags": {},
-      "order": 116,
+      "order": 118,
       "mode": 0,
       "inputs": [
         {
@@ -6440,7 +6460,7 @@
         26
       ],
       "flags": {},
-      "order": 115,
+      "order": 117,
       "mode": 0,
       "inputs": [
         {
@@ -6463,72 +6483,6 @@
         "showOutputText": true,
         "horizontal": false
       },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 11,
-      "type": "BatchPromptSchedule",
-      "pos": [
-        626.4306225197749,
-        107.36595553788023
-      ],
-      "size": {
-        "0": 620,
-        "1": 820
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 67,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 501
-        },
-        {
-          "name": "max_frames",
-          "type": "INT",
-          "link": 327,
-          "widget": {
-            "name": "max_frames"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "POS",
-          "type": "CONDITIONING",
-          "links": [
-            274
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "NEG",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BatchPromptSchedule"
-      },
-      "widgets_values": [
-        "\"0\" :\"(wonderland, forester, star:1.4)\",\n\"12\" :\"(fire, flying flower petals, swirling flames:1.4)\",\n\"24\" :\"(lightning and windy, flying flower petals:1.4)\",\n\"36\" :\"(water, field of flowers, crashing waves:1.4)\",\n\"48\" :\"(hearts, crashing waves, love:1.4, pink haze)\",\n\"60\" :\"(hearts, flying flower petals, love, pink haze:1.4)\"",
-        60,
-        false,
-        "(realistic, photorealistic:1.4), hyper detailed, day light, walking,",
-        "medium shot, whole body, (deep v dress), looking at viewer",
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "color": "#232",
       "bgcolor": "#353"
     },
@@ -6569,7 +6523,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 93,
+      "order": 94,
       "mode": 0,
       "inputs": [
         {
@@ -6606,15 +6560,90 @@
       ]
     },
     {
+      "id": 11,
+      "type": "BatchPromptSchedule",
+      "pos": [
+        625.3114121069339,
+        833.3074145755003
+      ],
+      "size": [
+        580,
+        370
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 71,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 501
+        },
+        {
+          "name": "max_frames",
+          "type": "INT",
+          "link": 327,
+          "widget": {
+            "name": "max_frames"
+          }
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 514,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "POS",
+          "type": "CONDITIONING",
+          "links": [
+            274
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "NEG",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchPromptSchedule"
+      },
+      "widgets_values": [
+        "\"0\" :\"(wonderland, forester, star:1.4)\",\n\"12\" :\"(fire, flying flower petals, swirling flames:1.4)\",\n\"24\" :\"(lightning and windy, flying flower petals:1.4)\",\n\"36\" :\"(water, field of flowers, crashing waves:1.4)\",\n\"48\" :\"(hearts, crashing waves, love:1.4, pink haze)\",\n\"60\" :\"(hearts, flying flower petals, love, pink haze:1.4)\"",
+        60,
+        false,
+        "(realistic, photorealistic:1.4), hyper detailed, day light, walking,",
+        "medium shot, whole body, (deep v dress), looking at viewer",
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
       "id": 317,
       "type": "CheckpointLoaderSimpleWithNoiseSelect",
       "pos": [
-        263,
-        75
+        245.31141210693374,
+        323.30741457550056
       ],
       "size": {
-        "0": 315,
-        "1": 122
+        "0": 319.20001220703125,
+        "1": 170
       },
       "flags": {
         "pinned": true
@@ -6652,7 +6681,112 @@
       },
       "widgets_values": [
         "00_realisian_v40.safetensors",
-        "linear (HotshotXL/default)"
+        "linear (HotshotXL/default)",
+        false,
+        0.18215
+      ]
+    },
+    {
+      "id": 319,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        605.3114121069339,
+        473.30741457550056
+      ],
+      "size": [
+        610,
+        322
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": 513,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            514
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        48,
+        60,
+        0,
+        "(hearts, crashing waves, love:1.4, pink haze)",
+        "(hearts, flying flower petals, love, pink haze:1.4)",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 318,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        615.3114121069339,
+        93.30741457550037
+      ],
+      "size": [
+        600,
+        330
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            513
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "(wonderland, forester, star:1.4)",
+        "(fire, flying flower petals, swirling flames:1.4)",
+        "(lightning and windy, flying flower petals:1.4)",
+        "(water, field of flowers, crashing waves:1.4)",
+        ""
       ]
     }
   ],
@@ -8056,6 +8190,22 @@
       271,
       1,
       "CLIP"
+    ],
+    [
+      513,
+      318,
+      0,
+      319,
+      0,
+      "STRING"
+    ],
+    [
+      514,
+      319,
+      0,
+      11,
+      2,
+      "STRING"
     ]
   ],
   "groups": [
@@ -8122,10 +8272,10 @@
     {
       "title": "Setup",
       "bounding": [
-        -103,
-        21,
-        1741,
-        1167
+        -118,
+        19,
+        1742,
+        1461
       ],
       "color": "#3f789e",
       "font_size": 24,

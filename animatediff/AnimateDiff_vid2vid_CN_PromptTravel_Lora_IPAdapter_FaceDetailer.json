@@ -1,6 +1,6 @@
 {
-  "last_node_id": 118,
-  "last_link_id": 282,
+  "last_node_id": 121,
+  "last_link_id": 286,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         240,
-        222
+        240
       ],
       "flags": {
         "pinned": true
@@ -38,6 +38,12 @@
           ],
           "shape": 3,
           "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "links": null,
+          "shape": 3
         }
       ],
       "properties": {
@@ -59,7 +65,11 @@
           "params": {
             "filename": "test6_510x660_5s.mp4",
             "type": "input",
-            "format": "video"
+            "format": "video/mp4",
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "force_rate": 16,
+            "select_every_nth": 1
           }
         }
       }
@@ -117,7 +127,7 @@
       ],
       "size": {
         "0": 342.5999755859375,
-        "1": 190
+        "1": 210
       },
       "flags": {
         "pinned": true
@@ -148,6 +158,11 @@
           "type": "MOTION_MODEL_SETTINGS",
           "link": null,
           "slot_index": 3
+        },
+        {
+          "name": "sample_settings",
+          "type": "sample_settings",
+          "link": null
         }
       ],
       "outputs": [
@@ -408,10 +423,10 @@
         902.0267649169939,
         -323.795518411255
       ],
-      "size": [
-        320,
-        313.99998474121094
-      ],
+      "size": {
+        "0": 320,
+        "1": 314
+      },
       "flags": {
         "pinned": true
       },
@@ -901,7 +916,7 @@
       ],
       "size": [
         320,
-        689
+        710
       ],
       "flags": {
         "pinned": true
@@ -913,9 +928,21 @@
           "name": "images",
           "type": "IMAGE",
           "link": 34
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "link": null
         }
       ],
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
@@ -924,11 +951,11 @@
         "loop_count": 0,
         "filename_prefix": "hina/FD_IPA_Animate",
         "format": "video/h264-mp4",
-        "pingpong": false,
-        "save_image": true,
+        "pix_fmt": "yuv420p",
         "crf": 18,
         "save_metadata": true,
-        "audio_file": "",
+        "pingpong": false,
+        "save_output": true,
         "videopreview": {
           "hidden": false,
           "paused": false,
@@ -940,52 +967,6 @@
           }
         }
       }
-    },
-    {
-      "id": 19,
-      "type": "CLIPTextEncode",
-      "pos": [
-        296.3016916427612,
-        675.9496332130427
-      ],
-      "size": {
-        "0": 630,
-        "1": 180
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 279,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            86,
-            234
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,\n"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 95,
@@ -1058,43 +1039,6 @@
       ],
       "color": "#432",
       "bgcolor": "#653"
-    },
-    {
-      "id": 93,
-      "type": "Text box",
-      "pos": [
-        286.3016916427612,
-        425.94963321304334
-      ],
-      "size": {
-        "0": 640,
-        "1": 200
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 10,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            223
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "Text box"
-      },
-      "widgets_values": [
-        "\"0\" :\"summer season, pink flower, \",\n\"12\" :\"summer season, pink flower, white flower, \",\n\"24\" :\"winter season, white flower, \",\n\"36\" :\"winter season, white flower, sunset, \",\n\"48\" :\"summer season, pink flower, white flower, \",\n"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 24,
@@ -1265,7 +1209,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1308,7 +1252,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "outputs": [
         {
@@ -1343,7 +1287,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1396,7 +1340,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1415,7 +1359,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 223,
+          "link": 286,
           "widget": {
             "name": "text"
           }
@@ -1575,7 +1519,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1838,11 +1782,11 @@
         258
       ],
       "size": {
-        "0": 315,
-        "1": 122
+        "0": 319.20001220703125,
+        "1": 170
       },
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -1882,8 +1826,110 @@
       },
       "widgets_values": [
         "00_realisian_v40.safetensors",
-        "linear (HotshotXL/default)"
+        "linear (HotshotXL/default)",
+        false,
+        0.18215
       ]
+    },
+    {
+      "id": 19,
+      "type": "CLIPTextEncode",
+      "pos": [
+        290,
+        480
+      ],
+      "size": [
+        620,
+        370
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 279,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            86,
+            234
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 120,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -320,
+        390
+      ],
+      "size": [
+        590,
+        460
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            286
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        12,
+        24,
+        36,
+        "(wonderland, forester, star:1.4)",
+        "(fire, flying flower petals, swirling flames:1.4)",
+        "(lightning and windy, flying flower petals:1.4)",
+        "(water, field of flowers, crashing waves:1.4)",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -2144,14 +2190,6 @@
       "INT"
     ],
     [
-      223,
-      93,
-      0,
-      97,
-      2,
-      "STRING"
-    ],
-    [
       224,
       94,
       0,
@@ -2310,6 +2348,14 @@
       105,
       0,
       "CLIP"
+    ],
+    [
+      286,
+      120,
+      0,
+      97,
+      2,
+      "STRING"
     ]
   ],
   "groups": [

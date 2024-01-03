@@ -20,29 +20,29 @@ class promptScheduleHelper:
                     "default": 0,
                     "min": 0
                 }),
-                "text_1": ("STRING", {
-                    "multiline": True,
-                    "default": "",
-                }),
                 "frame_2": ("INT", {
                     "default": 12,
                     "min": 0
-                }),
-                "text_2": ("STRING", {
-                    "multiline": True,
-                    "default": "",
                 }),
                 "frame_3": ("INT", {
                     "default": 24,
                     "min": 0
                 }),
-                "text_3": ("STRING", {
-                    "multiline": True,
-                    "default": "",
-                }),
                 "frame_4": ("INT", {
                     "default": 36,
                     "min": 0
+                }),
+                "text_1": ("STRING", {
+                    "multiline": True,
+                    "default": "",
+                }),
+                "text_2": ("STRING", {
+                    "multiline": True,
+                    "default": "",
+                }),
+                "text_3": ("STRING", {
+                    "multiline": True,
+                    "default": "",
                 }),
                 "text_4": ("STRING", {
                     "multiline": True,
@@ -55,7 +55,7 @@ class promptScheduleHelper:
     FUNCTION = "combinePromptScheduleToText"
     CATEGORY = "advanced"
 
-    def combinePromptScheduleToText(self, text_in_opt="", frame_1=0, text_1="", frame_2=0, text_2="", frame_3=0, text_3="", frame_4=0, text_4=""):
+    def combinePromptScheduleToText(self, text_in_opt="",frame_1=0, frame_2=0, frame_3=0, frame_4=0, text_1="", text_2="", text_3="", text_4=""):
         frames = []
 
         if text_in_opt != "":
