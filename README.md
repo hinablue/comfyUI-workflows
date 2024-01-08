@@ -66,6 +66,9 @@ This tool will help you merge keyframes with prompt content and there are some f
 
 # SDXL
 
+## SDXL_Fast_Portrait
+![SDXL_Fast_Portrait](sdxl/SDXL_Fast_Portrait.png)
+
 ## GTM_SDXL_cleanUI_v1.1_hina_noise
 ![GTM_SDXL_cleanUI_v1.1_hina_noise](sdxl/GTM_SDXL_cleanUI_v1.1_hina_noise.png)
 
@@ -78,6 +81,12 @@ This tool will help you merge keyframes with prompt content and there are some f
 ---
 
 # SD1.5
+
+## SD1.5_Auto_Clothing
+![SD1.5_Auto_Clothing](sd15/SD1.5_Auto_Clothing.png)
+
+## SD15_Fast_Portrait
+![SD15_Fast_Portrait](sd15/SD15_Fast_Portrait.png)
 
 ## SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID
 ![SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID](sd15/SD1.5_upscaler_2pass_faceDetailer_CN_Lora_IPAdapter_FaceID.png)
