@@ -1,6 +1,6 @@
 {
-  "last_node_id": 93,
-  "last_link_id": 195,
+  "last_node_id": 94,
+  "last_link_id": 197,
   "nodes": [
     {
       "id": 8,
@@ -33,7 +33,7 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            126
+            197
           ],
           "slot_index": 1,
           "shape": 3
@@ -70,7 +70,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -120,7 +120,7 @@
       },
       "widgets_values": [
         "enable",
-        986179659981383,
+        950441660234668,
         "randomize",
         20,
         5,
@@ -145,7 +145,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -189,7 +189,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -252,7 +252,7 @@
       },
       "widgets_values": [
         2,
-        542396553774887,
+        901253267946061,
         "randomize",
         20,
         5,
@@ -327,7 +327,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -357,7 +357,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -384,7 +384,7 @@
         900
       ],
       "flags": {},
-      "order": 28,
+      "order": 29,
       "mode": 4,
       "inputs": [
         {
@@ -513,7 +513,7 @@
         256,
         true,
         768,
-        959103812493130,
+        727866858566171,
         "randomize",
         20,
         5,
@@ -629,7 +629,7 @@
         30
       ],
       "flags": {},
-      "order": 31,
+      "order": 32,
       "mode": 4,
       "inputs": [
         {
@@ -666,7 +666,7 @@
         250
       ],
       "flags": {},
-      "order": 32,
+      "order": 33,
       "mode": 4,
       "inputs": [
         {
@@ -693,7 +693,7 @@
         710
       ],
       "flags": {},
-      "order": 29,
+      "order": 30,
       "mode": 4,
       "inputs": [
         {
@@ -760,7 +760,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -843,7 +843,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1029,7 +1029,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1138,7 +1138,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1193,7 +1193,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1269,7 +1269,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -1321,7 +1321,7 @@
         "Node name for S&R": "UltimateSDUpscaleNoUpscale"
       },
       "widgets_values": [
-        683929683495296,
+        83589254654026,
         "randomize",
         20,
         5,
@@ -1464,7 +1464,7 @@
         630
       ],
       "flags": {},
-      "order": 30,
+      "order": 31,
       "mode": 4,
       "inputs": [
         {
@@ -1610,7 +1610,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1621,7 +1621,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 126
+          "link": 196
         },
         {
           "name": "lora_stack",
@@ -1696,7 +1696,7 @@
         "Node name for S&R": "DF_Text_Box"
       },
       "widgets_values": [
-        "masterpiece, best quality, raw photo, realistic, adult girl, looking at viewer, supporting head on two hands, long hair, sweater, sweater hat, extremely beautiful detailed face, best shadow, medium breasts, (cute face, temptations look), snowing, snowing background, (sepia photography), (professional photo, balanced photo, balanced exposure)",
+        "1woman, solo, long hair, pink hair, black choker, green eyes, one eye covered by hair, eyeliner, gorgeous lips, tights, medium breasts cinematic, (masterpiece), (best quality), (ultra-detailed), very aesthetic, illustration, detailed eyes, perfect eyes, detailed face, (beautiful detailed face, beautiful detailed eyes) ,extreme details eyes voluptuous, scenery, oiled body, bright day, inoue orihime, long white sundress, sunflower fields, standing, outdoor, blue sky, clouds, sun, sun rays, downblouse, cleavage focus, bent over, oversized clothes, loose clothes, ample clothes, blushing, ",
         [
           false,
           true
@@ -1704,6 +1704,46 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 94,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        -590,
+        1020
+      ],
+      "size": [
+        320,
+        60
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 197
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            196
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
     }
   ],
   "links": [
@@ -1866,14 +1906,6 @@
       71,
       0,
       "MODEL"
-    ],
-    [
-      126,
-      8,
-      1,
-      71,
-      1,
-      "CLIP"
     ],
     [
       128,
@@ -2130,6 +2162,22 @@
       77,
       3,
       "STRING"
+    ],
+    [
+      196,
+      94,
+      0,
+      71,
+      1,
+      "CLIP"
+    ],
+    [
+      197,
+      8,
+      1,
+      94,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
@@ -2150,10 +2198,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.964614964500003,
+      "scale": 0.8769226950000032,
       "offset": [
-        1142.6426771766894,
-        74.25016386675864
+        1075.0909989504512,
+        137.38834069322874
       ]
     }
   },
