@@ -1,6 +1,6 @@
 {
-  "last_node_id": 149,
-  "last_link_id": 275,
+  "last_node_id": 156,
+  "last_link_id": 281,
   "nodes": [
     {
       "id": 114,
@@ -11,12 +11,12 @@
       ],
       "size": {
         "0": 210,
-        "1": 46
+        "1": 50
       },
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -46,105 +46,6 @@
       }
     },
     {
-      "id": 115,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        1135.02526525879,
-        181.49681190490725
-      ],
-      "size": [
-        430,
-        870
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 220
-        },
-        {
-          "name": "audio",
-          "type": "VHS_AUDIO",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 6,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 20,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00018.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4"
-          }
-        }
-      }
-    },
-    {
-      "id": 30,
-      "type": "ADE_AnimateDiffUniformContextOptions",
-      "pos": [
-        360,
-        760
-      ],
-      "size": {
-        "0": 350,
-        "1": 154
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CONTEXT_OPTIONS",
-          "type": "CONTEXT_OPTIONS",
-          "links": [
-            140
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ADE_AnimateDiffUniformContextOptions"
-      },
-      "widgets_values": [
-        16,
-        1,
-        4,
-        "uniform",
-        false
-      ]
-    },
-    {
       "id": 137,
       "type": "CheckpointLoaderSimpleWithNoiseSelect",
       "pos": [
@@ -152,13 +53,13 @@
         90
       ],
       "size": {
-        "0": 319.20001220703125,
+        "0": 320,
         "1": 170
       },
       "flags": {
         "pinned": true
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -190,10 +91,10 @@
         "Node name for S&R": "CheckpointLoaderSimpleWithNoiseSelect"
       },
       "widgets_values": [
-        "zHina/8964_detailRealisticBakedVAE_SP_fp16_v45.safetensors",
+        "zHina/8964_detailRealisticBakedVAE_SP_fp16_v70-mix.safetensors",
         "sqrt_linear (AnimateDiff)",
         false,
-        0.18215
+        1
       ]
     },
     {
@@ -204,13 +105,13 @@
         320
       ],
       "size": {
-        "0": 315,
-        "1": 58
+        "0": 320,
+        "1": 60
       },
       "flags": {
         "pinned": true
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -231,43 +132,6 @@
       ]
     },
     {
-      "id": 131,
-      "type": "Integer",
-      "pos": [
-        360,
-        90
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            245
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Animate Length (seconds)",
-      "properties": {
-        "Node name for S&R": "Integer"
-      },
-      "widgets_values": [
-        3
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
       "id": 143,
       "type": "CR SD1.5 Aspect Ratio",
       "pos": [
@@ -281,7 +145,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -359,8 +223,8 @@
         750
       ],
       "size": {
-        "0": 315,
-        "1": 58
+        "0": 320,
+        "1": 60
       },
       "flags": {
         "pinned": true
@@ -394,32 +258,479 @@
       ]
     },
     {
-      "id": 134,
-      "type": "MathExpression|pysssss",
+      "id": 136,
+      "type": "ADE_AnimateDiffUnload",
       "pos": [
+        840,
+        910
+      ],
+      "size": {
+        "0": 210,
+        "1": 30
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 249
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ADE_AnimateDiffUnload"
+      }
+    },
+    {
+      "id": 115,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1140,
+        190
+      ],
+      "size": [
         430,
-        310
+        920
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 220
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "link": 281,
+          "widget": {
+            "name": "frame_rate"
+          },
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 6,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 20,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00003.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 150,
+      "type": "DF_Integer",
+      "pos": [
+        380,
+        90
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            276,
+            280
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Output Frame Rate",
+      "properties": {
+        "Node name for S&R": "DF_Integer"
+      },
+      "widgets_values": [
+        8
+      ]
+    },
+    {
+      "id": 144,
+      "type": "PromptScheduleHelper",
+      "pos": [
+        -476.4399475097656,
+        494.01066589355435
+      ],
+      "size": {
+        "0": 430,
+        "1": 470
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_in_opt",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_in_opt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_out",
+          "type": "STRING",
+          "links": [
+            265
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptScheduleHelper"
+      },
+      "widgets_values": [
+        0,
+        24,
+        96,
+        128,
+        "(looking away:`(0.5+0.5*sin(t/12))`), (close up), cherry blossom, hanami, pink flower, white flower, spring season, ",
+        "(looking at viewer:`(0.5+0.5*sin(t/12))`), (close up), orange leaves, yellow leaves, fall season,",
+        "(looking away:`(0.5+0.5*sin(t/max_f))`, (close up), cherry blossom, hanami, pink flower, white flower, spring season,",
+        "(looking at viewer:`(0.5+0.5*sin(t/12))`), (close up), orange leaves, yellow leaves, fall season,",
+        ""
+      ]
+    },
+    {
+      "id": 113,
+      "type": "CLIPTextEncode",
+      "pos": [
+        350,
+        380
+      ],
+      "size": {
+        "0": 400,
+        "1": 300
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 213
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            272
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(worst quality, low quality, normal quality), disabled body, sketches, (manicure:1.2), lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, jpeg artifacts, signature, watermark, username, blurry, illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 30,
+      "type": "ADE_AnimateDiffUniformContextOptions",
+      "pos": [
+        380,
+        720
       ],
       "size": {
         "0": 350,
-        "1": 116
+        "1": 270
       },
       "flags": {
-        "collapsed": true
+        "pinned": true
       },
-      "order": 8,
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prev_context",
+          "type": "CONTEXT_OPTIONS",
+          "link": null
+        },
+        {
+          "name": "view_opts",
+          "type": "VIEW_OPTS",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONTEXT_OPTIONS",
+          "type": "CONTEXT_OPTIONS",
+          "links": [
+            140
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ADE_AnimateDiffUniformContextOptions"
+      },
+      "widgets_values": [
+        16,
+        1,
+        4,
+        "uniform",
+        false,
+        "flat",
+        false,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 145,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        400,
+        1030
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 6,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 266,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            267
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "TCD-SDXL-LoRA.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 71,
+      "type": "ADE_AnimateDiffLoaderWithContext",
+      "pos": [
+        380,
+        1160
+      ],
+      "size": {
+        "0": 350,
+        "1": 230
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 267
+        },
+        {
+          "name": "context_options",
+          "type": "CONTEXT_OPTIONS",
+          "link": 140,
+          "slot_index": 1
+        },
+        {
+          "name": "motion_lora",
+          "type": "MOTION_LORA",
+          "link": null,
+          "slot_index": 2
+        },
+        {
+          "name": "motion_model_settings",
+          "type": "MOTION_MODEL_SETTINGS",
+          "link": null
+        },
+        {
+          "name": "sample_settings",
+          "type": "sample_settings",
+          "link": null
+        },
+        {
+          "name": "ad_keyframes",
+          "type": "AD_KEYFRAMES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            249,
+            271
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ADE_AnimateDiffLoaderWithContext"
+      },
+      "widgets_values": [
+        "mm_sd_v14.fp16.safetensors",
+        "sqrt_linear (AnimateDiff)",
+        1,
+        false
+      ]
+    },
+    {
+      "id": 151,
+      "type": "DF_Integer",
+      "pos": [
+        380,
+        210
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            277
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Animate Length (seconds)",
+      "properties": {
+        "Node name for S&R": "DF_Integer"
+      },
+      "widgets_values": [
+        16
+      ]
+    },
+    {
+      "id": 134,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        390,
+        320
+      ],
+      "size": {
+        "0": 350,
+        "1": 120
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": true
+      },
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
           "name": "a",
           "type": "INT,FLOAT,IMAGE,LATENT",
-          "link": 245,
+          "link": 277,
           "slot_index": 0
         },
         {
           "name": "b",
           "type": "INT,FLOAT,IMAGE,LATENT",
-          "link": 246
+          "link": 276
         },
         {
           "name": "c",
@@ -452,355 +763,50 @@
       ]
     },
     {
-      "id": 145,
-      "type": "LoraLoaderModelOnly",
+      "id": 156,
+      "type": "DF_Int_to_Float",
       "pos": [
-        380,
-        960
+        590,
+        320
       ],
       "size": {
-        "0": 315,
-        "1": 82
+        "0": 320,
+        "1": 60
       },
       "flags": {
+        "collapsed": true,
         "pinned": true
       },
-      "order": 6,
-      "mode": 4,
+      "order": 8,
+      "mode": 0,
       "inputs": [
         {
-          "name": "model",
-          "type": "MODEL",
-          "link": 266,
+          "name": "Value",
+          "type": "INT",
+          "link": 280,
+          "widget": {
+            "name": "Value"
+          },
           "slot_index": 0
         }
       ],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "FLOAT",
+          "type": "FLOAT",
           "links": [
-            267
+            281
           ],
           "shape": 3,
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "LoraLoaderModelOnly"
+        "Node name for S&R": "DF_Int_to_Float"
       },
       "widgets_values": [
-        "animatediff_sd15_v3_adapter.ckpt",
         1
       ]
-    },
-    {
-      "id": 71,
-      "type": "ADE_AnimateDiffLoaderWithContext",
-      "pos": [
-        370,
-        1080
-      ],
-      "size": {
-        "0": 350,
-        "1": 210
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 267
-        },
-        {
-          "name": "context_options",
-          "type": "CONTEXT_OPTIONS",
-          "link": 140,
-          "slot_index": 1
-        },
-        {
-          "name": "motion_lora",
-          "type": "MOTION_LORA",
-          "link": null,
-          "slot_index": 2
-        },
-        {
-          "name": "motion_model_settings",
-          "type": "MOTION_MODEL_SETTINGS",
-          "link": null
-        },
-        {
-          "name": "sample_settings",
-          "type": "sample_settings",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            249,
-            271
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ADE_AnimateDiffLoaderWithContext"
-      },
-      "widgets_values": [
-        "mm_sd_v14.fp16.safetensors",
-        "sqrt_linear (AnimateDiff)",
-        1,
-        false
-      ]
-    },
-    {
-      "id": 132,
-      "type": "Integer",
-      "pos": [
-        360,
-        190
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 4,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            246
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Output Frame Rate",
-      "properties": {
-        "Node name for S&R": "Integer"
-      },
-      "widgets_values": [
-        48
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 144,
-      "type": "PromptScheduleHelper",
-      "pos": [
-        -476.4399475097656,
-        494.01066589355435
-      ],
-      "size": {
-        "0": 430,
-        "1": 470
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_in_opt",
-          "type": "STRING",
-          "link": null,
-          "widget": {
-            "name": "text_in_opt"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text_out",
-          "type": "STRING",
-          "links": [
-            265
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PromptScheduleHelper"
-      },
-      "widgets_values": [
-        0,
-        24,
-        96,
-        132,
-        "(looking away:`(0.5+0.5*sin(t/12))`), (close up), cherry blossom, hanami, pink flower, white flower, spring season, ",
-        "(looking at viewer:`(0.5+0.5*sin(t/12))`), (close up), orange leaves, yellow leaves, fall season,",
-        "(looking away:`(0.5+0.5*sin(t/max_f))`, (close up), cherry blossom, hanami, pink flower, white flower, spring season,",
-        "(looking at viewer:`(0.5+0.5*sin(t/12))`), (close up), orange leaves, yellow leaves, fall season,",
-        ""
-      ]
-    },
-    {
-      "id": 142,
-      "type": "BatchPromptSchedule",
-      "pos": [
-        20,
-        860
-      ],
-      "size": [
-        320,
-        380
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 256
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 265,
-          "widget": {
-            "name": "text"
-          },
-          "slot_index": 1
-        },
-        {
-          "name": "max_frames",
-          "type": "INT",
-          "link": 270,
-          "widget": {
-            "name": "max_frames"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "POS",
-          "type": "CONDITIONING",
-          "links": [
-            273
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "NEG",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BatchPromptSchedule"
-      },
-      "widgets_values": [
-        "\"0\" :\"\",\n\"12\" :\"\",\n\"24\" :\"\",\n\"36\" :\"\",\n\"48\" :\"\",\n\"60\" :\"\",\n\"72\" :\"\",\n\"84\" :\"\",\n\"96\" :\"\",\n\"108\" :\"\",\n\"120\" :\"\"\n",
-        120,
-        false,
-        "1girl, posing to viewer, white kimono, brown long hair, hands on chests, ",
-        "outdoors, falling petals, wisteria, petals, flower, plum blossoms",
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": 113,
-      "type": "CLIPTextEncode",
-      "pos": [
-        350,
-        380
-      ],
-      "size": {
-        "0": 400,
-        "1": 300
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 213
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            272
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "illustration, 3d, sepia, painting, cartoons, sketch, (worst quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, bar censor, mosaic censor, black skin, black and white, dutch angle, white borders, multiple views, steam, breath, steaming body, deformed, disfigured, bad anatomy, extra limb, floating limbs, disconnected limbs, blurry, tattoo, text, missing fingers, fewer digits, signature, username, censorship, old, amateur drawing, bad hands,"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 136,
-      "type": "ADE_AnimateDiffUnload",
-      "pos": [
-        840,
-        910
-      ],
-      "size": {
-        "0": 210,
-        "1": 26
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 249
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ADE_AnimateDiffUnload"
-      }
     },
     {
       "id": 149,
@@ -810,11 +816,11 @@
         90
       ],
       "size": {
-        "0": 317.4000244140625,
-        "1": 658
+        "0": 320,
+        "1": 870
       },
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -872,7 +878,7 @@
         "fixed",
         20,
         7,
-        "dpmpp_2s_ancestral",
+        "dpmpp_2m_sde",
         "karras",
         0,
         10000,
@@ -889,6 +895,79 @@
         0.5,
         "false",
         "true"
+      ]
+    },
+    {
+      "id": 142,
+      "type": "BatchPromptSchedule",
+      "pos": [
+        20,
+        860
+      ],
+      "size": {
+        "0": 320,
+        "1": 380
+      },
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 256
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 265,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "max_frames",
+          "type": "INT",
+          "link": 270,
+          "widget": {
+            "name": "max_frames"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "POS",
+          "type": "CONDITIONING",
+          "links": [
+            273
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "NEG",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchPromptSchedule"
+      },
+      "widgets_values": [
+        "\"0\" :\"\",\n\"12\" :\"\",\n\"24\" :\"\",\n\"36\" :\"\",\n\"48\" :\"\",\n\"60\" :\"\",\n\"72\" :\"\",\n\"84\" :\"\",\n\"96\" :\"\",\n\"108\" :\"\",\n\"120\" :\"\"\n",
+        120,
+        false,
+        "best quality, masterpiece, realistic, 1girl, posing to viewer, white kimono, brown long hair, hands on chests, ",
+        "outdoors, falling petals, wisteria, petals, flower, plum blossoms",
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     }
   ],
@@ -924,22 +1003,6 @@
       115,
       0,
       "IMAGE"
-    ],
-    [
-      245,
-      131,
-      0,
-      134,
-      0,
-      "INT,FLOAT,IMAGE,LATENT"
-    ],
-    [
-      246,
-      132,
-      0,
-      134,
-      1,
-      "INT,FLOAT,IMAGE,LATENT"
     ],
     [
       249,
@@ -1044,6 +1107,38 @@
       114,
       0,
       "LATENT"
+    ],
+    [
+      276,
+      150,
+      0,
+      134,
+      1,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      277,
+      151,
+      0,
+      134,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      280,
+      150,
+      0,
+      156,
+      0,
+      "INT"
+    ],
+    [
+      281,
+      156,
+      0,
+      115,
+      3,
+      "FLOAT"
     ]
   ],
   "groups": [
@@ -1064,8 +1159,8 @@
       "bounding": [
         2,
         16,
-        768,
-        1165
+        770,
+        1396
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1076,8 +1171,8 @@
       "bounding": [
         785,
         17,
-        790,
-        934
+        795,
+        959
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1085,6 +1180,14 @@
     }
   ],
   "config": {},
-  "extra": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9646149645000018,
+      "offset": {
+        "0": 504.1431404025925,
+        "1": 32.747360930108165
+      }
+    }
+  },
   "version": 0.4
 }
