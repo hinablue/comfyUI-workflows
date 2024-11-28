@@ -1,6 +1,6 @@
 {
-  "last_node_id": 92,
-  "last_link_id": 194,
+  "last_node_id": 93,
+  "last_link_id": 195,
   "nodes": [
     {
       "id": 8,
@@ -120,7 +120,7 @@
       },
       "widgets_values": [
         "enable",
-        720236083305676,
+        986179659981383,
         "randomize",
         20,
         5,
@@ -252,7 +252,7 @@
       },
       "widgets_values": [
         2,
-        711796410237795,
+        542396553774887,
         "randomize",
         20,
         5,
@@ -385,7 +385,7 @@
       ],
       "flags": {},
       "order": 28,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "image",
@@ -513,20 +513,20 @@
         256,
         true,
         768,
-        1076731250625025,
+        959103812493130,
         "randomize",
         20,
         5,
         "dpmpp_2m_sde_gpu",
         "exponential",
-        0.3,
+        0.5,
         5,
         true,
         true,
         0.5,
         10,
         3,
-        "center-1",
+        "mask-area",
         0,
         0.93,
         0,
@@ -535,7 +535,7 @@
         10,
         "",
         1,
-        false,
+        true,
         20,
         [
           false,
@@ -556,7 +556,7 @@
       ],
       "flags": {},
       "order": 2,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -597,7 +597,7 @@
       ],
       "flags": {},
       "order": 3,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -630,7 +630,7 @@
       ],
       "flags": {},
       "order": 31,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "mask",
@@ -667,7 +667,7 @@
       ],
       "flags": {},
       "order": 32,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "images",
@@ -694,7 +694,7 @@
       ],
       "flags": {},
       "order": 29,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "images",
@@ -722,7 +722,7 @@
       ],
       "flags": {},
       "order": 4,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -744,6 +744,53 @@
         "fixed",
         0,
         1
+      ]
+    },
+    {
+      "id": 67,
+      "type": "FreeU_V2",
+      "pos": [
+        70,
+        1060
+      ],
+      "size": [
+        320,
+        130
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 132
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            114,
+            115,
+            117,
+            164
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FreeU_V2"
+      },
+      "widgets_values": [
+        1.5,
+        1.6,
+        0.9,
+        0.2
       ]
     },
     {
@@ -796,7 +843,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1004,7 +1051,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 148,
+          "link": 195,
           "widget": {
             "name": "text"
           }
@@ -1209,47 +1256,6 @@
       ]
     },
     {
-      "id": 81,
-      "type": "DF_Text_Box",
-      "pos": [
-        -520,
-        880
-      ],
-      "size": [
-        510,
-        200
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            160
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt",
-      "properties": {
-        "Node name for S&R": "DF_Text_Box"
-      },
-      "widgets_values": [
-        "(worst quality, low quality, normal quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, disfigured, illustration, 3d,",
-        [
-          false,
-          true
-        ]
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 82,
       "type": "UltimateSDUpscaleNoUpscale",
       "pos": [
@@ -1315,7 +1321,7 @@
         "Node name for S&R": "UltimateSDUpscaleNoUpscale"
       },
       "widgets_values": [
-        618983284653535,
+        683929683495296,
         "randomize",
         20,
         5,
@@ -1334,6 +1340,43 @@
         16,
         true,
         false
+      ]
+    },
+    {
+      "id": 85,
+      "type": "easy seed",
+      "pos": [
+        420,
+        840
+      ],
+      "size": [
+        320,
+        110
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            175
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Generator Seed",
+      "properties": {
+        "Node name for S&R": "easy seed"
+      },
+      "widgets_values": [
+        678787305460337,
+        "fixed",
+        null
       ]
     },
     {
@@ -1375,6 +1418,41 @@
       ]
     },
     {
+      "id": 89,
+      "type": "easy seed",
+      "pos": [
+        2909.562255859375,
+        804.1412353515625
+      ],
+      "size": [
+        210,
+        110
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            181
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "FaceDetailer Seed",
+      "properties": {
+        "Node name for S&R": "easy seed"
+      },
+      "widgets_values": [
+        903135605624704,
+        "fixed",
+        null
+      ]
+    },
+    {
       "id": 90,
       "type": "Image Save",
       "pos": [
@@ -1387,7 +1465,7 @@
       ],
       "flags": {},
       "order": 30,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "images",
@@ -1429,71 +1507,100 @@
       ]
     },
     {
-      "id": 63,
-      "type": "ImpactWildcardProcessor",
+      "id": 92,
+      "type": "EmptyLatentImagePresets",
       "pos": [
-        -526.2543334960938,
-        234.19178771972656
+        60,
+        850
       ],
       "size": [
-        520,
-        600
+        330,
+        150
       ],
       "flags": {
         "pinned": true
       },
-      "order": 17,
+      "order": 13,
       "mode": 0,
-      "inputs": [
+      "inputs": [],
+      "outputs": [
         {
-          "name": "seed",
+          "name": "Latent",
+          "type": "LATENT",
+          "links": [
+            189
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "Width",
           "type": "INT",
-          "link": 178,
-          "slot_index": 0,
-          "widget": {
-            "name": "seed"
-          }
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "Height",
+          "type": "INT",
+          "links": [],
+          "slot_index": 2
         }
       ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImagePresets"
+      },
+      "widgets_values": [
+        "768 x 512 (1.5:1)",
+        true,
+        1
+      ]
+    },
+    {
+      "id": 81,
+      "type": "DF_Text_Box",
+      "pos": [
+        -520,
+        770
+      ],
+      "size": [
+        510,
+        200
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
       "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            148
+            160
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
+      "title": "Negative Prompt",
       "properties": {
-        "Node name for S&R": "ImpactWildcardProcessor"
+        "Node name for S&R": "DF_Text_Box"
       },
       "widgets_values": [
-        "A gorgeous woman with shoulder-length maroon hair and stylish bangs. The lighting is a combination of gel lights that cast a mystical, colorful glow over the scene, reminiscent of a Kodak Portra 400 film's vibrant and rich tones. The intricate details of her outfit and the mesmerizing environment around her are captured with a mastery that blurs the line between reality and fantasy, creating a masterpiece that feels both otherworldly and grounded in raw beauty The natural light highlights her confident posture and elegant features, contrasts beautifully with her modern, stylish appearance. The atmosphere is serene, with the warm sunlight casting soft shadows and enhancing the overall balance between youthfulness and cultural heritage in the composition. Delicate flower and plant arrangements adorn her surroundings, bathed in dynamic chiaroscuro's dramatic play of light and shadow. BREAK, The high-resolution details show the perfect anatomical structure, attracting viewers with its stunning beauty. In the center of the scene, her exudes an aura of mystery. With smooth, sharp focus, the illustrations burst with high definition, and accent lighting casts an otherworldly glow in the contrasting bright colors on the concept art.",
-        "1girl, Firefly Honkai Star Rail, glowing eyes, lips, thin lips, solo, looking at viewer, charming smile, holding a flowers, intricate modern wedding dress, long hem and dress train, elbow gloves, body, from below, back lighting, multicolored background, cherry blossoms, masterpiece, best quality, very aesthetic, absurdres, raytracing,\\nThe high-resolution details show the perfect anatomical structure, attracting viewers with its stunning beauty. In the center of the scene, her exudes an aura of mystery. With smooth, sharp focus, the illustrations burst with high definition, and accent lighting casts an otherworldly glow in the contrasting bright colors on the concept art.",
-        true,
-        1043616330493659,
-        "randomize",
-        "Select the Wildcard to add to the text",
-        [
-          false,
-          true
-        ],
+        "(worst quality, low quality, normal quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, disfigured, illustration, 3d,",
         [
           false,
           true
         ]
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
       "id": 71,
       "type": "CR Apply LoRA Stack",
       "pos": [
         -230,
-        1130
+        1020
       ],
       "size": [
         210,
@@ -1503,7 +1610,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1558,172 +1665,45 @@
       "widgets_values": []
     },
     {
-      "id": 89,
-      "type": "easy seed",
+      "id": 93,
+      "type": "DF_Text_Box",
       "pos": [
-        2909.562255859375,
-        804.1412353515625
+        -520,
+        230
       ],
       "size": [
-        210,
-        110
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "seed",
-          "type": "INT",
-          "links": [
-            181
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "FaceDetailer Seed",
-      "properties": {
-        "Node name for S&R": "easy seed"
-      },
-      "widgets_values": [
-        116917970925318,
-        "fixed",
-        null
-      ]
-    },
-    {
-      "id": 85,
-      "type": "easy seed",
-      "pos": [
-        420,
-        840
-      ],
-      "size": [
-        320,
-        110
+        510,
+        490
       ],
       "flags": {
         "pinned": true
       },
-      "order": 13,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "seed",
-          "type": "INT",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            175,
-            178
+            195
           ],
           "slot_index": 0
         }
       ],
-      "title": "Generator Seed",
+      "title": "Prompt",
       "properties": {
-        "Node name for S&R": "easy seed"
+        "Node name for S&R": "DF_Text_Box"
       },
       "widgets_values": [
-        974242152033058,
-        "fixed",
-        null
-      ]
-    },
-    {
-      "id": 67,
-      "type": "FreeU_V2",
-      "pos": [
-        70,
-        1060
+        "masterpiece, best quality, raw photo, realistic, adult girl, looking at viewer, supporting head on two hands, long hair, sweater, sweater hat, extremely beautiful detailed face, best shadow, medium breasts, (cute face, temptations look), snowing, snowing background, (sepia photography), (professional photo, balanced photo, balanced exposure)",
+        [
+          false,
+          true
+        ]
       ],
-      "size": [
-        320,
-        130
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 18,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 132
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            114,
-            115,
-            117,
-            164
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "FreeU_V2"
-      },
-      "widgets_values": [
-        1.5,
-        1.6,
-        0.9,
-        0.2
-      ]
-    },
-    {
-      "id": 92,
-      "type": "EmptyLatentImagePresets",
-      "pos": [
-        60,
-        850
-      ],
-      "size": [
-        330,
-        150
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "Latent",
-          "type": "LATENT",
-          "links": [
-            189
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "Width",
-          "type": "INT",
-          "links": [],
-          "slot_index": 1
-        },
-        {
-          "name": "Height",
-          "type": "INT",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImagePresets"
-      },
-      "widgets_values": [
-        "768 x 512 (1.5:1)",
-        true,
-        1
-      ]
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1960,14 +1940,6 @@
       "CONDITIONING"
     ],
     [
-      148,
-      63,
-      0,
-      77,
-      3,
-      "STRING"
-    ],
-    [
       150,
       71,
       0,
@@ -2112,14 +2084,6 @@
       "INT"
     ],
     [
-      178,
-      85,
-      0,
-      63,
-      0,
-      "INT"
-    ],
-    [
       179,
       88,
       0,
@@ -2158,6 +2122,14 @@
       12,
       3,
       "LATENT"
+    ],
+    [
+      195,
+      93,
+      0,
+      77,
+      3,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2178,10 +2150,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.49500000000000066,
+      "scale": 0.964614964500003,
       "offset": [
-        867.082096821133,
-        629.6948272333943
+        1142.6426771766894,
+        74.25016386675864
       ]
     }
   },
