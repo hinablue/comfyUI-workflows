@@ -120,7 +120,7 @@
       },
       "widgets_values": [
         "enable",
-        950441660234668,
+        740301268640272,
         "randomize",
         20,
         5,
@@ -252,7 +252,7 @@
       },
       "widgets_values": [
         2,
-        901253267946061,
+        596807480126230,
         "randomize",
         20,
         5,
@@ -513,7 +513,7 @@
         256,
         true,
         768,
-        727866858566171,
+        323163325258655,
         "randomize",
         20,
         5,
@@ -1321,7 +1321,7 @@
         "Node name for S&R": "UltimateSDUpscaleNoUpscale"
       },
       "widgets_values": [
-        83589254654026,
+        331005012236678,
         "randomize",
         20,
         5,
@@ -1374,7 +1374,7 @@
         "Node name for S&R": "easy seed"
       },
       "widgets_values": [
-        678787305460337,
+        251582947588811,
         "fixed",
         null
       ]
@@ -1555,47 +1555,6 @@
       ]
     },
     {
-      "id": 81,
-      "type": "DF_Text_Box",
-      "pos": [
-        -520,
-        770
-      ],
-      "size": [
-        510,
-        200
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            160
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative Prompt",
-      "properties": {
-        "Node name for S&R": "DF_Text_Box"
-      },
-      "widgets_values": [
-        "(worst quality, low quality, normal quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, disfigured, illustration, 3d,",
-        [
-          false,
-          true
-        ]
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 71,
       "type": "CR Apply LoRA Stack",
       "pos": [
@@ -1665,47 +1624,6 @@
       "widgets_values": []
     },
     {
-      "id": 93,
-      "type": "DF_Text_Box",
-      "pos": [
-        -520,
-        230
-      ],
-      "size": [
-        510,
-        490
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 15,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            195
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "DF_Text_Box"
-      },
-      "widgets_values": [
-        "1woman, solo, long hair, pink hair, black choker, green eyes, one eye covered by hair, eyeliner, gorgeous lips, tights, medium breasts cinematic, (masterpiece), (best quality), (ultra-detailed), very aesthetic, illustration, detailed eyes, perfect eyes, detailed face, (beautiful detailed face, beautiful detailed eyes) ,extreme details eyes voluptuous, scenery, oiled body, bright day, inoue orihime, long white sundress, sunflower fields, standing, outdoor, blue sky, clouds, sun, sun rays, downblouse, cleavage focus, bent over, oversized clothes, loose clothes, ample clothes, blushing, ",
-        [
-          false,
-          true
-        ]
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 94,
       "type": "CLIPSetLastLayer",
       "pos": [
@@ -1744,6 +1662,88 @@
       "widgets_values": [
         -2
       ]
+    },
+    {
+      "id": 93,
+      "type": "DF_Text_Box",
+      "pos": [
+        -520,
+        230
+      ],
+      "size": [
+        510,
+        490
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            195
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "DF_Text_Box"
+      },
+      "widgets_values": [
+        "asian girl, digital art, whistling Urban effervescence, desaturated colors, bony details, bokeh, daguerreotype, Fine art photography collage using tired portrait of dark themes, cowboy shot, The high-resolution details show the perfect anatomical structure, attracting viewers with its stunning beauty, With smooth, sharp focus, the illustrations burst with high definition, and accent lighting casts an otherworldly glow in the contrasting bright colors on the concept art",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 81,
+      "type": "DF_Text_Box",
+      "pos": [
+        -520,
+        770
+      ],
+      "size": [
+        510,
+        200
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            160
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt",
+      "properties": {
+        "Node name for S&R": "DF_Text_Box"
+      },
+      "widgets_values": [
+        "(worst quality, low quality, normal quality), disabled body, (ugly), sketches, (manicure:1.2), lowres, watermark, monochrome, censor, anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, disfigured, illustration, 3d,",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
     }
   ],
   "links": [
@@ -2198,10 +2198,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8769226950000032,
+      "scale": 0.5445000000000026,
       "offset": [
-        1075.0909989504512,
-        137.38834069322874
+        1437.3026214761442,
+        559.799152360854
       ]
     }
   },
