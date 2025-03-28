@@ -1,8 +1,8 @@
 {
   "id": "f63b633c-d38f-45e7-8e91-79833a292588",
   "revision": 0,
-  "last_node_id": 21,
-  "last_link_id": 31,
+  "last_node_id": 22,
+  "last_link_id": 34,
   "nodes": [
     {
       "id": 8,
@@ -16,7 +16,7 @@
         46
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -105,7 +105,7 @@
         180.6060791015625
       ],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -204,7 +204,7 @@
         813.8931884765625
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -222,91 +222,6 @@
       "widgets_values": [
         "ComfyUI",
         ""
-      ]
-    },
-    {
-      "id": 11,
-      "type": "ModelSamplingAuraFlow",
-      "pos": [
-        484.7452697753906,
-        -158.52064514160156
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 29
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            26
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "ModelSamplingAuraFlow"
-      },
-      "widgets_values": [
-        6
-      ]
-    },
-    {
-      "id": 20,
-      "type": "PatchModelAddDownscale",
-      "pos": [
-        461.3620300292969,
-        -54.481651306152344
-      ],
-      "size": [
-        352.79998779296875,
-        202
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 26
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            27
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.27",
-        "Node name for S&R": "PatchModelAddDownscale"
-      },
-      "widgets_values": [
-        3,
-        2,
-        0,
-        0.35,
-        true,
-        "bicubic",
-        "bicubic"
       ]
     },
     {
@@ -357,13 +272,13 @@
         262
       ],
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 27
+          "link": 33
         },
         {
           "name": "positive",
@@ -379,6 +294,14 @@
           "name": "latent_image",
           "type": "LATENT",
           "link": 17
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 34
         }
       ],
       "outputs": [
@@ -397,7 +320,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        426469725164624,
+        301964638191198,
         "randomize",
         40,
         4,
@@ -418,7 +341,7 @@
         82
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -447,6 +370,91 @@
       ]
     },
     {
+      "id": 11,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        484.7452697753906,
+        -158.52064514160156
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "ModelSamplingAuraFlow"
+      },
+      "widgets_values": [
+        6
+      ]
+    },
+    {
+      "id": 20,
+      "type": "PatchModelAddDownscale",
+      "pos": [
+        461.3620300292969,
+        -54.481651306152344
+      ],
+      "size": [
+        352.79998779296875,
+        202
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "PatchModelAddDownscale"
+      },
+      "widgets_values": [
+        3,
+        2,
+        0,
+        0.35,
+        true,
+        "bicubic",
+        "bicubic"
+      ]
+    },
+    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -458,7 +466,7 @@
         177.11770629882812
       ],
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -484,7 +492,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "You are an assistant designed to generate superior illustrious style anime images with the superior degree of image-text alignment based on textual prompts or user prompts. <Prompt Start>  \n1girl, armpits, black sports bra, breasts, closed mouth, clothes around waist, cloud, cloudy sky, dark-skinned female, dark skin, fire, forest, full moon, groin, hair between eyes, jacket, jacket around waist, katana, large breasts, linea alba, long hair, looking at viewer, moon, nature, navel, night, night sky, official alternate eye color, official alternate hairstyle, ootachi, pants, plant, purple ribbon, pyrokinesis, red eyes, red hair, red jacket, red pants, red track suit, ribbon, sky, solo, sports bra, star \\(sky\\), starry sky, tan, toned, tree, very long hair,\n\n",
+        "You are an advanced image generation assistant designed to generate high-quality illustrious anime-style images, specialized in creating highly detailed, high-resolution anime and manga-inspired artwork that precisely matches user requirements, including tag-based prompts. <Prompt Start> 1girl with vibrant blue hair is looking directly at the viewer with a gentle expression. She stands in the middle of a lively urban street filled with tall buildings, neon signs, and bustling activity. In her hands, she holds a red sign with the word '鳥巢' written in bold white letters. Her hair flows softly in the breeze, and her bright eyes reflect the glow of the city lights around her. The scene is vibrant yet slightly mysterious, with cars passing by and pedestrians moving in the background. The contrast between the bustling city environment and the calm expression of the girl creates an intriguing and captivating atmosphere.",
         [
           false,
           true
@@ -492,6 +500,41 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 22,
+      "type": "easy seed",
+      "pos": [
+        861.383544921875,
+        510.2850036621094
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "0104f7f6a9ef02ac6651221c4bc2b742c184e79a",
+        "Node name for S&R": "easy seed"
+      },
+      "widgets_values": [
+        697702776971052,
+        "fixed",
+        null
+      ]
     }
   ],
   "links": [
@@ -552,14 +595,6 @@
       "MODEL"
     ],
     [
-      27,
-      20,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
       28,
       4,
       0,
@@ -590,16 +625,32 @@
       7,
       0,
       "CLIP"
+    ],
+    [
+      33,
+      20,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      34,
+      22,
+      0,
+      3,
+      4,
+      "INT"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7972024500000038,
+      "scale": 0.7972024500000009,
       "offset": [
-        455.9898136445039,
-        311.4582002821469
+        455.6034694706805,
+        459.18613165432276
       ]
     },
     "ue_links": [],
